@@ -1,6 +1,6 @@
-- title: Authentication
-  slug: authentication
-  description: Securing your online account login credentials
+- title: Uwierzytelnianie
+  slug: uwierzytelnianie
+  description: Zabezpieczanie danych logowania do konta internetowego
   icon: password
   color: yellow
   intro: >-
