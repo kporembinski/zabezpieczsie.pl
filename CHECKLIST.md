@@ -32,7 +32,7 @@ A mirror of this repo is available at [codeberg.org/alicia/personal-security-che
 ---
 
 <!-- checklist-start -->
-## Authentication
+## Uwierzytelnianie
 
 Most reported data breaches are caused by the use of weak, default, or stolen passwords (according to [this Verizon report](http://www.verizonenterprise.com/resources/reports/rp_dbir-2016-executive-summary_xg_en.pdf)). Use long, strong, and unique passwords, manage them in a secure password manager, enable 2-factor authentication, keep on top of breaches, and take care while logging into your accounts.
 
