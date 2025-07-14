@@ -8,7 +8,7 @@ import { ChecklistContext } from "~/store/checklist-context";
 import type { Sections } from "~/types/PSC";
 
 export const useChecklists = routeLoader$(async () => {
-  const remoteUrl = 'https://raw.githubusercontent.com/Lissy93/personal-security-checklist/HEAD/personal-security-checklist.yml';
+  const remoteUrl = 'https://raw.githubusercontent.com/kporembinski/personal-security-checklist/refs/heads/master/personal-security-checklist.yml';
   return fetch(remoteUrl)
     .then((res) => res.text())
     .then((res) => jsyaml.load(res) as Sections)

@@ -21,7 +21,7 @@ export default component$(() => {
   ];
 
     const deleteAllData = $(() => {
-    const isConfirmed = confirm('Are you sure you want to delete all local data? This will erase your progress.');
+    const isConfirmed = confirm('Czy na pewno chcesz usunąć wszystkie dane lokalne? Spowoduje to utratę postępów.');
     if (isConfirmed) {
       localStorage.clear();
       location.reload();
