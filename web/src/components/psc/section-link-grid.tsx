@@ -80,7 +80,7 @@ export default component$((props: { sections: Section[] }) => {
               </div>
             ) : (
               <span class="absolute right-2 top-2 opacity-30 text-xs">
-                Not yet started
+                 Jeszcze nie rozpoczęto
               </span>
             )}
           </div>

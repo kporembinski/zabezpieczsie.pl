@@ -151,8 +151,8 @@ export default component$((props: { section: Section }) => {
       <div>
         <progress class="progress w-64" value={percent} max="100"></progress>
         <p class="text-xs text-center">
-          {done} out of {total} ({percent}%)
-          complete, {disabled} ignored</p>
+          {done} z {total} ({percent}%)
+          zrobiono, {disabled} zignorowane</p>
       </div>
 
       <div class="flex flex-wrap gap-2 justify-end my-4">

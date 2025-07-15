@@ -291,16 +291,16 @@ export default component$(() => {
           class="absolute top-1 right-1 btn btn-sm opacity-50"
           onClick$={() => setIgnoreDialog(true)}
           >Close</button>
-        <p class="text-xl block text-center font-bold">No stats yet</p>
-        <p class="w-md text-left my-2">You'll see your progress here, once you start ticking items off the checklists</p>
-        <p class="w-md text-left my-2">Get started, by selecting a checklist below</p>
+        <p class="text-xl block text-center font-bold">Brak statystyk</p>
+        <p class="w-md text-left my-2">Tutaj będziesz mógł śledzić swoje postępy, gdy zaczniesz odhaczać pozycje z listy kontrolnej.</p>
+        <p class="w-md text-left my-2">Zacznij od wybrania poniższej listy kontrolnej.</p>
       </div>
     )}
 
     <div class="flex justify-center flex-col items-center gap-6">
       {/* Progress Percent */}
       <div class="rounded-box bg-front shadow-md w-96 p-4">
-        <h3 class="text-primary text-2xl">Your Progress</h3>
+        <h3 class="text-primary text-2xl">Twój postęp</h3>
         <p class="text-lg">
           You've completed <b>{totalProgress.value.completed} out of {totalProgress.value.outOf}</b> items
         </p>
