@@ -23,9 +23,9 @@ export default component$((props: { section: Section }) => {
   const originalFilters = {
     show: 'all', // 'all', 'remaining', 'completed'
     levels: {
-      essential: true,
-      optional: true,
-      advanced: true,
+      podstawowe: true,
+      opcjonalne: true,
+      zaawansowane: true,
     },
   };
 
@@ -33,11 +33,11 @@ export default component$((props: { section: Section }) => {
 
   const getBadgeClass = (priority: Priority, precedeClass: string = '') => {
     switch (priority.toLocaleLowerCase()) {
-      case 'essential':
+      case 'podstawowe':
         return `${precedeClass}success`;
-      case 'optional':
+      case 'opcjonalne':
         return `${precedeClass}warning`;
-      case 'advanced':
+      case 'zaawansowane':
         return `${precedeClass}error`;
       default:
         return `${precedeClass}neutral`;
@@ -87,7 +87,7 @@ export default component$((props: { section: Section }) => {
         case 'advice':
           return item.point;
         case 'level':
-          return ['essential', 'optional', 'advanced'].indexOf(item.priority.toLowerCase());
+          return ['podstawowe', 'opcjonalne', 'zaawansowane'].indexOf(item.priority.toLowerCase());
         default:
           return 0;
       }
@@ -198,8 +198,8 @@ export default component$((props: { section: Section }) => {
             <span class="text-sm">Podstawowe</span> 
             <input
               type="checkbox"
-              checked={filterState.levels.essential}
-              onChange$={() => (filterState.levels.essential = !filterState.levels.essential)}
+              checked={filterState.levels.podstawowe}
+              onChange$={() => (filterState.levels.podstawowe = !filterState.levels.podstawowe)}
               class="checkbox checkbox-sm checked:checkbox-success"
             />
           </label>
