@@ -330,8 +330,7 @@ export default component$(() => {
           bardziej szanujące prywatność aplikacje i usługi.
         </p>
         <p class="text-lg">
-          View our directory of recommended software,
-          at <a class="link link-secondary font-bold" href="https://awesome-privacy.xyz">awesome-privacy.xyz</a>
+          Poszukaj oprogramowania nastawionego na prywatność na: <a class="link link-secondary font-bold" href="https://www.privacytools.io/">privacytools.io</a>
         </p>
       </div>
     </div>

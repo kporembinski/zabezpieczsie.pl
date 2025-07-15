@@ -10,13 +10,13 @@ export default component$(() => {
           <p>zabezpieczsie.pl</p>
           <h1 class="text-5xl font-bold">Zabezpiecz Się</h1>
           <p class="subtitle pb-6">Twój przewodnik po zabezpieczaniu życia cyfrowego i ochronie prywatności</p>
-          <Icon class="mb-4" icon="shield" width={120} height={120}  />
-          <a href="https://github.com/lissy93/personal-security-checklist">
-            {/* <button class="btn btn-primary btn-lg">
+          <Icon class="mb-4" icon="shield" width={60} height={60}  />
+          {/* <a href="https://github.com/lissy93/personal-security-checklist">
+            <button class="btn btn-primary btn-lg">
               <Icon icon="github" width={20} height={20}  />
               View on GitHub
-            </button> */}
-          </a>
+            </button>
+          </a> */}
         </div>
       </div>
     </div>
