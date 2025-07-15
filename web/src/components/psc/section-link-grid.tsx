@@ -58,7 +58,7 @@ export default component$((props: { sections: Section[] }) => {
             <Icon icon={section.icon || 'star'} color={section.color} />
             {(done.value && done.value[index]) ? (
               <p class={`text-${section.color}-400 pt-2 pb-0 px-0 mx-0 my-0`}>
-                {done.value[index]}/{section.checklist.length} Done
+                {done.value[index]}/{section.checklist.length}
               </p>
             ) : (
               <p class={`text-${section.color}-400 pt-2 pb-0 px-0 mx-0 my-0`}>

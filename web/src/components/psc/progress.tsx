@@ -302,7 +302,7 @@ export default component$(() => {
       <div class="rounded-box bg-front shadow-md w-96 p-4">
         <h3 class="text-primary text-2xl">Twój postęp</h3>
         <p class="text-lg">
-          Ukończyłeś <b>{totalProgress.value.completed} z {totalProgress.value.outOf}</b> punktów
+          Ukończono <b>{totalProgress.value.completed} z {totalProgress.value.outOf}</b> punktów
         </p>
         <progress
           class="progress w-80"

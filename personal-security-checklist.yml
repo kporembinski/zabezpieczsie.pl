@@ -1,13 +1,10 @@
 - title: Uwierzytelnianie
   slug: uwierzytelnianie
-  description: Zabezpieczanie danych logowania do konta internetowego
+  description: Zabezpieczanie danych logowania do kont internetowych
   icon: password
   color: yellow
   intro: >-
-    Most reported data breaches are caused by the use of weak, default, or stolen passwords
-    (according to [this Verizon report](http://www.verizonenterprise.com/resources/reports/rp_dbir-2016-executive-summary_xg_en.pdf)).
-    Use long, strong, and unique passwords, manage them in a secure password manager, enable
-    2-factor authentication, keep on top of breaches, and take care while logging into your accounts.
+    Większość zgłoszonych naruszeń bezpieczeństwa danych wynika z używania słabych, domyślnych lub skradzionych haseł (według raportu [CERT Polska](https://cert.pl/uploads/docs/Raport_CP_2024.pdf)). Używaj długich, silnych i unikalnych haseł, zarządzaj nimi w bezpiecznym menedżerze haseł, włącz uwierzytelnianie dwuskładnikowe, śledź naruszenia bezpieczeństwa i zachowaj ostrożność podczas logowania się na swoje konta.
   checklist:
   - point: Używaj silnego hasła
     priority: Start
@@ -20,7 +17,7 @@
       passwords can be cracked. Read more about creating strong passwords:
       [securityinabox.org](https://securityinabox.org/en/passwords/passwords-and-2fa/).
 
-  - point: Don't Reuse Passwords
+  - point: Stosuj wszędzie różne hasła
     priority: Start
     details: >-
       If someone were to reuse a password and one site they had an account with suffered a leak, then a
@@ -1866,8 +1863,8 @@
 
   color: indigo
 
-- title: Fizyczne bezpieczeństwo
-  slug: fizyczne-bezpieczenstwo
+- title: Ochrona fizyczna
+  slug: ochrona-fizyczna
   description: Taking measures to prevent IRL security incidents
   icon: physical
   intro: >-
