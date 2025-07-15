@@ -9,21 +9,12 @@
   - point: Używaj silnego hasła
     priority: Start
     details: >-
-      If your password is too short, or contains dictionary words, places, or names, then it can be easily
-      cracked through brute force or guessed by someone. The easiest way to make a strong password is by
-      making it long (12+ characters) — consider using a 'passphrase' made up of many words. Alternatively,
-      use a password generator to create a long, strong random password. Have a play with
-      [Security.org's How Secure Is My Password?](https://security.org/how-secure-is-my-password/), to get an idea of how quickly common
-      passwords can be cracked. Read more about creating strong passwords:
-      [securityinabox.org](https://securityinabox.org/en/passwords/passwords-and-2fa/).
-
+      Jeśli Twoje hasło jest zbyt krótkie lub zawiera słowa ze słownika, nazwy miejsc lub imiona, może zostać łatwo złamane metodą brute force lub odgadnięte przez kogoś. Najprostszym sposobem na stworzenie silnego hasła jest użycie długiego hasła (12+ znaków) — rozważ użycie „frazy hasła” złożonej z wielu słów. Alternatywnie, użyj generatora haseł, aby stworzyć długie, silne hasło losowe. Wypróbuj narzędzie [Security.org „How Secure Is My Password?”](https://security.org/how-secure-is-my-password/), aby dowiedzieć się, jak szybko można złamać popularne hasła. Więcej informacji na temat tworzenia silnych haseł znajdziesz na stronie [cert.pl](https://cert.pl/posts/2022/01/kompleksowo-o-haslach/).
+      
   - point: Stosuj wszędzie różne hasła
     priority: Start
     details: >-
-      If someone were to reuse a password and one site they had an account with suffered a leak, then a
-      criminal could easily gain unauthorized access to their other accounts. This is usually done through
-      large-scale automated login requests, and it is called Credential Stuffing. Unfortunately, this is all
-      too common, but it's simple to protect against — use a different password for each of your online accounts.
+      Jeśli ktoś ponownie użyje hasła, a jedna z witryn, w której posiada konto, padnie ofiarą wycieku danych, przestępca może łatwo uzyskać nieautoryzowany dostęp do pozostałych kont tej osoby. Odbywa się to zazwyczaj poprzez automatyczne wysyłanie na dużą skalę żądań logowania i nazywa się to Credential Stuffing. Niestety jest to zbyt powszechne zjawisko, ale można się przed nim łatwo chronić — wystarczy używać różnych haseł do poszczególnych kont internetowych.
 
   - point: Use a Secure Password Manager
     priority: Start

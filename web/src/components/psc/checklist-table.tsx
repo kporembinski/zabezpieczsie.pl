@@ -274,7 +274,7 @@ export default component$((props: { section: Section }) => {
                     setCompleted(data);
                   }}
                 />
-                <label for={`ignore-${itemId}`} class="text-small block opacity-50 mt-2">Ignore</label>
+                <label for={`ignore-${itemId}`} class="text-small block opacity-50 mt-2">Zignoruj</label>
                 <input
                   type="checkbox"
                   id={`ignore-${itemId}`}
