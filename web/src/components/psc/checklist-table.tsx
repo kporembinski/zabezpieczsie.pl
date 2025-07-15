@@ -207,8 +207,8 @@ export default component$((props: { section: Section }) => {
             <span class="text-sm">Opcjonalne</span> 
             <input
               type="checkbox"
-              checked={filterState.levels.optional}
-              onChange$={() => (filterState.levels.optional = !filterState.levels.optional)}
+              checked={filterState.levels.opcjonalne}
+              onChange$={() => (filterState.levels.opcjonalne = !filterState.levels.opcjonalne)}
               class="checkbox checkbox-sm checked:checkbox-warning"
             />
           </label>
@@ -217,9 +217,9 @@ export default component$((props: { section: Section }) => {
             <span class="text-sm">Zaawansowane</span> 
             <input
               type="checkbox"
-              checked={filterState.levels.advanced}
+              checked={filterState.levels.zaawansowane}
               class="checkbox checkbox-sm checked:checkbox-error"
-              onChange$={() => (filterState.levels.advanced = !filterState.levels.advanced)}
+              onChange$={() => (filterState.levels.zaawansowane = !filterState.levels.zaawansowane)}
             />
           </label>
         </div>
