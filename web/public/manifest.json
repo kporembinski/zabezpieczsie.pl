@@ -1,9 +1,9 @@
 {
   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
   "name": "digital-defense",
-  "short_name": "Digital Defense",
+  "short_name": "ZabezpieczSie.pl",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#5616c6",
-  "description": "The ultimate personal security checklist"
+  "description": "Kompletna lista kontrolna dotycząca bezpieczeństwa osobistego"
 }

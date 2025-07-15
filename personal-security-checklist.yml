@@ -10,7 +10,7 @@
     2-factor authentication, keep on top of breaches, and take care while logging into your accounts.
   checklist:
   - point: Używaj silnego hasła
-    priority: Podstawowe
+    priority: Essential
     details: >-
       If your password is too short, or contains dictionary words, places, or names, then it can be easily
       cracked through brute force or guessed by someone. The easiest way to make a strong password is by
