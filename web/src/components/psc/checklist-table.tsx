@@ -23,9 +23,9 @@ export default component$((props: { section: Section }) => {
   const originalFilters = {
     show: 'all', // 'all', 'remaining', 'completed'
     levels: {
-      podstawowe: true,
-      opcjonalne: true,
-      zaawansowane: true,
+      start: true,
+      plus: true,
+      pro: true,
     },
   };
 
@@ -33,11 +33,11 @@ export default component$((props: { section: Section }) => {
 
   const getBadgeClass = (priority: Priority, precedeClass: string = '') => {
     switch (priority.toLocaleLowerCase()) {
-      case 'podstawowe':
+      case 'start':
         return `${precedeClass}success`;
-      case 'opcjonalne':
+      case 'plus':
         return `${precedeClass}warning`;
-      case 'zaawansowane':
+      case 'pro':
         return `${precedeClass}error`;
       default:
         return `${precedeClass}neutral`;
@@ -87,7 +87,7 @@ export default component$((props: { section: Section }) => {
         case 'advice':
           return item.point;
         case 'level':
-          return ['podstawowe', 'opcjonalne', 'zaawansowane'].indexOf(item.priority.toLowerCase());
+          return ['start', 'plus', 'pro'].indexOf(item.priority.toLowerCase());
         default:
           return 0;
       }
@@ -195,31 +195,31 @@ export default component$((props: { section: Section }) => {
         <div class="flex justify-end items-center gap-1">
           <p class="font-bold text-sm">Filtry</p>
           <label class="p-2 rounded hover:bg-front transition-all cursor-pointer flex gap-2">
-            <span class="text-sm">Podstawowe</span> 
+            <span class="text-sm">Start</span> 
             <input
               type="checkbox"
-              checked={filterState.levels.podstawowe}
-              onChange$={() => (filterState.levels.podstawowe = !filterState.levels.podstawowe)}
+              checked={filterState.levels.start}
+              onChange$={() => (filterState.levels.start = !filterState.levels.start)}
               class="checkbox checkbox-sm checked:checkbox-success"
             />
           </label>
           <label class="p-2 rounded hover:bg-front transition-all cursor-pointer flex gap-2">
-            <span class="text-sm">Opcjonalne</span> 
+            <span class="text-sm">Plus</span> 
             <input
               type="checkbox"
-              checked={filterState.levels.opcjonalne}
-              onChange$={() => (filterState.levels.opcjonalne = !filterState.levels.opcjonalne)}
+              checked={filterState.levels.plus}
+              onChange$={() => (filterState.levels.plus = !filterState.levels.plus)}
               class="checkbox checkbox-sm checked:checkbox-warning"
             />
           </label>
           <label
             class="p-2 rounded hover:bg-front transition-all cursor-pointer flex gap-2">
-            <span class="text-sm">Zaawansowane</span> 
+            <span class="text-sm">Pro</span> 
             <input
               type="checkbox"
-              checked={filterState.levels.zaawansowane}
+              checked={filterState.levels.pro}
               class="checkbox checkbox-sm checked:checkbox-error"
-              onChange$={() => (filterState.levels.zaawansowane = !filterState.levels.zaawansowane)}
+              onChange$={() => (filterState.levels.pro = !filterState.levels.pro)}
             />
           </label>
         </div>

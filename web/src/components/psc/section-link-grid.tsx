@@ -62,7 +62,7 @@ export default component$((props: { sections: Section[] }) => {
               </p>
             ) : (
               <p class={`text-${section.color}-400 pt-2 pb-0 px-0 mx-0 my-0`}>
-                {section.checklist.length} Punkty
+                {section.checklist.length} punkty
               </p>
             )}
           </div>
@@ -80,7 +80,7 @@ export default component$((props: { sections: Section[] }) => {
               </div>
             ) : (
               <span class="absolute right-2 top-2 opacity-30 text-xs">
-                 Jeszcze nie rozpoczęto
+                 Nie zaczęto
               </span>
             )}
           </div>

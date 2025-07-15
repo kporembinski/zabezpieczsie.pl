@@ -151,9 +151,9 @@ export default component$(() => {
         totalProgress.value = progress;
     })
 
-    makeDataAndDrawChart('podstawowe', 'hsl(var(--su, 158 64% 52%))');
-    makeDataAndDrawChart('opcjonalne', 'hsl(var(--wa, 43 96% 56%))');
-    makeDataAndDrawChart('zaawansowane', 'hsl(var(--er, 0 91% 71%))');
+    makeDataAndDrawChart('start', 'hsl(var(--su, 158 64% 52%))');
+    makeDataAndDrawChart('plus', 'hsl(var(--wa, 43 96% 56%))');
+    makeDataAndDrawChart('pro', 'hsl(var(--er, 0 91% 71%))');
   }));
 
 
@@ -210,9 +210,9 @@ export default component$(() => {
   
     // Wait on each set to resolve, and return the final data object
     return Promise.all([
-      buildDataForPriority('zaawansowane', 'hsl(0 91% 71%/75%)'),
-      buildDataForPriority('opcjonalne', 'hsl(43 96% 56%/75%)'),
-      buildDataForPriority('podstawowe', 'hsl(158 64% 52%/75%)'),      
+      buildDataForPriority('pro', 'hsl(0 91% 71%/75%)'),
+      buildDataForPriority('plus', 'hsl(43 96% 56%/75%)'),
+      buildDataForPriority('start', 'hsl(158 64% 52%/75%)'),      
     ]).then(datasets => ({
       labels,
       datasets,
@@ -274,9 +274,9 @@ export default component$(() => {
   }));
 
   const items = [
-    { id: 'podstawowe-container', label: 'Podstawowe' },
-    { id: 'opcjonalne-container', label: 'Opcjonalne' },
-    { id: 'zaawansowane-container', label: 'Zaawansowane' },
+    { id: 'start-container', label: 'Start' },
+    { id: 'plus-container', label: 'Plus' },
+    { id: 'pro-container', label: 'Pro' },
   ];
 
   // Beware, some god-awful markup ahead (thank Tailwind for that!)

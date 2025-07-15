@@ -18,7 +18,7 @@ export interface Section {
   furtherResources?: Link[],
 }
 
-export type Priority = 'podstawowe' | 'opcjonalne' | 'zaawansowane';
+export type Priority = 'start' | 'plus' | 'pro';
 
 export interface Checklist {
   point: string,
