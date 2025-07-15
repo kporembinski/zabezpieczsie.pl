@@ -24,11 +24,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "Digital Defense",
+  title: "ZabezpieczSie.pl",
   meta: [
     {
       name: "description",
-      content: "The ultimate personal security checklist, for securing your digital life.",
+      content: "Kompletna lista kontrolna bezpieczeństwa osobistego, zapewniająca bezpieczeństwo Twojego cyfrowego życia.",
     },
   ],
 };

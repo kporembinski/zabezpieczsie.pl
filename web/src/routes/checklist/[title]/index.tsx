@@ -36,8 +36,8 @@ export default component$(() => {
 
       {section && section.softwareLinks && (
         <>
-        <div class="divider my-4">Useful Links</div>
-        <h3 class="text-xl my-2">Recommended Software</h3>
+        <div class="divider my-4">Przydatne linki</div>
+        <h3 class="text-xl my-2">Zalecane oprogramowanie</h3>
           <ul class="list-disc pl-4">
           {section.softwareLinks.map((link, index) => (
             <li key={index}>

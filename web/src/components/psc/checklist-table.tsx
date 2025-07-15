@@ -152,19 +152,19 @@ export default component$((props: { section: Section }) => {
         <progress class="progress w-64" value={percent} max="100"></progress>
         <p class="text-xs text-center">
           {done} z {total} ({percent}%)
-          zrobiono, {disabled} zignorowane</p>
+          zrobiono, {disabled} zignorowano</p>
       </div>
 
       <div class="flex flex-wrap gap-2 justify-end my-4">
         {(sortState.column || JSON.stringify(filterState) !== JSON.stringify(originalFilters)) && (
           <button class="btn btn-sm hover:btn-primary" onClick$={resetFilters}>
             <Icon width={18} height={16} icon="clear"/>
-            Reset Filters
+            Wyczyść filtry
           </button>
         )}
         <button class="btn btn-sm hover:btn-primary" onClick$={() => { showFilters.value = !showFilters.value; }}>
           <Icon width={18} height={16} icon="filters"/>
-          {showFilters.value ? 'Hide' : 'Show'} Filters
+          {showFilters.value ? 'Ukryj' : 'Pokaż'} filtry
         </button>
       </div>
     </div>
@@ -174,28 +174,28 @@ export default component$((props: { section: Section }) => {
         style={{ opacity: stage.value === "enterTo" ? 1 : 0, height: stage.value === "enterTo" ? 'auto' : 0 }}> 
         {/* Filter by completion */}
         <div class="flex justify-end items-center gap-1">
-          <p class="font-bold text-sm">Show</p>
+          <p class="font-bold text-sm">Pokaż</p>
           <label onClick$={() => (filterState.show = 'all')}
             class="p-2 rounded hover:bg-front transition-all cursor-pointer flex gap-2">
-            <span class="text-sm">All</span> 
+            <span class="text-sm">Wszystkie</span> 
             <input type="radio" name="show" class="radio radio-sm checked:radio-info" checked />
           </label>
           <label onClick$={() => (filterState.show = 'remaining')}
             class="p-2 rounded hover:bg-front transition-all cursor-pointer flex gap-2">
-            <span class="text-sm">Remaining</span> 
+            <span class="text-sm">Pozostałe</span> 
             <input type="radio" name="show" class="radio radio-sm checked:radio-error" />
           </label>
           <label onClick$={() => (filterState.show = 'completed')}
             class="p-2 rounded hover:bg-front transition-all cursor-pointer flex gap-2">
-            <span class="text-sm">Completed</span> 
+            <span class="text-sm">Ukończone</span> 
             <input type="radio" name="show" class="radio radio-sm checked:radio-success" />
           </label>
         </div>
         {/* Filter by level */}
         <div class="flex justify-end items-center gap-1">
-          <p class="font-bold text-sm">Filter</p>
+          <p class="font-bold text-sm">Filtry</p>
           <label class="p-2 rounded hover:bg-front transition-all cursor-pointer flex gap-2">
-            <span class="text-sm">Basic</span> 
+            <span class="text-sm">Podstawowe</span> 
             <input
               type="checkbox"
               checked={filterState.levels.essential}
@@ -204,7 +204,7 @@ export default component$((props: { section: Section }) => {
             />
           </label>
           <label class="p-2 rounded hover:bg-front transition-all cursor-pointer flex gap-2">
-            <span class="text-sm">Optional</span> 
+            <span class="text-sm">Opcjonalne</span> 
             <input
               type="checkbox"
               checked={filterState.levels.optional}
@@ -214,7 +214,7 @@ export default component$((props: { section: Section }) => {
           </label>
           <label
             class="p-2 rounded hover:bg-front transition-all cursor-pointer flex gap-2">
-            <span class="text-sm">Advanced</span> 
+            <span class="text-sm">Zaawansowane</span> 
             <input
               type="checkbox"
               checked={filterState.levels.advanced}
@@ -230,9 +230,9 @@ export default component$((props: { section: Section }) => {
       <thead>
         <tr>
           { [
-            { id: 'done', text: 'Done?'},
-            { id: 'advice', text: 'Advice' },
-            { id: 'level', text: 'Level' }
+            { id: 'done', text: 'Zrobione'},
+            { id: 'advice', text: 'Porada' },
+            { id: 'level', text: 'Poziom' }
           ].map((item) => (
             <th
               key={item.id}
@@ -245,7 +245,7 @@ export default component$((props: { section: Section }) => {
               </span>
             </th>
           ))}
-          <th>Details</th>
+          <th>Szczegóły</th>
         </tr>
       </thead>
       <tbody>

@@ -274,9 +274,9 @@ export default component$(() => {
   }));
 
   const items = [
-    { id: 'essential-container', label: 'Essential' },
-    { id: 'optional-container', label: 'Optional' },
-    { id: 'advanced-container', label: 'Advanced' },
+    { id: 'essential-container', label: 'Podstawowe' },
+    { id: 'optional-container', label: 'Opcjonalne' },
+    { id: 'advanced-container', label: 'Zaawansowane' },
   ];
 
   // Beware, some god-awful markup ahead (thank Tailwind for that!)
@@ -302,7 +302,7 @@ export default component$(() => {
       <div class="rounded-box bg-front shadow-md w-96 p-4">
         <h3 class="text-primary text-2xl">Twój postęp</h3>
         <p class="text-lg">
-          You've completed <b>{totalProgress.value.completed} out of {totalProgress.value.outOf}</b> items
+          Ukończyłeś <b>{totalProgress.value.completed} z {totalProgress.value.outOf}</b> punktów
         </p>
         <progress
           class="progress w-80"
@@ -326,8 +326,8 @@ export default component$(() => {
       {/* Something ??? */}
       <div class="p-4 rounded-box bg-front shadow-md w-96 flex-grow">
         <p class="text-sm opacity-80 mb-2">
-          Next up, consider switching to more secure and
-          privacy-respecting apps and services.
+          Następnie rozważ przejście na bezpieczniejsze i
+          bardziej szanujące prywatność aplikacje i usługi.
         </p>
         <p class="text-lg">
           View our directory of recommended software,
