@@ -205,8 +205,8 @@
     - title: 2-Factor Authentication
       url: https://awesome-privacy.xyz/essentials/2-factor-authentication
 
-- title: Przeglądanie stron internetowych
-  slug: web-browsing
+- title: Strony WWW
+  slug: strony-www
   description: Avoiding tracking, censorship, and data collection online
   icon: browser
   intro: >-
