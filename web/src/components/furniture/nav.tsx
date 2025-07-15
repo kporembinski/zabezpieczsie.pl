@@ -39,8 +39,8 @@ export default component$(() => {
             </label>
           </div> 
           <a href="/" class="btn btn-ghost text-xl flex capitalize">
-            <label for="my-drawer-3" aria-label="open sidebar" class="tooltip tooltip-bottom" data-tip="View all Pages"><Icon class="mr-2" icon="shield" width={28} height={28}  /></label>
-            <h1>Digital Defense</h1>
+            <label for="my-drawer-3" aria-label="open sidebar" class="tooltip tooltip-bottom" data-tip="Zobacz wszystkie strony"><Icon class="mr-2" icon="shield" width={28} height={28}  /></label>
+            <h1>Zabezpiecz Się</h1>
           </a>
         </div>
         <div class="flex-none hidden md:flex">
@@ -49,7 +49,7 @@ export default component$(() => {
               <details>
                 <summary>
                   <Icon icon="checklist" width={16} height={16}  />
-                  Checklists
+                  Checklisty
                 </summary>
                 <ul class="p-2 bg-base-100 rounded-t-none z-10">
                   {data.value.map((item: Section, index: number) => (
@@ -64,13 +64,13 @@ export default component$(() => {
               </details>
             </li>
             <li>
-              <a href="https://github.com/lissy93/personal-security-checklist"
-                class="tooltip flex tooltip-bottom" data-tip="View / Edit Source & Data">
+              <a href="https://github.com/kporembinski/personal-security-checklist"
+                class="tooltip flex tooltip-bottom" data-tip="Zobacz/edycja źródła i danych">
                 <Icon icon="github" width={16} height={16}  />GitHub
               </a>
             </li>
           </ul>
-          <div class="tooltip tooltip-bottom" data-tip="Theme">
+          <div class="tooltip tooltip-bottom" data-tip="Motyw">
             <label class="cursor-pointer grid place-items-center">
               <input
                 type="checkbox"
@@ -87,7 +87,7 @@ export default component$(() => {
           <li class="list-none px-2">
             <p
               onClick$={() => ((document.getElementById('settings_modal') || {}) as HTMLDialogElement).showModal()}
-              class="cursor-pointer tooltip flex tooltip-bottom" data-tip="Settings">
+              class="cursor-pointer tooltip flex tooltip-bottom" data-tip="Ustawienia">
                 <Icon icon="settings" width={20} height={20}  />
             </p>
           </li>
@@ -101,8 +101,8 @@ export default component$(() => {
           <Icon class="mr-2" icon="shield" width={16} height={16}  />
             Digital Defense
           </h2>
-          <li><a href="/"><Icon class="mr-2" icon="homepage" width={16} height={16}  />Home</a></li>
-          <li><a href="https://github.com/lissy93/personal-security-checklist">
+          <li><a href="https://zabezpieczsie.pl/"><Icon class="mr-2" icon="homepage" width={16} height={16}  />Strona główna</a></li>
+          <li><a href="https://github.com/kporembinski/personal-security-checklist">
             <Icon class="mr-2" icon="github" width={16} height={16}  />GitHub</a>
           </li>
           <li>
@@ -136,17 +136,17 @@ export default component$(() => {
             </a>
             <ul>
               <li>
-                <a href="https://github.com/Lissy93/personal-security-checklist/?tab=readme-ov-file#contributing">Contributing</a>
+                <a href="https://github.com/kporembinski/personal-security-checklist/?tab=readme-ov-file#contributing">Wkład</a>
               </li>
               <li>
-                <a href="https://github.com/Lissy93/personal-security-checklist/blob/master/LICENSE">License</a>
+                <a href="https://github.com/kporembinski/personal-security-checklist/blob/master/LICENSE">Licencja</a>
               </li>
             </ul>
             <ul>
             <li>
-              <a href="/about#author">Author</a>
+              <a href="/about#author">Autor</a>
               <ul>
-                <li><a href="https://aliciasykes.com/contact">Contact</a></li>
+                <li><a href="https://aliciasykes.com/contact">Kontakt</a></li>
                 <li>
                   <a href="https://apps.aliciasykes.com">More Apps</a>
                 </li>
@@ -167,18 +167,18 @@ export default component$(() => {
       <dialog id="settings_modal" class="modal">
         <div class="modal-box">
           <div class="tabs tabs-lifted">
-            <p class="tab tab-active">Settings</p>
-            <a class="tab" href="/about">About</a>
+            <p class="tab tab-active">Ustawienia</p>
+            <a class="tab" href="/about">O projekcie</a>
           </div>
           <div class="modal-action justify-start w-full flex flex-col gap-4">
               <div class="flex items-between w-full justify-between">
-                <label for="theme" class="label">Theme</label>
+                <label for="theme" class="label">Motyw</label>
                 <select 
                   id="theme" 
                   class="select select-bordered w-full max-w-xs"
                   onChange$={(event) => setTheme((event.target as HTMLSelectElement).value) }
                   >
-                  <option disabled selected>Theme</option>
+                  <option disabled selected>Motyw</option>
                   {themes.map((someTheme) => (
                     <option
                       key={someTheme}
@@ -191,13 +191,13 @@ export default component$(() => {
                 </select>
               </div>
               <div class="flex items-between w-full justify-between">
-                <label class="label">Data</label>
-                <button class="btn btn-primary" onClick$={deleteAllData}>Delete All</button>
+                <label class="label">Postęp</label>
+                <button class="btn btn-primary" onClick$={deleteAllData}>Skasuj wszystko</button>
               </div>
               <button
                 class="btn my-1 mx-auto"
                 onClick$={() => ((document.getElementById('settings_modal') || {}) as HTMLDialogElement).close()}
-              >Close</button>
+              >Zamknij</button>
             </div>
         </div>
       </dialog>
