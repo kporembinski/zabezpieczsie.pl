@@ -129,15 +129,9 @@
   - point: Blokuj reklamy
     priority: Start
     details: >-
-      Using an ad-blocker can help improve your privacy, by blocking the trackers that ads implement.
-      [uBlock Origin](https://awesome-privacy.xyz/networking/ad-blockers/ublock-origin) is a very
-      efficient and open source browser addon,
-      developed by Raymond Hill. When 3rd-party ads are displayed on a webpage, they have the ability to
-      track you, gathering personal information about you and your habits, which can then be sold, or used
-      to show you more targeted ads, and some ads are plain malicious or fake. Blocking ads also makes pages
-      load faster, uses less data and provides a less cluttered experience.
+      Korzystanie z programu blokującego reklamy może pomóc w poprawie prywatności poprzez blokowanie modułów śledzących stosowanych w reklamach np. poprzez wtyczki takie jak: [uBlock Origin](https://ublockorigin.com/), [AdGuard](https://adguard.com/). Gdy na stronie internetowej wyświetlane są reklamy stron trzecich, mają one możliwość śledzenia użytkownika, gromadzenia danych osobowych o nim i jego zwyczajach, które następnie mogą być sprzedawane lub wykorzystywane do wyświetlania bardziej ukierunkowanych reklam, a niektóre reklamy są po prostu złośliwe lub fałszywe. Blokowanie reklam sprawia również, że strony ładują się szybciej, zużywają mniej danych i zapewniają mniej zagmatwane wrażenia.
 
-  - point: Upewnij się, że strona jest autentyczna.
+  - point: Upewnij się, że strona jest autentyczna
     priority: Basic
     details: >-
       It may sound obvious, but when you logging into any online accounts, double check the URL is correct.
