@@ -124,7 +124,7 @@
   description: Unikanie śledzenia, cenzury i gromadzenia danych w Internecie
   icon: browser
   intro: >-
-    Większość stron internetowych korzysta z jakiejś formy śledzenia, często w celu uzyskania wglądu w zachowania i preferencje użytkowników. Dane te mogą być niezwykle szczegółowe, a zatem niezwykle cenne dla korporacji, rządów i złodziei własności intelektualnej. Naruszenia bezpieczeństwa danych i wycieki są powszechne, a deanonimizacja aktywności użytkowników w sieci jest często banalnym zadaniem. Istnieją dwie podstawowe metody śledzenia: stanowa (oparta na plikach cookie) i bezstanowa (oparta na odciskach palców). Pliki cookie to niewielkie fragmenty informacji przechowywane w przeglądarce użytkownika wraz z unikalnym identyfikatorem, który służy do identyfikacji użytkownika. Odciski palców przeglądarki to bardzo dokładny sposób identyfikacji i śledzenia użytkowników w Internecie. Gromadzone informacje są dość obszerne i często obejmują szczegóły przeglądarki, system operacyjny, rozdzielczość ekranu, obsługiwane czcionki, wtyczki, strefę czasową, preferencje językowe i czcionkowe, a nawet konfigurację sprzętu. W tej sekcji opisano kroki, które można podjąć, aby lepiej chronić się przed zagrożeniami, zminimalizować śledzenie w Internecie i poprawić prywatność.
+    Większość stron internetowych korzysta z jakiejś formy śledzenia, często w celu uzyskania wglądu w zachowania i preferencje użytkowników.
   checklist:
   - point: Blokuj reklamy
     priority: Start
