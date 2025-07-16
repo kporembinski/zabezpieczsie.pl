@@ -290,7 +290,7 @@ export default component$(() => {
         <button
           class="absolute top-1 right-1 btn btn-sm opacity-50"
           onClick$={() => setIgnoreDialog(true)}
-          >Close</button>
+          >Zamknij</button>
         <p class="text-xl block text-center font-bold">Brak statystyk</p>
         <p class="w-md text-left my-2">Tutaj będziesz mógł śledzić swoje postępy, gdy zaczniesz odhaczać pozycje z listy kontrolnej.</p>
         <p class="w-md text-left my-2">Zacznij od wybrania poniższej listy kontrolnej.</p>

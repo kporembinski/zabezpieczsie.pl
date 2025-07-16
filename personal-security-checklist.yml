@@ -16,62 +16,39 @@
     details: >-
       Jeśli ktoś ponownie użyje hasła, a jedna z witryn, w której posiada konto, padnie ofiarą wycieku danych, przestępca może łatwo uzyskać nieautoryzowany dostęp do pozostałych kont tej osoby. Odbywa się to zazwyczaj poprzez automatyczne wysyłanie na dużą skalę żądań logowania i nazywa się to Credential Stuffing. Niestety jest to zbyt powszechne zjawisko, ale można się przed nim łatwo chronić — wystarczy używać różnych haseł do poszczególnych kont internetowych.
 
-  - point: Use a Secure Password Manager
+  - point: Używaj bezpiecznego menedżera haseł
     priority: Start
     details: >-
-      For most people, it is going to be near-impossible to remember hundreds of strong and unique passwords.
-      A password manager is an application that generates, stores, and auto-fills your login credentials for you.
-      All your passwords will be encrypted against 1 master password (which you must remember, and it should be
-      very strong). Most password managers have browser extensions and mobile apps, so whatever device you are on,
-      your passwords can be auto-filled. A good all-rounder is
-      [Bitwarden](https://awesome-privacy.xyz/essentials/password-managers/bitwarden), or see
-      [Recommended Password Managers](https://awesome-privacy.xyz/essentials/password-managers).
+      Dla większości osób zapamiętanie setek silnych i unikalnych haseł jest praktycznie niemożliwe. Menedżer haseł to aplikacja, która generuje, przechowuje i automatycznie wypełnia dane logowania. Wszystkie hasła są szyfrowane za pomocą jednego hasła głównego (które musisz zapamiętać i które powinno być bardzo silne). Większość menedżerów haseł posiada rozszerzenia do przeglądarek i aplikacje mobilne, więc niezależnie od tego, z jakiego urządzenia korzystasz, Twoje hasła mogą być automatycznie wypełniane. Dobrym, wszechstronnym rozwiązaniem jest [Bitwarden](https://bitwarden.com/).
 
   - point: Unikaj udostępniania haseł
     priority: Start
     details: >-
       Chociaż mogą zdarzyć się sytuacje, w których konieczne będzie udostępnienie dostępu do konta innej osobie, generalnie należy tego unikać, ponieważ zwiększa to ryzyko naruszenia bezpieczeństwa konta. Jeśli konieczne jest udostępnienie hasła — na przykład podczas pracy w zespole korzystającym ze wspólnego konta — należy to zrobić za pomocą funkcji wbudowanych w menedżer haseł.
 
-  - point: Enable 2-Factor Authentication
+  - point: Włącz uwierzytelnianie dwuskładnikowe
     priority: Start
     details: >-
-      2FA is where you must provide both something you know (a password) and something you have (such as a
-      code on your phone) to log in. This means that if anyone has your password (e.g., through phishing,
-      malware, or a data breach), they will not be able to log into your account. It's easy to get started,
-      download [an authenticator app](https://github.com/Lissy93/awesome-privacy#2-factor-authentication)
-      onto your phone, and then go to your account security settings and follow the steps to enable 2FA. Next
-      time you log in on a new device, you will be prompted for the code that is displayed in the app on your phone
-      (it works without internet, and the code usually changes every 30 seconds).
+      2FA to metoda, w której musisz podać zarówno coś, co znasz (hasło), jak i coś, co posiadasz (np. kod na telefonie), aby się zalogować. Oznacza to, że nawet jeśli ktoś zdobędzie Twoje hasło (np. poprzez phishing, złośliwe oprogramowanie lub naruszenie bezpieczeństwa danych), nie będzie mógł zalogować się na Twoje konto. Rozpoczęcie korzystania z tej funkcji jest proste: pobierz [aplikację uwierzytelniającą](https://2fas.com/) na swój telefon, a następnie przejdź do ustawień bezpieczeństwa konta i postępuj zgodnie z instrukcjami, aby włączyć 2FA. Przy następnym logowaniu na nowym urządzeniu zostaniesz poproszony o podanie kodu wyświetlanego w aplikacji na telefonie (działa ona bez internetu, a kod zmienia się zazwyczaj co 30 sekund).
 
-  - point: Keep Backup Codes Safe
+  - point: Zabezpiecz kody zapasowe
     priority: Start
     details: >-
-      When you enable multi-factor authentication, you will usually be given several codes that you can use if
-      your 2FA method is lost, broken, or unavailable. Keep these codes somewhere safe to prevent loss or
-      unauthorized access. You should store these on paper or in a safe place on disk (e.g., in offline storage
-      or an encrypted file/drive). Don't store these in your password manager as 2FA sources and passwords
-      should be kept separately.
+      Po włączeniu uwierzytelniania wieloskładnikowego zazwyczaj otrzymujesz kilka kodów, których możesz użyć w przypadku utraty, uszkodzenia lub niedostępności metody 2FA. Przechowuj te kody w bezpiecznym miejscu, aby zapobiec ich utracie lub nieuprawnionemu dostępowi. Powinieneś przechowywać je na papierze lub w bezpiecznym miejscu na dysku (np. w pamięci offline lub w zaszyfrowanym pliku/dysku). Nie przechowuj ich w menedżerze haseł, ponieważ źródła 2FA i hasła powinny być przechowywane oddzielnie.
 
-  - point: Sign Up for Breach Alerts
+  - point: Powiadomienia o wyciekach
     priority: Plus
     details: >-
-      After a website suffers a significant data breach, the leaked data often ends up on the internet. Several websites collect
-      these leaked records and allow you to search your email address to check if you are in any of their lists.
-      [Firefox Monitor](https://monitor.firefox.com), [Have I Been Pwned](https://haveibeenpwned.com),
-      and [DeHashed](https://dehashed.com) allow you to sign up for monitoring, where they will notify you if your
-      email address appears in any new data sets. It is useful to know as soon as possible when this happens so
-      that you can change your passwords for the affected accounts. [Have i been pwned](https://awesome-privacy.xyz/security-tools/online-tools/have-i-been-pwned) also has domain-wide
-      notification, where you can receive alerts if any email addresses under your entire domain appear (useful if
-      you use aliases for [anonymous forwarding](https://github.com/Lissy93/awesome-privacy#anonymous-mail-forwarding)).
+      Po poważnym naruszeniu bezpieczeństwa danych w witrynie internetowej, wyciekające dane często trafiają do Internetu. Kilka witryn internetowych gromadzi te wyciekające dane i umożliwia wyszukiwanie adresu e-mail w celu sprawdzenia, czy znajduje się on na którejś z ich list. [Firefox Monitor](https://monitor.mozilla.org/), [Have I Been Pwned](https://haveibeenpwned.com/) umożliwiają rejestrację w celu monitorowania, a następnie powiadamiają użytkownika, jeśli jego adres e-mail pojawi się w nowych zestawach danych. Warto jak najszybciej dowiedzieć się o takim zdarzeniu, aby móc zmienić hasła do kont, których dotyczy wyciek. Have I Been Pwned oferuje również powiadomienia dla całej domeny, dzięki czemu można otrzymywać alerty, jeśli pojawią się jakiekolwiek adresy e-mail z całej domeny (przydatne, jeśli używasz aliasów do anonimowego przekazywania wiadomości).
 
-  - point: Shield your Password/PIN
+  - point: Chroń swoje hasło/PIN
     priority: Plus
     details: >-
       When typing your password in public places, ensure you are not in direct line of sight of a CCTV camera and
       that no one can see over your shoulder. Cover your password or pin code while you type, and do not
       reveal any plain text passwords on your screen.
 
-  - point: Update Critical Passwords Periodically
+  - point: Okresowo aktualizuj ważne hasła
     priority: Plus
     details: >-
       Database leaks and breaches are common, and, likely, several of your passwords are already somewhere
@@ -80,14 +57,14 @@
       sufficient. Enforcing mandatory password changes within organisations is [no longer recommended](https://duo.com/decipher/microsoft-will-no-longer-recommend-forcing-periodic-password-changes),
       as it encourages colleagues to select weaker passwords.
 
-  - point: Don’t Save your Password in Browsers
+  - point: Nie zapisuj haseł w przeglądarkach
     priority: Plus
     details: >-
       Most modern browsers offer to save your credentials when you log into a site. Don’t allow this, as they are
       not always encrypted and could allow someone to gain access to your accounts. Instead, use a dedicated
       password manager to store (and auto-fill) your passwords.
 
-  - point: Avoid Logging In on Someone Else’s Device
+  - point: Unikaj logowania się na urządzeniu należącym do innej osoby.
     priority: Plus
     details: >-
       Avoid logging in on other people's computers since you can't be sure their system is clean. Be especially cautious
@@ -96,13 +73,13 @@
       private/incognito session (Use Ctrl+Shift+N/ Cmd+Shift+N). This will request the browser to not save your credentials,
       cookies, and browsing history.
 
-  - point: Avoid Password Hints
+  - point: Unikaj podpowiedzi dotyczących hasła
     priority: Plus
     details: >-
       Some sites allow you to set password hints. Often, it is very easy to guess answers. In cases where password hints
       are mandatory, use random answers and record them in your password manager (`Name of the first school: 6D-02-8B-!a-E8-8F-81`).
 
-  - point: Never Answer Online Security Questions Truthfully
+  - point: Nigdy nie odpowiadaj zgodnie z prawdą na pytania dotyczące bezpieczeństwa online
     priority: Plus
     details: >-
       If a site asks security questions (such as place of birth, mother's maiden name, or first car, etc.), don't provide
@@ -110,14 +87,14 @@
       Instead, create a fictitious answer, and store it inside your password manager. Using real words is better than
       random characters, as [explained here](https://news.ycombinator.com/item?id=29244870).
 
-  - point: Don’t Use a 4-digit PIN
+  - point: Nie używaj 4-cyfrowego kodu PIN
     priority: Plus
     details: >-
       Don’t use a short PIN to access your smartphone or computer. Instead, use a text password or a much longer PIN.
       Numeric passphrases are easy to crack (A 4-digit pin has 10,000 combinations, compared to 7.4 million for a
       4-character alpha-numeric code).
 
-  - point: Avoid Using SMS for 2FA
+  - point: Unikaj używania SMS-ów do uwierzytelniania dwuskładnikowego (2FA)
     priority: Plus
     details: >-
       When enabling multi-factor authentication, opt for app-based codes or a hardware token if supported. SMS is
@@ -127,14 +104,14 @@
       you have a signal and can be slow. If a website or service requires the usage of an SMS number for recovery, consider
       purchasing a second pre-paid phone number only used for account recovery for these instances.
 
-  - point: Avoid Using your PM to Generate OTPs
+  - point: Unikaj używania Menedżera Haseł do generowania jednorazowych haseł (OTP)
     priority: Pro
     details: >-
       Many password managers are also able to generate 2FA codes. It is best not to use your primary password manager
       as your 2FA authenticator as well, since it would become a single point of failure if compromised. Instead, use a
       dedicated [authenticator app](https://github.com/Lissy93/awesome-privacy#2-factor-authentication) on your phone or laptop.
 
-  - point: Avoid Face Unlock
+  - point: Unikaj odblokowywania twarzą
     priority: Pro
     details: >-
       Most phones and laptops offer a facial recognition authentication feature, using the camera to compare a snapshot
@@ -142,7 +119,7 @@
       and gain access to the device through digital photos and reconstructions from CCTV footage. Unlike your password,
       there are likely photos of your face on the internet and videos recorded by surveillance cameras.
 
-  - point: Watch Out for Keyloggers
+  - point: Uważaj na keyloggery
     priority: Pro
     details: >-
       A hardware [keylogger](https://en.wikipedia.org/wiki/Hardware_keylogger) is a physical device planted between
@@ -153,7 +130,7 @@
       own keyboard to work. Data typed on a virtual keyboard, pasted from the clipboard, or auto-filled by a password
       manager can not be intercepted by a hardware keylogger.
 
-  - point: Consider a Hardware Token
+  - point: Rozważ zakup tokena sprzętowego
     priority: Pro
     details: >-
       A U2F/FIDO2 security key is a USB (or NFC) device that you insert while logging in to an online service to
@@ -164,7 +141,7 @@
       a good explanation of the security of using FIDO U2F tokens. Of course, it is important to store the physical key
       somewhere safe or keep it on your person. Some online accounts allow for several methods of 2FA to be enabled.
 
-  - point: Consider Offline Password Manager
+  - point: Rozważ użycie menedżera haseł offline
     priority: Pro
     details: >-
       For increased security, an encrypted offline password manager will give you full control over your data.
@@ -174,7 +151,7 @@
       (iOS). The drawback being that it may be slightly less convenient for some, and it will be up to you to back it up
       and store it securely.
 
-  - point: Consider Unique Usernames
+  - point: Rozważ użycie unikalnych nazw użytkowników
     priority: Pro
     details: >-
       Having different passwords for each account is a good first step, but if you also use a unique username, email, or
