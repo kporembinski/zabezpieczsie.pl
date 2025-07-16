@@ -44,154 +44,93 @@
   - point: Chroń swoje hasło/PIN
     priority: Plus
     details: >-
-      When typing your password in public places, ensure you are not in direct line of sight of a CCTV camera and
-      that no one can see over your shoulder. Cover your password or pin code while you type, and do not
-      reveal any plain text passwords on your screen.
+      Podczas wpisywania hasła w miejscach publicznych upewnij się, że nie znajdujesz się w bezpośrednim zasięgu wzroku kamery i że nikt nie może zajrzeć Ci przez ramię. Zakryj hasło lub kod PIN podczas wpisywania i nie ujawniaj żadnych haseł w postaci zwykłego tekstu na ekranie.
 
   - point: Okresowo aktualizuj ważne hasła
     priority: Plus
     details: >-
-      Database leaks and breaches are common, and, likely, several of your passwords are already somewhere
-      online. Occasionally updating passwords of security-critical accounts can help mitigate this. But providing
-      that all your passwords are long, strong, and unique, there is no need to do this too often — annually should be
-      sufficient. Enforcing mandatory password changes within organisations is [no longer recommended](https://duo.com/decipher/microsoft-will-no-longer-recommend-forcing-periodic-password-changes),
-      as it encourages colleagues to select weaker passwords.
+      Wycieki i naruszenia baz danych są powszechne i prawdopodobnie kilka z Twoich haseł już gdzieś w sieci się znalazło. Okazjonalna aktualizacja haseł do kont o kluczowym znaczeniu dla bezpieczeństwa może pomóc w ograniczeniu tego ryzyka. Jednak pod warunkiem, że wszystkie Twoje hasła są długie, silne i unikalne, nie ma potrzeby robić tego zbyt często — wystarczy raz w roku. [Wymuszanie obowiązkowej zmiany haseł nie jest już zalecane](https://cert.pl/posts/2022/01/kompleksowo-o-haslach/), ponieważ zachęca to współpracowników do wybierania słabszych haseł.
 
   - point: Nie zapisuj haseł w przeglądarkach
     priority: Plus
     details: >-
-      Most modern browsers offer to save your credentials when you log into a site. Don’t allow this, as they are
-      not always encrypted and could allow someone to gain access to your accounts. Instead, use a dedicated
-      password manager to store (and auto-fill) your passwords.
+      Większość nowoczesnych przeglądarek oferuje zapisanie danych logowania podczas logowania się do witryny. Nie należy na to pozwalać, ponieważ dane te nie zawsze są szyfrowane i mogą umożliwić komuś uzyskanie dostępu do kont użytkownika. Zamiast tego należy używać dedykowanego menedżera haseł do przechowywania (i automatycznego wypełniania) haseł.
 
   - point: Unikaj logowania się na urządzeniu należącym do innej osoby.
     priority: Plus
     details: >-
-      Avoid logging in on other people's computers since you can't be sure their system is clean. Be especially cautious
-      of public machines, as malware and tracking arr more common here. Using someone else's device is especially
-      dangerous with critical accounts like online banking. When using someone else's machine, ensure that you're in a
-      private/incognito session (Use Ctrl+Shift+N/ Cmd+Shift+N). This will request the browser to not save your credentials,
-      cookies, and browsing history.
+      Unikaj logowania się na komputerach innych osób, ponieważ nie masz pewności, czy ich system jest czysty. Szczególną ostrożność należy zachować w przypadku komputerów publicznych, ponieważ złośliwe oprogramowanie i śledzenie są tam bardziej powszechne. Korzystanie z cudzego urządzenia jest szczególnie niebezpieczne w przypadku kont o krytycznym znaczeniu, takich jak bankowość internetowa. Korzystając z cudzego komputera, upewnij się, że sesja jest prywatna/incognito (użyj Ctrl+Shift+N/ Cmd+Shift+N). Spowoduje to, że przeglądarka nie będzie zapisywać Twoich danych logowania, plików cookie i historii przeglądania.
 
   - point: Unikaj podpowiedzi dotyczących hasła
     priority: Plus
     details: >-
-      Some sites allow you to set password hints. Often, it is very easy to guess answers. In cases where password hints
-      are mandatory, use random answers and record them in your password manager (`Name of the first school: 6D-02-8B-!a-E8-8F-81`).
+      Niektóre strony umożliwiają ustawienie podpowiedzi do hasła. Często odpowiedzi są bardzo łatwe do odgadnięcia. W przypadkach, gdy podpowiedzi do hasła są obowiązkowe, należy używać losowych odpowiedzi i zapisywać je w menedżerze haseł (nazwa pierwszej szkoły: 6D-02-8B-!a-E8-8F-81).
 
   - point: Nigdy nie odpowiadaj zgodnie z prawdą na pytania dotyczące bezpieczeństwa online
     priority: Plus
     details: >-
-      If a site asks security questions (such as place of birth, mother's maiden name, or first car, etc.), don't provide
-      real answers. It is a trivial task for hackers to find out this information online or through social engineering.
-      Instead, create a fictitious answer, and store it inside your password manager. Using real words is better than
-      random characters, as [explained here](https://news.ycombinator.com/item?id=29244870).
+      Jeśli strona zadaje pytania zabezpieczające (takie jak miejsce urodzenia, nazwisko panieńskie matki lub pierwszy samochód itp.), nie podawaj prawdziwych odpowiedzi. Dla hakerów zdobycie tych informacji w Internecie lub poprzez socjotechnikę jest bardzo łatwe. Zamiast tego wymyśl fikcyjną odpowiedź i zapisz ją w menedżerze haseł. Używanie prawdziwych słów jest lepszym rozwiązaniem niż losowe znaki.
 
   - point: Nie używaj 4-cyfrowego kodu PIN
     priority: Plus
     details: >-
-      Don’t use a short PIN to access your smartphone or computer. Instead, use a text password or a much longer PIN.
-      Numeric passphrases are easy to crack (A 4-digit pin has 10,000 combinations, compared to 7.4 million for a
-      4-character alpha-numeric code).
+      Nie używaj krótkiego kodu PIN do uzyskania dostępu do smartfona lub komputera. Zamiast tego używaj hasła tekstowego lub znacznie dłuższego kodu PIN. Hasła numeryczne są łatwe do złamania (4-cyfrowy kod PIN ma 10 000 kombinacji, w porównaniu do 7,4 miliona kombinacji dla 4-znakowego kodu alfanumerycznego).
 
   - point: Unikaj używania SMS-ów do uwierzytelniania dwuskładnikowego (2FA)
     priority: Plus
     details: >-
-      When enabling multi-factor authentication, opt for app-based codes or a hardware token if supported. SMS is
-      susceptible to several common threats, such as [SIM-swapping](https://www.maketecheasier.com/sim-card-hijacking)
-      and [interception](https://secure-voice.com/ss7_attacks). There's also no guarantee of how securely your phone
-      number will be stored or what else it will be used for. From a practical point of view, SMS will only work when
-      you have a signal and can be slow. If a website or service requires the usage of an SMS number for recovery, consider
-      purchasing a second pre-paid phone number only used for account recovery for these instances.
+      Włączając uwierzytelnianie wieloskładnikowe, wybierz kody oparte na aplikacji lub token sprzętowy, jeśli jest obsługiwany. SMS-y są podatne na kilka typowych zagrożeń, takich jak zamiana karty SIM i przechwycenie. Nie ma również gwarancji, że numer telefonu będzie przechowywany w bezpieczny sposób ani do czego jeszcze zostanie wykorzystany. Z praktycznego punktu widzenia SMS-y działają tylko wtedy, gdy masz zasięg i mogą być powolne. Jeśli strona internetowa lub usługa wymaga użycia numeru SMS do odzyskania dostępu, rozważ zakup drugiego numeru telefonu na kartę, który będzie używany wyłącznie do odzyskiwania dostępu do konta w takich przypadkach.
 
   - point: Unikaj używania Menedżera Haseł do generowania jednorazowych haseł (OTP)
     priority: Pro
     details: >-
-      Many password managers are also able to generate 2FA codes. It is best not to use your primary password manager
-      as your 2FA authenticator as well, since it would become a single point of failure if compromised. Instead, use a
-      dedicated [authenticator app](https://github.com/Lissy93/awesome-privacy#2-factor-authentication) on your phone or laptop.
+      Wiele menedżerów haseł może również generować kody 2FA. Najlepiej nie używać głównego menedżera haseł jako uwierzytelniacza 2FA, ponieważ w przypadku naruszenia bezpieczeństwa stałby się on pojedynczym punktem awarii. Zamiast tego należy używać dedykowanej aplikacji uwierzytelniającej na telefonie lub laptopie.
 
   - point: Unikaj odblokowywania twarzą
     priority: Pro
     details: >-
-      Most phones and laptops offer a facial recognition authentication feature, using the camera to compare a snapshot
-      of your face with a stored hash. It may be very convenient, but there are numerous ways to [fool it](https://www.forbes.com/sites/jvchamary/2017/09/18/security-apple-face-id-iphone-x/)
-      and gain access to the device through digital photos and reconstructions from CCTV footage. Unlike your password,
-      there are likely photos of your face on the internet and videos recorded by surveillance cameras.
+      Większość telefonów i laptopów oferuje funkcję uwierzytelniania za pomocą rozpoznawania twarzy, wykorzystując aparat do porównania zdjęcia twarzy użytkownika z zapisanym skrótem. Może to być bardzo wygodne, ale istnieje wiele sposobów na oszukanie tego systemu i uzyskanie dostępu do urządzenia za pomocą zdjęć cyfrowych i rekonstrukcji z nagrań z kamer. W przeciwieństwie do hasła, w Internecie prawdopodobnie znajdują się zdjęcia twarzy użytkownika oraz nagrania z kamer monitoringu.
 
   - point: Uważaj na keyloggery
     priority: Pro
     details: >-
-      A hardware [keylogger](https://en.wikipedia.org/wiki/Hardware_keylogger) is a physical device planted between
-      your keyboard and the USB port, which intercepts all keystrokes and sometimes relays data to a remote server.
-      It gives a hacker access to everything typed, including passwords. The best way to stay protected is just by
-      checking your USB connection after your PC has been unattended. It is also possible for keyloggers to be planted
-      inside the keyboard housing, so look for any signs that the case has been tampered with, and consider bringing your
-      own keyboard to work. Data typed on a virtual keyboard, pasted from the clipboard, or auto-filled by a password
-      manager can not be intercepted by a hardware keylogger.
+      Keylogger sprzętowy to fizyczne urządzenie podłączane między klawiaturą a portem USB, które przechwytuje wszystkie naciśnięcia klawiszy, a czasem przekazuje dane do zdalnego serwera. Dzięki temu haker ma dostęp do wszystkich wpisanych danych, w tym haseł. Najlepszym sposobem na zapewnienie sobie ochrony jest sprawdzenie połączenia USB po pozostawieniu komputera bez nadzoru. Keyloggery mogą być również umieszczone wewnątrz obudowy klawiatury, dlatego należy sprawdzić, czy nie ma śladów manipulacji przy obudowie, a także rozważyć zabranie do pracy własnej klawiatury. Dane wpisane na klawiaturze wirtualnej, wklejone ze schowka lub automatycznie wypełnione przez menedżera haseł nie mogą zostać przechwycone przez keylogger sprzętowy.
 
-  - point: Rozważ zakup tokena sprzętowego
+  - point: Rozważ zakup klucza U2F
     priority: Pro
     details: >-
-      A U2F/FIDO2 security key is a USB (or NFC) device that you insert while logging in to an online service to
-      verify your identity instead of entering a OTP from your authenticator. [SoloKey](https://solokeys.com) and
-      [NitroKey](https://www.nitrokey.com) are examples of such keys. They bring with them several security benefits.
-      Since the browser communicates directly with the device, it cannot be fooled as to which host is requesting
-      authentication because the TLS certificate is checked. [This post](https://security.stackexchange.com/a/71704) is
-      a good explanation of the security of using FIDO U2F tokens. Of course, it is important to store the physical key
-      somewhere safe or keep it on your person. Some online accounts allow for several methods of 2FA to be enabled.
+      Klucz bezpieczeństwa U2F/FIDO2 to urządzenie USB (lub NFC), które podłącza się podczas logowania do serwisu internetowego w celu weryfikacji tożsamości zamiast wprowadzania jednorazowego hasła (OTP) z urządzenia uwierzytelniającego. Przykładami takich kluczy są [Yubico](https://www.x-kom.pl/p/683066-klucz-sprzetowy-yubico-yubikey-5-nfc.html?sm=zRk3mSEc). Zapewniają one szereg korzyści związanych z bezpieczeństwem. Ponieważ przeglądarka komunikuje się bezpośrednio z urządzeniem, nie można jej oszukać co do tego, który host żąda uwierzytelnienia, ponieważ sprawdzany jest certyfikat TLS. Ten post stanowi dobre wyjaśnienie bezpieczeństwa korzystania z tokenów FIDO U2F. Oczywiście ważne jest, aby przechowywać fizyczny klucz w bezpiecznym miejscu lub mieć go przy sobie. Niektóre konta internetowe pozwalają na włączenie kilku metod 2FA.
 
   - point: Rozważ użycie menedżera haseł offline
     priority: Pro
     details: >-
-      For increased security, an encrypted offline password manager will give you full control over your data.
-      [KeePass](https://awesome-privacy.xyz/essentials/password-managers/keepass) is a popular choice, with lots of [plugins](https://[KeePass](https://awesome-privacy.xyz/essentials/password-managers/keepass).info/plugins.html) and
-      community forks with additional compatibility and functionality. Popular clients include: [KeePassXC](https://keepassxc.org)
-      (desktop), [KeePassDX](https://www.keepassdx.com) (Android) and [StrongBox](https://apps.apple.com/us/app/strongbox-password-safe/id897283731)
-      (iOS). The drawback being that it may be slightly less convenient for some, and it will be up to you to back it up
-      and store it securely.
+      Aby zwiększyć bezpieczeństwo, zaszyfrowany menedżer haseł offline zapewni Ci pełną kontrolę nad Twoimi danymi. Popularnym wyborem jest [KeePassXC](https://keepassxc.org/), który oferuje wiele wtyczek i rozgałęzień społecznościowych zapewniających dodatkową kompatybilność i funkcjonalność. Wadą jest to, że dla niektórych może być nieco mniej wygodny, a tworzenie kopii zapasowych i bezpieczne przechowywanie danych zależy od użytkownika.
 
   - point: Rozważ użycie unikalnych nazw użytkowników
     priority: Pro
     details: >-
-      Having different passwords for each account is a good first step, but if you also use a unique username, email, or
-      phone number to log in, then it will be significantly harder for anyone trying to gain unauthorised access. The easiest
-      method for multiple emails, is using auto-generated aliases for anonymous mail forwarding. This is where
-      [anything]@yourdomain.com will arrive in your inbox, allowing you to use a different email for each account (see
-      [Mail Alias Providers](https://github.com/Lissy93/awesome-privacy#mail-forwarding)). Usernames are easier
-      since you can use your password manager to generate, store, and auto-fill these. Virtual phone numbers can be generated
-      through your VOIP provider.
+      Używanie różnych haseł dla każdego konta to dobry pierwszy krok, ale jeśli do logowania używasz również unikalnej nazwy użytkownika, adresu e-mail lub numeru telefonu, znacznie utrudnisz osobom nieuprawnionym uzyskanie dostępu do Twoich kont. Najłatwiejszą metodą w przypadku wielu adresów e-mail jest użycie automatycznie generowanych aliasów do anonimowego przekazywania poczty. Dzięki temu wiadomości wysłane na adres [dowolny adres]@twojadomena.com będą trafiać do Twojej skrzynki odbiorczej, co pozwoli Ci używać innego adresu e-mail dla każdego konta. Nazwy użytkownika są łatwiejsze, ponieważ można je generować, przechowywać i automatycznie wypełniać za pomocą menedżera haseł. Wirtualne numery telefonów można generować za pośrednictwem dostawcy usług VOIP.
+      
   softwareLinks:
-    - title: Password Managers
-      url: https://awesome-privacy.xyz/essentials/password-managers
-    - title: 2-Factor Authentication
-      url: https://awesome-privacy.xyz/essentials/2-factor-authentication
+    - title: Menedżer haseł Bitwarden
+      url: https://bitwarden.com/
+    - title: Yubico YubiKey 5 NFC
+      url: https://www.x-kom.pl/p/683066-klucz-sprzetowy-yubico-yubikey-5-nfc.html?sm=zRk3mSEc
+    - title: Yubico YubiKey 5C NFC
+      url: https://www.x-kom.pl/p/683070-klucz-sprzetowy-yubico-yubikey-5c-nfc.html?sm=yawAiyd7
 
 - title: Strony WWW
   slug: strony-www
-  description: Avoiding tracking, censorship, and data collection online
+  description: Unikanie śledzenia, cenzury i gromadzenia danych w Internecie
   icon: browser
   intro: >-
-    Most websites on the internet will use some form of tracking, often to gain
-    insight into their users behaviour and preferences. This data can be incredibly
-    detailed, and so is extremely valuable to corporations, governments and intellectual
-    property thieves. Data breaches and leaks are common, and deanonymizing users web
-    activity is often a trivial task.
-
-
-    There are two primary methods of tracking; stateful (cookie-based), and stateless
-    (fingerprint-based). Cookies are small pieces of information, stored in your browser
-    with a unique ID that is used to identify you. Browser fingerprinting is a highly
-    accurate way to identify and track users wherever they go online. The information
-    collected is quite comprehensive, and often includes browser details, OS, screen
-    resolution, supported fonts, plugins, time zone, language and font preferences,
-    and even hardware configurations.
-
-
-    This section outlines the steps you can take, to be better protected from threats,
-    minimise online tracking and improve privacy.
+    Większość stron internetowych korzysta z jakiejś formy śledzenia, często w celu uzyskania wglądu w zachowania i preferencje użytkowników. Dane te mogą być niezwykle szczegółowe, a zatem niezwykle cenne dla korporacji, rządów i złodziei własności intelektualnej. Naruszenia bezpieczeństwa danych i wycieki są powszechne, a deanonimizacja aktywności użytkowników w sieci jest często banalnym zadaniem.
+    
+    Istnieją dwie podstawowe metody śledzenia: stanowa (oparta na plikach cookie) i bezstanowa (oparta na odciskach palców). Pliki cookie to niewielkie fragmenty informacji przechowywane w przeglądarce użytkownika wraz z unikalnym identyfikatorem, który służy do identyfikacji użytkownika. Odciski palców przeglądarki to bardzo dokładny sposób identyfikacji i śledzenia użytkowników w Internecie. Gromadzone informacje są dość obszerne i często obejmują szczegóły przeglądarki, system operacyjny, rozdzielczość ekranu, obsługiwane czcionki, wtyczki, strefę czasową, preferencje językowe i czcionkowe, a nawet konfigurację sprzętu.
+    
+    W tej sekcji opisano kroki, które można podjąć, aby lepiej chronić się przed zagrożeniami, zminimalizować śledzenie w Internecie i poprawić prywatność.
   checklist:
-  - point: Block Ads
+  - point: Blokuj reklamy
     priority: Start
     details: >-
       Using an ad-blocker can help improve your privacy, by blocking the trackers that ads implement.
