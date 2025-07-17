@@ -142,7 +142,7 @@
       [IsLegitSite](https://www.islegitsite.com), [Google Safe Browsing Status](https://transparencyreport.google.com/safe-browsing/search)
       if you are unsure.
 
-  - point: Watch out for Browser Malware
+  - point: Uważaj na złośliwe oprogramowanie przeglądarki
     priority: Basic
     details: >-
       Your system or browser can be compromised by spyware, miners, browser hijackers, malicious redirects,
@@ -154,7 +154,7 @@
       [how browsers get infected](https://heimdalsecurity.com/blog/practical-online-protection-where-malware-hides)
       and [how to remove browser malware](https://heimdalsecurity.com/blog/malware-removal).
 
-  - point: Use a Privacy-Respecting Browser
+  - point: Używaj przeglądarki respektującej prywatność
     priority: Start
     details: >-
       [Firefox](https://awesome-privacy.xyz/essentials/browsers/firefox) (with a few tweaks)
@@ -166,7 +166,7 @@
       for example - [arkenfox](https://github.com/arkenfox/user.js/wiki) or [12byte](https://12bytes.org/firefox-configuration-guide-for-privacy-freaks-and-performance-buffs/)'s
       user.js configs. See more: [Privacy Browsers](https://github.com/Lissy93/awesome-privacy#browsers).
 
-  - point: Use a Private Search Engine
+  - point: Użyj prywatnej wyszukiwarki
     priority: Start
     details: >-
       Using a privacy-preserving, non-tracking search engine, will reduce risk that your search terms are not
@@ -178,7 +178,7 @@
       their privacy. It is recommended to update your [browsers default search](https://duckduckgo.com/install)
       to a privacy-respecting search engine.
 
-  - point: Remove Unnecessary Browser Addons
+  - point: Usuń niepotrzebne dodatki przeglądarki
     priority: Start
     details: >-
       Extensions are able to see, log or modify anything you do in the browser, and some innocent looking
@@ -187,7 +187,7 @@
       web stores allow you to check what permissions/access rights an extension requires before you install it.
       Check the reviews. Only install extensions you really need, and removed those which you haven't used in a while.
 
-  - point: Keep Browser Up-to-date
+  - point: Aktualizuj przeglądarkę
     priority: Start
     details: >-
       Browser vulnerabilities are constantly being [discovered](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=browser)
@@ -195,7 +195,7 @@
       version you're using here](https://www.whatismybrowser.com/), or follow [this guide](https://www.whatismybrowser.com/guides/how-to-update-your-browser/)
       for instructions on how to update. Some browsers will auto-update to the latest stable version.
 
-  - point: Check for HTTPS
+  - point: Sprawdź, czy jest HTTPS
     priority: Start
     details: >-
       If you enter information on a non-HTTPS website, this data is transported unencrypted and can therefore
