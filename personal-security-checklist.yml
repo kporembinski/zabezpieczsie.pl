@@ -857,7 +857,7 @@
   color: blue
 
 - title: Sieć
-  slug: networks
+  slug: siec
   description: Safeguarding your network traffic
   icon: network
   intro: >
