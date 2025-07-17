@@ -130,11 +130,22 @@
     priority: Start
     details: >-
       Test
-      
+
   - point: Blokuj reklamy
     priority: Start
     details: >-
       Korzystanie z programu blokującego reklamy może pomóc w poprawie prywatności poprzez blokowanie modułów śledzących stosowanych w reklamach np. poprzez wtyczki takie jak: [uBlock Origin](https://ublockorigin.com/), [AdGuard](https://adguard.com/). Gdy na stronie internetowej wyświetlane są reklamy stron trzecich, mają one możliwość śledzenia użytkownika, gromadzenia danych osobowych o nim i jego zwyczajach, które następnie mogą być sprzedawane lub wykorzystywane do wyświetlania bardziej ukierunkowanych reklam, a niektóre reklamy są po prostu złośliwe lub fałszywe. Blokowanie reklam sprawia również, że strony ładują się szybciej, zużywają mniej danych i zapewniają mniej zagmatwane wrażenia.
+
+  - point: Zablokuj reklamy
+    priority: Basic
+    details: >-
+      It may sound obvious, but when you logging into any online accounts, double check the URL is correct.
+      Storing commonly visited sites in your bookmarks is a good way to ensure the URL is easy to find. When
+      visiting new websites, look for common signs that it could be unsafe: Browser warnings, redirects,
+      on-site spam and pop-ups. You can also check a website using a tool, such as:
+      [Virus Total](https://awesome-privacy.xyz/security-tools/online-tools/virus-total),
+      [IsLegitSite](https://www.islegitsite.com), [Google Safe Browsing Status](https://transparencyreport.google.com/safe-browsing/search)
+      if you are unsure.
 
   - point: Upewnij się, że strona jest autentyczna
     priority: Basic
