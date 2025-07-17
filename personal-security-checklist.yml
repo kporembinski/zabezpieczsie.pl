@@ -134,13 +134,7 @@
   - point: Upewnij się, że strona jest autentyczna
     priority: Basic
     details: >-
-      It may sound obvious, but when you logging into any online accounts, double check the URL is correct.
-      Storing commonly visited sites in your bookmarks is a good way to ensure the URL is easy to find. When
-      visiting new websites, look for common signs that it could be unsafe: Browser warnings, redirects,
-      on-site spam and pop-ups. You can also check a website using a tool, such as:
-      [Virus Total](https://awesome-privacy.xyz/security-tools/online-tools/virus-total),
-      [IsLegitSite](https://www.islegitsite.com), [Google Safe Browsing Status](https://transparencyreport.google.com/safe-browsing/search)
-      if you are unsure.
+      Może to zabrzmieć banalnie, ale podczas logowania się na dowolne konta internetowe należy dokładnie sprawdzić, czy adres URL jest poprawny. Zapisanie często odwiedzanych stron w zakładkach to dobry sposób na zapewnienie łatwego dostępu do adresu URL. Podczas odwiedzania nowych stron internetowych należy zwracać uwagę na typowe oznaki, które mogą świadczyć o ich niebezpieczeństwie: ostrzeżenia przeglądarki, przekierowania, spam i wyskakujące okienka. Można również sprawdzić stronę internetową za pomocą narzędzia, takiego jak: [Virus Total](https://www.virustotal.com), [IsLegitSite](https://www.islegitsite.com), [Google Safe Browsing Status](https://transparencyreport.google.com/safe-browsing/search), jeśli nie masz pewności.
 
   - point: Uważaj na złośliwe oprogramowanie przeglądarki
     priority: Basic
@@ -352,52 +346,52 @@
       used anymore, but since it gives plugins intimate access rights, and can be dangerous, therefore you should
       disable it.
 
-  - point: Disable WebRTC
+  - point: Wyłącz WebRTC
     priority: Plus
     details: >-
       WebRTC allows high-quality audio/video communication and peer-to-peer file-sharing straight from the
       browser. However it can pose as a privacy leak. To learn more, check out this guide.
 
-  - point: Spoof HTML5 Canvas Sig
+  - point: Fałszywy HTML5 Canvas Sig
     priority: Plus
     details: >-
       Canvas Fingerprinting allows websites to identify and track users very accurately. You can use the
       Canvas-Fingerprint-Blocker extension to spoof your fingerprint or
       use [Tor](https://awesome-privacy.xyz/networking/mix-networks/tor).
 
-  - point: Spoof User Agent
+  - point: Fałszywy User Agent
     priority: Plus
     details: >-
       The user agent tells the website what device, browser and version you are using. Switching user agent
       periodically is one small step you can take to become less unique.
 
-  - point: Disregard DNT
+  - point: Zignoruj DNT
     priority: Plus
     details: >-
       Enabling Do Not Track has very limited impact, since many websites do not respect or follow this. Since
       it is rarely used, it may also add to your signature, making you more unique.
 
-  - point: Prevent HSTS Tracking
+  - point: Zapobieganie śledzeniu HSTS
     priority: Plus
     details: >-
       HSTS was designed to help secure websites, but privacy concerns have been raised as it allowed site
       operators to plant super-cookies. It can be disabled by visiting chrome://net-internals/#hsts in
       Chromium-based browsers.
 
-  - point: Prevent Automatic Browser Connections
+  - point: Zapobieganie automatycznym połączeniom przeglądarki
     priority: Plus
     details: >-
       Even when you are not using your browser, it may call home to report on usage activity, analytics and
       diagnostics. You may wish to disable some of this, which can be done through the settings.
 
-  - point: Enable 1st-Party Isolation
+  - point: Włącz izolację pierwszej strony
     priority: Plus
     details: >-
       [First Party Isolation](https://awesome-privacy.xyz/security-tools/browser-extensions/first-party-isolation) means
       that all identifier sources and browser state are scoped using the URL bar
       domain, this can greatly reduce tracking.
 
-  - point: Strip Tracking Params from URLs
+  - point: Usuwanie parametrów śledzenia z adresów URL
     priority: Pro
     details: >-
       Websites often append additional GET parameters to URLs that you click, to identify information like
@@ -405,20 +399,20 @@
       or use an extension like [ClearURLs](https://awesome-privacy.xyz/security-tools/browser-extensions/clearurls) to strip tracking data
       from URLs automatically.
 
-  - point: First Launch Security
+  - point: Bezpieczeństwo przy pierwszym uruchomieniu
     priority: Pro
     details: >-
       After installing a web browser, the first time you launch it (prior to configuring its privacy settings),
       most browsers will call home. Therefore, after installing a browser, you should first disable your internet
       connection, then configure privacy options before reenabling your internet connectivity.
 
-  - point: Use The Tor Browser
+  - point: Użyj przeglądarki Tor
     priority: Pro
     details: >-
       The [Tor](https://awesome-privacy.xyz/networking/mix-networks/tor) Project provides a browser that encrypts and routes your traffic through multiple nodes, keeping
       users safe from interception and tracking. The main drawbacks are speed and user experience.
 
-  - point: Disable JavaScript
+  - point: Wyłącz JavaScript
     priority: Pro
     details: >-
       Many modern web apps are JavaScript-based, so disabling it will greatly decrease your browsing experience.
