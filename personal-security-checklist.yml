@@ -124,28 +124,12 @@
   description: Unikanie śledzenia, cenzury i gromadzenia danych w Internecie
   icon: browser
   intro: >-
-    Większość stron internetowych korzysta z jakiejś formy śledzenia, często w celu uzyskania wglądu w zachowania i preferencje użytkowników.
+    Większość stron internetowych korzysta z jakiejś formy śledzenia, często w celu uzyskania wglądu w zachowania i preferencje użytkowników. Dane te mogą być niezwykle szczegółowe, a zatem niezwykle cenne dla korporacji, rządów i złodziei własności intelektualnej. Naruszenia bezpieczeństwa danych i wycieki są powszechne, a deanonimizacja aktywności użytkowników w sieci jest często banalnym zadaniem. Istnieją dwie podstawowe metody śledzenia: stanowa (oparta na plikach cookie) i bezstanowa (oparta na odciskach palców). Pliki cookie to małe fragmenty informacji przechowywane w przeglądarce z unikalnym identyfikatorem, który służy do identyfikacji użytkownika. Odciski palców przeglądarki to bardzo dokładny sposób identyfikacji i śledzenia użytkowników w Internecie. Gromadzone informacje są dość obszerne i często obejmują szczegóły przeglądarki, system operacyjny, rozdzielczość ekranu, obsługiwane czcionki, wtyczki, strefę czasową, preferencje językowe i czcionkowe, a nawet konfigurację sprzętu. W tej sekcji opisano kroki, które można podjąć, aby lepiej chronić się przed zagrożeniami, zminimalizować śledzenie w Internecie i poprawić prywatność.
   checklist:
   - point: Blokuj reklamy
     priority: Start
     details: >-
-      Test
-
-  - point: Blokuj reklamy
-    priority: Start
-    details: >-
       Korzystanie z programu blokującego reklamy może pomóc w poprawie prywatności poprzez blokowanie modułów śledzących stosowanych w reklamach np. poprzez wtyczki takie jak: [uBlock Origin](https://ublockorigin.com/), [AdGuard](https://adguard.com/). Gdy na stronie internetowej wyświetlane są reklamy stron trzecich, mają one możliwość śledzenia użytkownika, gromadzenia danych osobowych o nim i jego zwyczajach, które następnie mogą być sprzedawane lub wykorzystywane do wyświetlania bardziej ukierunkowanych reklam, a niektóre reklamy są po prostu złośliwe lub fałszywe. Blokowanie reklam sprawia również, że strony ładują się szybciej, zużywają mniej danych i zapewniają mniej zagmatwane wrażenia.
-
-  - point: Blokuj reklamy
-    priority: Basic
-    details: >-
-      It may sound obvious, but when you logging into any online accounts, double check the URL is correct.
-      Storing commonly visited sites in your bookmarks is a good way to ensure the URL is easy to find. When
-      visiting new websites, look for common signs that it could be unsafe: Browser warnings, redirects,
-      on-site spam and pop-ups. You can also check a website using a tool, such as:
-      [Virus Total](https://awesome-privacy.xyz/security-tools/online-tools/virus-total),
-      [IsLegitSite](https://www.islegitsite.com), [Google Safe Browsing Status](https://transparencyreport.google.com/safe-browsing/search)
-      if you are unsure.
 
   - point: Upewnij się, że strona jest autentyczna
     priority: Basic
@@ -232,7 +216,7 @@
       A popular option is [CloudFlare](https://awesome-privacy.xyz/networking/dns-providers/cloudflare)'s [1.1.1.1](https://awesome-privacy.xyz/security-tools/mobile-apps/1.1.1.1), or compare providers- it is simple to enable in-browser.
       Note that DoH comes with its own issues, mostly preventing web filtering.
 
-  - point: Multi-[Session](https://awesome-privacy.xyz/communication/encrypted-messaging/session) Containers
+  - point: Multi-Session Containers
     priority: Start
     details: >-
       Compartmentalisation is really important to keep different aspects of your browsing separate. For
