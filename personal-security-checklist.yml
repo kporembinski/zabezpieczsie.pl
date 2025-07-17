@@ -119,17 +119,17 @@
     - title: Yubico YubiKey 5C NFC
       url: https://www.x-kom.pl/p/683070-klucz-sprzetowy-yubico-yubikey-5c-nfc.html?sm=yawAiyd7
 
-- title: Strony WWW
-  slug: strony-www
+- title: Przeglądarki
+  slug: przegladarki
   description: Unikanie śledzenia, cenzury i gromadzenia danych w Internecie
   icon: browser
   intro: >-
-    Większość stron internetowych korzysta z jakiejś formy śledzenia, często w celu uzyskania wglądu w zachowania i preferencje użytkowników. Dane te mogą być niezwykle szczegółowe, a zatem niezwykle cenne dla korporacji, rządów i złodziei własności intelektualnej. Naruszenia bezpieczeństwa danych i wycieki są powszechne, a deanonimizacja aktywności użytkowników w sieci jest często banalnym zadaniem. Istnieją dwie podstawowe metody śledzenia: stanowa (oparta na plikach cookie) i bezstanowa (oparta na odciskach palców). Pliki cookie to niewielkie fragmenty informacji przechowywane w przeglądarce użytkownika wraz z unikalnym identyfikatorem, który służy do identyfikacji użytkownika. Odciski palców przeglądarki to bardzo dokładny sposób identyfikacji i śledzenia użytkowników w Internecie. Gromadzone informacje są dość obszerne i często obejmują szczegóły przeglądarki, system operacyjny, rozdzielczość ekranu, obsługiwane czcionki, wtyczki, strefę czasową, preferencje językowe i czcionkowe, a nawet konfigurację sprzętu. W tej sekcji opisano kroki, które można podjąć, aby lepiej chronić się przed zagrożeniami, zminimalizować śledzenie w Internecie i poprawić prywatność.
+    Większość stron internetowych korzysta z jakiejś formy śledzenia, często w celu uzyskania wglądu w zachowania i preferencje użytkowników.
   checklist:
   - point: Blokuj reklamy
     priority: Start
     details: >-
-      Korzystanie z programu blokującego reklamy może pomóc w poprawie prywatności poprzez blokowanie modułów śledzących stosowanych.
+      Korzystanie z programu blokującego reklamy może pomóc w poprawie prywatności poprzez blokowanie modułów śledzących stosowanych w reklamach np. poprzez wtyczki takie jak: [uBlock Origin](https://ublockorigin.com/), [AdGuard](https://adguard.com/). Gdy na stronie internetowej wyświetlane są reklamy stron trzecich, mają one możliwość śledzenia użytkownika, gromadzenia danych osobowych o nim i jego zwyczajach, które następnie mogą być sprzedawane lub wykorzystywane do wyświetlania bardziej ukierunkowanych reklam, a niektóre reklamy są po prostu złośliwe lub fałszywe. Blokowanie reklam sprawia również, że strony ładują się szybciej, zużywają mniej danych i zapewniają mniej zagmatwane wrażenia.
 
   - point: Upewnij się, że strona jest autentyczna
     priority: Basic
