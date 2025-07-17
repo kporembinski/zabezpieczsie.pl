@@ -129,6 +129,11 @@
   - point: Blokuj reklamy
     priority: Start
     details: >-
+      Test
+      
+  - point: Blokuj reklamy
+    priority: Start
+    details: >-
       Korzystanie z programu blokującego reklamy może pomóc w poprawie prywatności poprzez blokowanie modułów śledzących stosowanych w reklamach np. poprzez wtyczki takie jak: [uBlock Origin](https://ublockorigin.com/), [AdGuard](https://adguard.com/). Gdy na stronie internetowej wyświetlane są reklamy stron trzecich, mają one możliwość śledzenia użytkownika, gromadzenia danych osobowych o nim i jego zwyczajach, które następnie mogą być sprzedawane lub wykorzystywane do wyświetlania bardziej ukierunkowanych reklam, a niektóre reklamy są po prostu złośliwe lub fałszywe. Blokowanie reklam sprawia również, że strony ładują się szybciej, zużywają mniej danych i zapewniają mniej zagmatwane wrażenia.
 
   - point: Upewnij się, że strona jest autentyczna
@@ -1827,31 +1832,31 @@
     priority: Start
     details: Shield your PIN entry from onlookers and cameras, and clean touchscreens after use.
 
-  - point: Check for Skimmers
+  - point: Sprawdź, czy nie ma skimmerów
     priority: Start
     details: Inspect ATMs and public devices for skimming devices and tampering signs before use.
 
-  - point: Protect your Home Address
+  - point: Chroń swój adres domowy
     priority: Plus
     details: Use alternative locations, forwarding addresses, and anonymous payment methods to protect your home address.
 
-  - point: Use a PIN, Not Biometrics
+  - point: Używaj kodu PIN, a nie danych biometrycznych
     priority: Pro
     details: Prefer PINs over biometrics for device security in situations where legal coercion to unlock devices may occur.
 
-  - point: Reduce exposure to CCTV
+  - point: Ogranicz narażenie na działanie kamer CCTV
     priority: Pro
     details: Wear disguises and choose routes with fewer cameras to avoid surveillance.
 
-  - point: Anti-Facial Recognition Clothing
+  - point: Odzież chroniąca przed rozpoznawaniem twarzy
     priority: Pro
     details: Wear clothing with patterns that trick facial-recognition technology.
 
-  - point: Reduce Night Vision Exposure
+  - point: Ogranicz narażenie na widzenie noktowizyjne
     priority: Pro
     details: Use IR light sources or reflective glasses to obstruct night vision cameras.
 
-  - point: Protect your DNA
+  - point: Chroń swoje DNA
     priority: Pro
     details: Avoid sharing DNA with heritage websites and be cautious about leaving DNA traces.
 
