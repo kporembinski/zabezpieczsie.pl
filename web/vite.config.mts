@@ -15,6 +15,10 @@ export default defineConfig((): UserConfig => {
           {
             src: '../personal-security-checklist.yml',
             dest: 'public'
+          },
+          {
+            src: '../sitemap.xml',
+            dest: 'public'
           }
         ]
       })
