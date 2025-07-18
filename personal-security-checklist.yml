@@ -1817,36 +1817,36 @@
     priority: Start
     details: Prevent devices from being visible from outside to mitigate risks from lasers and theft.
 
-  - point: Protect your PIN
+  - point: Chroń swój kod PIN
     priority: Start
-    details: Shield your PIN entry from onlookers and cameras, and clean touchscreens after use.
+    details: Chroń swój kod PIN przed wzrokiem osób postronnych i kamerami oraz wyczyść ekran dotykowy po użyciu.
 
   - point: Sprawdź, czy nie ma skimmerów
     priority: Start
-    details: Inspect ATMs and public devices for skimming devices and tampering signs before use.
+    details: Przed użyciem sprawdź bankomaty i urządzenia publiczne pod kątem obecności urządzeń do skimmingu i śladów manipulacji.
 
   - point: Chroń swój adres domowy
     priority: Plus
-    details: Use alternative locations, forwarding addresses, and anonymous payment methods to protect your home address.
+    details: Aby chronić swój adres domowy, korzystaj z alternatywnych lokalizacji, adresów do przekazywania przesyłek i anonimowych metod płatności.
 
   - point: Używaj kodu PIN, a nie danych biometrycznych
     priority: Pro
-    details: Prefer PINs over biometrics for device security in situations where legal coercion to unlock devices may occur.
+    details: W sytuacjach, w których może dojść do prawnego wymuszenia odblokowania urządzenia, należy preferować kody PIN zamiast danych biometrycznych w celu zapewnienia bezpieczeństwa urządzenia.
 
   - point: Ogranicz narażenie na działanie kamer CCTV
     priority: Pro
-    details: Wear disguises and choose routes with fewer cameras to avoid surveillance.
+    details: Noś przebrania i wybieraj trasy z mniejszą liczbą kamer, aby uniknąć inwigilacji.
 
   - point: Odzież chroniąca przed rozpoznawaniem twarzy
     priority: Pro
-    details: Wear clothing with patterns that trick facial-recognition technology.
+    details: Noś ubrania z wzorami, które oszukują technologię rozpoznawania twarzy.
 
   - point: Ogranicz narażenie na widzenie noktowizyjne
     priority: Pro
-    details: Use IR light sources or reflective glasses to obstruct night vision cameras.
+    details: Użyj źródeł światła podczerwonego lub okularów odblaskowych, aby zasłonić kamery noktowizyjne.
 
   - point: Chroń swoje DNA
     priority: Pro
-    details: Avoid sharing DNA with heritage websites and be cautious about leaving DNA traces.
+    details: Unikaj udostępniania DNA serwisom internetowym zajmującym się dziedzictwem kulturowym i zachowaj ostrożność przy pozostawianiu śladów DNA.
 
   color: lime
