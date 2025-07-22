@@ -131,7 +131,7 @@
     details: >-
       Korzystanie z programu blokującego reklamy może pomóc w poprawie prywatności poprzez blokowanie modułów śledzących stosowanych w reklamach np. poprzez wtyczki takie jak: [uBlock Origin](https://ublockorigin.com/), [AdGuard](https://adguard.com/). Gdy na stronie internetowej wyświetlane są reklamy stron trzecich, mają one możliwość śledzenia użytkownika, gromadzenia danych osobowych o nim i jego zwyczajach, które następnie mogą być sprzedawane lub wykorzystywane do wyświetlania bardziej ukierunkowanych reklam, a niektóre reklamy są po prostu złośliwe lub fałszywe. Blokowanie reklam sprawia również, że strony ładują się szybciej, zużywają mniej danych i zapewniają mniej zagmatwane wrażenia.
 
-  - point: Zweryfikuj autentyczność strony
+  - point: Uważaj na złośliwe oprogramowanie przeglądark
     priority: Basic
     details: >-
       Może to zabrzmieć banalnie, ale podczas logowania się na dowolne konta internetowe należy dokładnie sprawdzić, czy adres URL jest poprawny. Zapisanie często odwiedzanych stron w zakładkach to dobry sposób na zapewnienie łatwego dostępu do adresu URL. Podczas odwiedzania nowych stron internetowych należy zwracać uwagę na typowe oznaki, które mogą świadczyć o ich niebezpieczeństwie: ostrzeżenia przeglądarki, przekierowania, spam i wyskakujące okienka. Można również sprawdzić stronę internetową za pomocą narzędzia, takiego jak: [Virus Total](https://www.virustotal.com), [IsLegitSite](https://www.islegitsite.com), [Google Safe Browsing Status](https://transparencyreport.google.com/safe-browsing/search), jeśli nie masz pewności.
@@ -1753,7 +1753,7 @@
 
 - title: Ochrona fizyczna
   slug: ochrona-fizyczna
-  description: Taking measures to prevent IRL security incidents
+  description: Podejmowanie działań zapobiegających incydentom bezpieczeństwa w świecie rzeczywistym
   icon: physical
   intro: >-
     Public records often include sensitive personal data (full name, date of birth,
@@ -1778,27 +1778,26 @@
     your devices and your data. This section outlines some basic methods for physical security
 
   checklist:
-  - point: Destroy Sensitive Documents
+  - point: Niszcz poufne dokumenty
     priority: Start
-    details: |
-      Shred or redact sensitive documents before disposal to protect against
-      identity theft and maintain confidentiality.
+    details: >-
+      Shred or redact sensitive documents before disposal to protect against identity theft and maintain confidentiality.
 
-  - point: Opt-Out of Public Records
+  - point: Rezygnacja z rejestrów publicznych
     priority: Start
-    details: |
+    details: >-
       Contact people search websites to opt-out from listings that show persona
       information, using guides like Michael Bazzell's Personal Data Removal Workbook.
 
-  - point: Watermark Documents
+  - point: Dokumenty z znakiem wodnym
     priority: Start
-    details: |
+    details: >-
       Add a watermark with the recipient's name and date to digital copies of
       personal documents to trace the source of a breach.
 
   - point: Don't Reveal Info on Inbound Calls
     priority: Start
-    details: |
+    details: >-
       Only share personal data on calls you initiate and verify the recipient's phone number.
 
   - point: Stay Alert
