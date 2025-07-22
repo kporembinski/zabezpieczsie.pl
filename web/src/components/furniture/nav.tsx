@@ -120,7 +120,7 @@ export default component$(() => {
           </li>
           <li>
             <a href="/article">
-              <Icon class="mr-2" icon="articles" width={16} height={16} />Articles
+              <Icon class="mr-2" icon="articles" width={16} height={16} />Artykuły
             </a>
             <ul>
               {articles.map(article => (
@@ -132,7 +132,7 @@ export default component$(() => {
           </li>
           <li>
             <a href="/about">
-              <Icon class="mr-2" icon="about" width={16} height={16} />About
+              <Icon class="mr-2" icon="about" width={16} height={16} />O projekcie
             </a>
             <ul>
               <li>
