@@ -129,12 +129,12 @@
   - point: Blokuj reklamy
     priority: Start
     details: >-
-      Korzystanie z programu blokującego reklamy może pomóc w poprawie prywatności poprzez blokowanie modułów śledzących stosowanych w reklamach np. poprzez wtyczki takie jak: [uBlock Origin](https://ublockorigin.com/), [AdGuard](https://adguard.com/). Gdy na stronie internetowej wyświetlane są reklamy stron trzecich, mają one możliwość śledzenia użytkownika, gromadzenia danych osobowych o nim i jego zwyczajach, które następnie mogą być sprzedawane lub wykorzystywane do wyświetlania bardziej ukierunkowanych reklam, a niektóre reklamy są po prostu złośliwe lub fałszywe. Blokowanie reklam sprawia również, że strony ładują się szybciej, zużywają mniej danych i zapewniają mniej zagmatwane wrażenia.
+      AAAAA
 
-  + point: A
+  - point: Zweryfikuj autentyczność strony
     priority: Basic
     details: >-
-      B
+      Może to zabrzmieć banalnie, ale podczas logowania się na dowolne konta internetowe należy dokładnie sprawdzić, czy adres URL jest poprawny. Zapisanie często odwiedzanych stron w zakładkach to dobry sposób na zapewnienie łatwego dostępu do adresu URL. Podczas odwiedzania nowych stron internetowych należy zwracać uwagę na typowe oznaki, które mogą świadczyć o ich niebezpieczeństwie: ostrzeżenia przeglądarki, przekierowania, spam i wyskakujące okienka. Można również sprawdzić stronę internetową za pomocą narzędzia, takiego jak: [Virus Total](https://www.virustotal.com), [IsLegitSite](https://www.islegitsite.com), [Google Safe Browsing Status](https://transparencyreport.google.com/safe-browsing/search), jeśli nie masz pewności.
 
   - point: Uważaj na złośliwe oprogramowanie przeglądarki
     priority: Basic
