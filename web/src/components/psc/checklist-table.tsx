@@ -43,16 +43,9 @@ export default component$((props: { section: Section }) => {
   };
 
   const generateId = (title: string) => {
-    const result = title.toLowerCase()
-      .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '')
-      .replace(/[^a-z0-9 -]/g, '-')
-      .replace(/\s+/g, '-')
-      .replace(/-+/g, '-')
-      .replace(/^-+|-+$/g, '');
-    console.log(`[IDGEN] ${title} => ${result}`);
-    return result;
+    return title.toLowerCase().replace(/\s+/g, '-');
   };
+
 
   const parseMarkdown = (text: string | undefined): string => {
     return marked.parse(text || '', { async: false }) as string || '';
@@ -73,8 +66,6 @@ export default component$((props: { section: Section }) => {
     const itemIgnored = isIgnored(itemId);
     const itemLevel = item.priority;
 
-    console.log(`[FILTER] #${idx} ID: ${itemId} | Done: ${itemCompleted} | Ignored: ${itemIgnored} | Point: ${item.point}`);
-
     if (filterState.show === 'remaining' && (itemCompleted || itemIgnored)) return false;
     if (filterState.show === 'completed' && !itemCompleted) return false;
 
@@ -83,7 +74,6 @@ export default component$((props: { section: Section }) => {
 
   filteredChecklist.forEach((item, idx) => {
     const itemId = generateId(item.point);
-    console.log(`[RENDER] #${idx} ID: ${itemId} | Point: ${item.point}`);
   });
 
   const sortChecklist = (a: Checklist, b: Checklist) => {
@@ -284,7 +274,7 @@ export default component$((props: { section: Section }) => {
                     setCompleted(data);
                   }}
                 />
-                <label for={`ignore-${itemId}`} class="text-small block opacity-50 mt-2">Omiń</label>
+                <label for={`ignore-${itemId}`} class="text-small block opacity-50 mt-2">Pomiń</label>
                 <input
                   type="checkbox"
                   id={`ignore-${itemId}`}
