@@ -7,7 +7,9 @@ import { marked } from "marked";
 import { useLocalStorage } from "~/hooks/useLocalStorage";
 import styles from './psc.module.css';
 
+
 export default component$((props: { section: Section }) => {
+
   const [completed, setCompleted] = useLocalStorage('PSC_PROGRESS', {});
   const [ignored, setIgnored] = useLocalStorage('PSC_IGNORED', {});
 
@@ -19,7 +21,7 @@ export default component$((props: { section: Section }) => {
   const checklist = useSignal<Checklist[]>(props.section.checklist);
 
   const originalFilters = {
-    show: 'all',
+    show: 'all', // 'all', 'remaining', 'completed'
     levels: {
       start: true,
       plus: true,
@@ -43,9 +45,8 @@ export default component$((props: { section: Section }) => {
   };
 
   const generateId = (title: string) => {
-    return title.toLowerCase().replace(/\s+/g, '-');
+    return title.toLowerCase().replace(/ /g, '-');
   };
-
 
   const parseMarkdown = (text: string | undefined): string => {
     return marked.parse(text || '', { async: false }) as string || '';
@@ -54,26 +55,25 @@ export default component$((props: { section: Section }) => {
   const isIgnored = (pointId: string) => {
     return ignored.value[pointId] || false;
   };
+  
 
   const isChecked = (pointId: string) => {
     if (isIgnored(pointId)) return false;
     return completed.value[pointId] || false;
   };
 
-  const filteredChecklist = checklist.value.filter((item, idx) => {
+  const filteredChecklist = checklist.value.filter((item) => {
     const itemId = generateId(item.point);
     const itemCompleted = isChecked(itemId);
     const itemIgnored = isIgnored(itemId);
     const itemLevel = item.priority;
 
+    // Filter by completion status
     if (filterState.show === 'remaining' && (itemCompleted || itemIgnored)) return false;
     if (filterState.show === 'completed' && !itemCompleted) return false;
 
+    // Filter by level
     return filterState.levels[itemLevel.toLocaleLowerCase() as Priority];
-  });
-
-  filteredChecklist.forEach((item, idx) => {
-    const itemId = generateId(item.point);
   });
 
   const sortChecklist = (a: Checklist, b: Checklist) => {
@@ -105,11 +105,11 @@ export default component$((props: { section: Section }) => {
   };
 
   const handleSort = $((column: string) => {
-    if (sortState.column === column) {
+    if (sortState.column === column) { // Reverse direction if same column
       sortState.ascending = !sortState.ascending;
-    } else {
+    } else { // Sort table by column
       sortState.column = column;
-      sortState.ascending = true;
+      sortState.ascending = true; // Default to ascending
     }
   });
 
