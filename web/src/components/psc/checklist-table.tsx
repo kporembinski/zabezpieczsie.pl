@@ -43,13 +43,15 @@ export default component$((props: { section: Section }) => {
   };
 
   const generateId = (title: string) => {
-    return title.toLowerCase()
+    const result = title.toLowerCase()
       .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g, '') // usuwa znaki diakrytyczne
-      .replace(/[^a-z0-9 -]/g, '-')    // zamienia inne znaki specjalne
-      .replace(/\s+/g, '-')            // spacje na myślniki
-      .replace(/-+/g, '-')             // konsolidacja myślników
-      .replace(/^-+|-+$/g, '');        // usuwa leading/trailing -
+      .replace(/[̀-ͯ]/g, '')
+      .replace(/[^a-z0-9 -]/g, '-')
+      .replace(/\s+/g, '-')
+      .replace(/-+/g, '-')
+      .replace(/^-+|-+$/g, '');
+    console.log(`[IDGEN] ${title} => ${result}`);
+    return result;
   };
 
   const parseMarkdown = (text: string | undefined): string => {
