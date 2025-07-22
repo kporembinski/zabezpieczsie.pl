@@ -45,11 +45,11 @@ export default component$((props: { section: Section }) => {
   const generateId = (title: string) => {
     return title.toLowerCase()
       .normalize('NFD')
-      .replace(/\p{Diacritic}/gu, '')
-      .replace(/[^a-z0-9 -]/g, '-')
-      .replace(/\s+/g, '-')
-      .replace(/-+/g, '-')
-      .replace(/^-+|-+$/g, '');
+      .replace(/[\u0300-\u036f]/g, '') // usuwa znaki diakrytyczne
+      .replace(/[^a-z0-9 -]/g, '-')    // zamienia inne znaki specjalne
+      .replace(/\s+/g, '-')            // spacje na myślniki
+      .replace(/-+/g, '-')             // konsolidacja myślników
+      .replace(/^-+|-+$/g, '');        // usuwa leading/trailing -
   };
 
   const parseMarkdown = (text: string | undefined): string => {
