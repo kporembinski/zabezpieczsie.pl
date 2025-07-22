@@ -17,8 +17,8 @@ export const useChecklists = routeLoader$(async () => {
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
   cacheControl({
-    maxAge: 0,
-    staleWhileRevalidate: 0,
+    staleWhileRevalidate: 60 * 60 * 24 * 7,
+    maxAge: 5,
   });
 };
 
