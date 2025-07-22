@@ -41,8 +41,26 @@ export default component$(() => {
           <p class="py-2" dangerouslySetInnerHTML={parseMarkdown(section.intro)}></p>
         )}
 
-        <div class="overflow-x-auto">
-          <Table section={section} />
+        <div class="mt-8">
+          <h2 class="text-2xl font-semibold mb-4">Debug: Lista punktów</h2>
+          {section.checklist.map((item, index) => {
+            const rawPointId = `${slug}-${item.point}`;
+            const pointId = rawPointId
+              .toLowerCase()
+              .normalize('NFD')
+              .replace(/[̀-ͯ]/g, '')
+              .replace(/[^a-z0-9\-]/g, '-')
+              .replace(/-+/g, '-')
+              .replace(/^-|-$/g, '');
+
+            return (
+              <div key={pointId} class="border p-2 mb-2 bg-base-200 rounded">
+                <div class="font-semibold">#{index + 1}: {item.point ?? '[brak punktu]'}</div>
+                <div class="text-sm italic">{item.details ?? '[brak szczegółów]'}</div>
+                <div class="text-xs mt-1 text-gray-500">ID: {pointId}</div>
+              </div>
+            );
+          })}
         </div>
 
         {section.softwareLinks && section.softwareLinks.length > 0 && (
