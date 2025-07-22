@@ -49,6 +49,7 @@ export default component$(() => {
       )}
 
     </article>
+    <pre>{JSON.stringify(section, null, 2)}</pre>
     </div>
   );
 });

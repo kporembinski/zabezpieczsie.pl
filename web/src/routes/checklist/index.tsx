@@ -47,7 +47,7 @@ export default component$(() => {
               <div class="card-actions justify-end">
                 <a href={`/checklist/${section.slug}`}>
                   <button class={`btn text-base-100 bg-${section.color}-400 hover:bg-${section.color}-600`}>
-                    View Full Checklist ➜
+                    Zobacz pełną checklistę ➜
                   </button>
                 </a>
               </div>
