@@ -43,7 +43,13 @@ export default component$((props: { section: Section }) => {
   };
 
   const generateId = (title: string) => {
-    return title.toLowerCase().replace(/ /g, '-');
+    return title.toLowerCase()
+      .normalize('NFD')
+      .replace(/\p{Diacritic}/gu, '')
+      .replace(/[^a-z0-9 -]/g, '-')
+      .replace(/\s+/g, '-')
+      .replace(/-+/g, '-')
+      .replace(/^-+|-+$/g, '');
   };
 
   const parseMarkdown = (text: string | undefined): string => {
@@ -71,6 +77,11 @@ export default component$((props: { section: Section }) => {
     if (filterState.show === 'completed' && !itemCompleted) return false;
 
     return filterState.levels[itemLevel.toLocaleLowerCase() as Priority];
+  });
+
+  filteredChecklist.forEach((item, idx) => {
+    const itemId = generateId(item.point);
+    console.log(`[RENDER] #${idx} ID: ${itemId} | Point: ${item.point}`);
   });
 
   const sortChecklist = (a: Checklist, b: Checklist) => {
