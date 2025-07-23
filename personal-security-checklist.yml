@@ -139,278 +139,182 @@
   - point: Uważaj na złośliwe oprogramowanie przeglądarki
     priority: Start
     details: >-
-      Your system or browser can be compromised by spyware, miners, browser hijackers, malicious redirects,
-      adware etc. You can usually stay protected, just by: ignoring pop-ups, be wary of what your clicking,
-      don't proceed to a website if your browser warns you it may be malicious. Common signs of browser malware
-      include: default search engine or homepage has been modified, toolbars, unfamiliar extensions or icons,
-      significantly more ads, errors and pages loading much slower than usual. These articles from Heimdal
-      explain [signs of browser malware](https://heimdalsecurity.com/blog/warning-signs-operating-system-infected-malware),
-      [how browsers get infected](https://heimdalsecurity.com/blog/practical-online-protection-where-malware-hides)
-      and [how to remove browser malware](https://heimdalsecurity.com/blog/malware-removal).
+      Twój system lub przeglądarka mogą zostać zaatakowane przez oprogramowanie szpiegujące, górników, porywaczy przeglądarki, złośliwe przekierowania, oprogramowanie reklamowe itp. Zwykle można zachować ochronę, po prostu: ignorując wyskakujące okienka, uważając na to, co klikasz, nie przechodząc do strony internetowej, jeśli przeglądarka ostrzega, że może być złośliwa. Typowe oznaki złośliwego oprogramowania przeglądarki to: domyślna wyszukiwarka lub strona główna została zmodyfikowana, paski narzędzi, nieznane rozszerzenia lub ikony, znacznie więcej reklam, błędy i strony ładujące się znacznie wolniej niż zwykle.
 
   - point: Używaj przeglądarki respektującej prywatność
     priority: Start
     details: >-
-      [Firefox](https://awesome-privacy.xyz/essentials/browsers/firefox) (with a few tweaks)
-      and [Brave](https://awesome-privacy.xyz/essentials/browsers/brave-browser)
-      are secure, private-respecting browsers. Both are fast, open source, user-friendly and available on all
-      major operating systems. Your browser has access to everything that you do online, so if possible, avoid
-      Google Chrome, Edge and Safari as (without correct configuration) all three of them, collect usage data,
-      call home and allow for invasive tracking. Firefox requires a few changes to achieve optimal security,
-      for example - [arkenfox](https://github.com/arkenfox/user.js/wiki) or [12byte](https://12bytes.org/firefox-configuration-guide-for-privacy-freaks-and-performance-buffs/)'s
-      user.js configs. See more: [Privacy Browsers](https://github.com/Lissy93/awesome-privacy#browsers).
+      Firefox (po wprowadzeniu kilku poprawek) i [LibreWolf](https://librewolf.net/) to bezpieczne przeglądarki, które szanują prywatność użytkowników. Obie są szybkie, oparte na otwartym kodzie źródłowym, przyjazne dla użytkownika i dostępne na wszystkich głównych systemach operacyjnych. Twoja przeglądarka ma dostęp do wszystkich Twoich działań w Internecie, więc jeśli to możliwe, unikaj przeglądarek Google Chrome, Edge i Safari, ponieważ (bez odpowiedniej konfiguracji) wszystkie trzy zbierają dane o użytkowaniu, wysyłają je do producenta i umożliwiają inwazyjne śledzenie. Firefox wymaga kilku zmian, aby osiągnąć optymalne bezpieczeństwo, na przykład konfiguracje [arkenfox user.js](https://github.com/arkenfox/user.js).
 
   - point: Użyj prywatnej wyszukiwarki
     priority: Start
     details: >-
-      Using a privacy-preserving, non-tracking search engine, will reduce risk that your search terms are not
-      logged, or used against you. Consider [DuckDuckGo](https://awesome-privacy.xyz/essentials/search-engines/duckduckgo),
-      or [Qwant](https://awesome-privacy.xyz/essentials/search-engines/qwant).
-      Google implements some [incredibly invasive](https://hackernoon.com/data-privacy-concerns-with-google-b946f2b7afea)
-      tracking policies, and have a history of displaying [biased search results](https://www.businessinsider.com/evidence-that-google-search-results-are-biased-2014-10).
-      Therefore Google, along with Bing, Baidu, Yahoo and Yandex are incompatible with anyone looking to protect
-      their privacy. It is recommended to update your [browsers default search](https://duckduckgo.com/install)
-      to a privacy-respecting search engine.
+      Korzystanie z wyszukiwarki chroniącej prywatność i nie śledzącej użytkowników zmniejsza ryzyko, że Twoje wyszukiwane hasła nie zostaną zarejestrowane lub wykorzystane przeciwko Tobie. Rozważ użycie DuckDuckGo lub Qwant. Google stosuje niezwykle inwazyjne zasady śledzenia i ma historię wyświetlania stronniczych wyników wyszukiwania. Dlatego Google, wraz z Bing, Baidu, Yahoo i Yandex, nie są odpowiednie dla osób, które chcą chronić swoją prywatność. Zaleca się zmianę domyślnej wyszukiwarki w przeglądarce na taką, która szanuje prywatność.
 
   - point: Usuń niepotrzebne dodatki przeglądarki
     priority: Start
     details: >-
-      Extensions are able to see, log or modify anything you do in the browser, and some innocent looking
-      browser apps, have malicious intentions. Websites can see which extensions you have installed, and may
-      use this to enhance your fingerprint, to more accurately identify/ track you. Both [Firefox](https://awesome-privacy.xyz/essentials/browsers/firefox) and Chrome
-      web stores allow you to check what permissions/access rights an extension requires before you install it.
-      Check the reviews. Only install extensions you really need, and removed those which you haven't used in a while.
+      Rozszerzenia mogą widzieć, rejestrować lub modyfikować wszystko, co robisz w przeglądarce, a niektóre niewinnie wyglądające aplikacje przeglądarkowe mają złośliwe zamiary. Witryny internetowe mogą zobaczyć, jakie rozszerzenia masz zainstalowane, i mogą wykorzystać tę informację do ulepszenia Twojego odcisku palca, aby dokładniej Cię identyfikować/śledzić. Zarówno sklep internetowy Firefox, jak i Chrome pozwalają sprawdzić, jakich uprawnień/praw dostępu wymaga rozszerzenie przed jego zainstalowaniem. Sprawdź recenzje. Instaluj tylko te rozszerzenia, które naprawdę potrzebujesz, i usuń te, których nie używasz od dłuższego czasu.
 
   - point: Aktualizuj przeglądarkę
     priority: Start
     details: >-
-      Browser vulnerabilities are constantly being [discovered](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=browser)
-      and patched, so it’s important to keep it up to date, to avoid a zero-day exploit. You can [see which browser
-      version you're using here](https://www.whatismybrowser.com/), or follow [this guide](https://www.whatismybrowser.com/guides/how-to-update-your-browser/)
-      for instructions on how to update. Some browsers will auto-update to the latest stable version.
+      Luki w zabezpieczeniach przeglądarek są stale wykrywane i usuwane, dlatego ważne jest, aby aktualizować przeglądarkę, aby uniknąć ataków typu zero-day. [Tutaj możesz sprawdzić, której wersji przeglądarki używasz](https://www.whatismybrowser.com/), lub postępować zgodnie z instrukcjami zawartymi w tym przewodniku, aby zaktualizować przeglądarkę. Niektóre przeglądarki automatycznie aktualizują się do najnowszej stabilnej wersji.
 
   - point: Sprawdź, czy jest HTTPS
     priority: Start
     details: >-
-      If you enter information on a non-HTTPS website, this data is transported unencrypted and can therefore
-      be read by anyone who intercepts it. Do not enter any data on a non-HTTPS website, but also do not let
-      the green padlock give you a false sense of security, just because a website has SSL certificate, does
-      not mean that it is legitimate or trustworthy. [HTTPS-Everywhere](https://www.eff.org/https-everywhere)
-      (developed by the [EFF](https://www.eff.org/)) used to be a browser extension/addon that automatically
-      enabled HTTPS on websites, but as of 2022 is now deprecated. In their [accouncement article](https://www.eff.org/)
-      the EFF explains that most browsers now integrate such protections. Additionally, it provides instructions
-      for [Firefox](https://awesome-privacy.xyz/essentials/browsers/firefox), Chrome, Edge and Safari browsers on how to enable their HTTPS secure protections.
+      Jeśli wprowadzisz informacje na stronie internetowej bez protokołu HTTPS, dane te są przesyłane bez szyfrowania i mogą być odczytane przez każdego, kto je przechwyci. Nie wprowadzaj żadnych danych na stronach internetowych bez protokołu HTTPS, ale nie daj się zwieść zielonej kłódce, która daje fałszywe poczucie bezpieczeństwa. Posiadanie certyfikatu SSL przez stronę internetową nie oznacza, że jest ona legalna lub godna zaufania, gdyż każda strona w tym fałszywa - posiada certyfikat SSL.
 
-  - point: Use DNS-over-HTTPS
+  - point: Użyj DNS-over-HTTPS
     priority: Start
     details: >-
-      Traditional DNS makes requests in plain text for everyone to see. It allows for eavesdropping and
-      manipulation of DNS data through man-in-the-middle attacks. Whereas DNS-over-HTTPS performs DNS
-      resolution via the HTTPS protocol, meaning data between you and your DNS resolver is encrypted.
-      A popular option is [CloudFlare](https://awesome-privacy.xyz/networking/dns-providers/cloudflare)'s [1.1.1.1](https://awesome-privacy.xyz/security-tools/mobile-apps/1.1.1.1), or compare providers- it is simple to enable in-browser.
-      Note that DoH comes with its own issues, mostly preventing web filtering.
+      Tradycyjny DNS wysyła żądania w postaci zwykłego tekstu, który każdy może zobaczyć. Umożliwia to podsłuchiwanie i manipulowanie danymi DNS poprzez ataki typu „man-in-the-middle”. Natomiast DNS-over-HTTPS wykonuje rozpoznawanie DNS za pośrednictwem protokołu HTTPS, co oznacza, że dane między użytkownikiem a serwerem rozpoznającym DNS są szyfrowane. Popularną opcją jest CloudFlare 1.1.1.1 lub porównanie dostawców — można ją łatwo włączyć w przeglądarce. Należy pamiętać, że DoH ma swoje własne problemy, głównie uniemożliwiające filtrowanie treści internetowych.
 
-  - point: Multi-Session Containers
+  - point: Kontenery wielosesyjne
     priority: Start
     details: >-
-      Compartmentalisation is really important to keep different aspects of your browsing separate. For
-      example, using different profiles for work, general browsing, social media, online shopping etc
-      will reduce the number associations that data brokers can link back to you. One option is to make
-      use of [Firefox Containers](https://awesome-privacy.xyz/security-tools/browser-extensions/firefox-multi-account-containers)
-      which is designed exactly for this purpose.
-      Alternatively, you could
-      use different browsers for different tasks
-      ([Brave](https://awesome-privacy.xyz/essentials/browsers/brave-browser),
-      [Firefox](https://awesome-privacy.xyz/essentials/browsers/firefox),
-      [Tor](https://awesome-privacy.xyz/networking/mix-networks/tor) etc).
+      Rozdzielenie jest bardzo ważne, aby oddzielić różne aspekty przeglądania stron internetowych. Na przykład korzystanie z różnych profili do pracy, ogólnego przeglądania stron, mediów społecznościowych, zakupów online itp. zmniejszy liczbę powiązań, które brokerzy danych mogą przypisać do Ciebie. Jedną z opcji jest skorzystanie z Firefox Containers, które zostało zaprojektowane właśnie w tym celu. Alternatywnie możesz używać różnych przeglądarek do różnych zadań (Brave, Firefox, Tor itp.).
 
-  - point: Use Incognito
+  - point: Użyj trybu incognito
     priority: Start
     details: >-
-      When using someone else's machine, ensure that you're in a private/ incognito session. This will
-      prevent browser history, cookies and some data being saved, but is not fool-proof- you can still
-      be tracked.
+      Korzystając z komputera innej osoby, upewnij się, że korzystasz z trybu prywatnego/incognito. Zapobiegnie to zapisywaniu historii przeglądarki, plików cookie i niektórych danych, ale nie jest to rozwiązanie niezawodne – nadal możesz być śledzony.
 
-  - point: Understand Your Browser Fingerprint
+  - point: Zapoznaj się z odciskami palców przeglądarki
     priority: Start
     details: >-
-      Browser Fingerprinting is an incredibly accurate method of tracking, where a website identifies you
-      based on your device information. You can view your fingerprint at amiunique.org- The aim is to be
-      as un-unique as possible.
+     Browser Fingerprinting to niezwykle dokładna metoda śledzenia, w której strona internetowa identyfikuje użytkownika na podstawie informacji o jego urządzeniu. Możesz sprawdzić swój odcisk palca na stronie [amiunique.org](https://amiunique.org/fingerprint). Celem jest, aby być jak najmniej unikalnym.
 
-  - point: Manage Cookies
+  - point: Zarządzaj plikami cookie
     priority: Start
     details: >-
-      Clearing cookies regularly is one step you can take to help reduce websites from tracking you.
-      Cookies may also store your session token, which if captured, would allow someone to access your
-      accounts without credentials. To mitigate this you should clear cookies often.
+      Regularne czyszczenie plików cookie to jeden ze sposobów, które możesz zastosować, aby ograniczyć śledzenie Twojej aktywności przez strony internetowe. Pliki cookie mogą również przechowywać token sesji, który w przypadku przechwycenia umożliwiłby komuś dostęp do Twoich kont bez podawania danych uwierzytelniających. Aby ograniczyć to ryzyko, należy często usuwać pliki cookie.
 
-  - point: Block Third-Party Cookies
+  - point: Blokuj pliki cookie stron trzecich
     priority: Start
     details: >-
-      Third-party cookies placed on your device by a website other than the one you’re visiting. This
-      poses a privacy risk, as a 3rd entity can collect data from your current session. This guide explains
-      how you can disable 3rd-party cookies, and you can check here ensure this worked.
+      Pliki cookie stron trzecich umieszczane na Twoim urządzeniu przez witrynę internetową inną niż ta, którą odwiedzasz. Stanowi to zagrożenie dla prywatności, ponieważ podmiot trzeci może gromadzić dane z bieżącej sesji. W tym przewodniku wyjaśniono, jak wyłączyć pliki cookie stron trzecich, a tutaj możesz sprawdzić, czy to zadziałało.
 
-  - point: Block Third-Party Trackers
+  - point: Blokuj trackery stron trzecich
     priority: Start
     details: >-
-      Blocking trackers will help to stop websites, advertisers, analytics and more from tracking you in
-      the background. [Privacy Badger](https://awesome-privacy.xyz/security-tools/browser-extensions/privacy-badger),
-      [DuckDuckGo Privacy Starts](https://awesome-privacy.xyz/security-tools/browser-extensions/privacy-essentials),
-      [uBlock Origin](https://awesome-privacy.xyz/networking/ad-blockers/ublock-origin) and uMatrix (advanced)
-      are all very effective, open source tracker-blockers available for all major browsers.
+      Blokowanie trackerów pomoże powstrzymać strony internetowe, reklamodawców, narzędzia analityczne i inne podmioty przed śledzeniem użytkownika w tle. Privacy Badger, DuckDuckGo Privacy Essentials, uBlock Origin i uMatrix (zaawansowane) to bardzo skuteczne, otwarte oprogramowanie do blokowania trackerów, dostępne dla wszystkich głównych przeglądarek.
 
-  - point: Beware of Redirects
+  - point: Uważaj na przekierowania
     priority: Plus
     details: >-
-      While some redirects are harmless, others, such as Unvalidated redirects are used in phishing attacks,
-      it can make a malicious link seem legitimate. If you are unsure about a redirect URL, you can check
-      where it forwards to with a tool like RedirectDetective.
+      Niektóre przekierowania są nieszkodliwe, ale inne, takie jak przekierowania niezweryfikowane, są wykorzystywane w atakach phishingowych, co może sprawiać, że złośliwy link wydaje się wiarygodny. Jeśli nie masz pewności co do adresu URL przekierowania, możesz sprawdzić, dokąd prowadzi, za pomocą narzędzia takiego jak RedirectDetective.
 
-  - point: Do Not Sign Into Your Browser
+  - point: Nie loguj się do przeglądarki
     priority: Plus
     details: >-
-      Many browsers allow you to sign in, in order to sync history, bookmarks and other browsing data across
-      devices. However this not only allows for further data collection, but also increases attack surface
-      through providing another avenue for a malicious actor to get hold of personal information.
+      Wiele przeglądarek umożliwia zalogowanie się w celu synchronizacji historii, zakładek i innych danych przeglądania między urządzeniami. Jednakże nie tylko umożliwia to dalsze gromadzenie danych, ale także zwiększa powierzchnię ataku, zapewniając złośliwym podmiotom kolejną drogę do uzyskania dostępu do danych osobowych.
 
-  - point: Disallow Prediction Services
+  - point: Zablokuj usługi prognozowania
     priority: Plus
     details: >-
-      Some browsers allow for prediction services, where you receive real-time search results or URL auto-fill.
-      If this is enabled then data is sent to Google (or your default search engine) with every keypress,
-      rather than when you hit enter.
+      Niektóre przeglądarki umożliwiają korzystanie z usług przewidywania, dzięki którym otrzymujesz wyniki wyszukiwania w czasie rzeczywistym lub automatyczne uzupełnianie adresów URL. Jeśli ta funkcja jest włączona, dane są wysyłane do Google (lub domyślnej wyszukiwarki) przy każdym naciśnięciu klawisza, a nie tylko po naciśnięciu klawisza Enter.
 
-  - point: Avoid G Translate for Webpages
+  - point: Unikaj tłumaczenia stron internetowych
     priority: Plus
     details: >-
-      When you visit a web page written in a foreign language, you may be prompted to install the Google Translate
-      extension. Be aware that Google collects all data (including input fields), along with details of the current
-      user. Instead use a translation service that is not linked to your browser.
+      Podczas odwiedzania strony internetowej napisanej w obcym języku może pojawić się monit o zainstalowanie rozszerzenia Google Translate. Należy pamiętać, że Google gromadzi wszystkie dane (w tym pola wprowadzania danych) wraz ze szczegółowymi informacjami o bieżącym użytkowniku. Zamiast tego należy skorzystać z usługi tłumaczeniowej, która nie jest powiązana z przeglądarką.
 
-  - point: Disable Web Notifications
+  - point: Wyłącz powiadomienia
     priority: Plus
     details: >-
-      Browser push notifications are a common method for criminals to encourage you to click their link, since
-      it is easy to spoof the source. Be aware of this, and for instructions on disabling browser notifications,
-      see this article.
+      Powiadomienia push przeglądarki są popularną metodą stosowaną przez przestępców, aby zachęcić użytkowników do kliknięcia w link, ponieważ łatwo jest sfałszować źródło. Należy mieć tego świadomość.
 
-  - point: Disable Automatic Downloads
+  - point: Wyłącz automatyczne pobieranie
     priority: Plus
     details: >-
-      Drive-by downloads is a common method of getting harmful files onto a users device. This can be mitigated
-      by disabling auto file downloads, and be cautious of websites which prompt you to download files unexpectedly.
+      Pobieranie plików podczas przeglądania stron internetowych to popularna metoda wprowadzania szkodliwych plików na urządzenie użytkownika. Można temu zapobiec, wyłączając automatyczne pobieranie plików i zachowując ostrożność w przypadku stron internetowych, które nieoczekiwanie wyświetlają monity o pobranie plików.
 
-  - point: Disallow Access to Sensors
+  - point: Zablokuj dostęp do czujników
     priority: Plus
     details: >-
-      Mobile websites can tap into your device sensors without asking. If you grant these permissions to your
-      browser once, then all websites are able to use these capabilities, without permission or notification.
+      Strony mobilne mogą korzystać z czujników urządzenia bez pytania o zgodę. Jeśli raz udzielisz przeglądarce tych uprawnień, wszystkie strony internetowe będą mogły korzystać z tych funkcji bez pytania o zgodę i bez powiadomienia.
 
-  - point: Disallow Location
+  - point: Nie zezwalaj na lokalizację
     priority: Plus
     details: >-
-      Location Services lets sites ask for your physical location to improve your experience. This should be
-      disabled in settings. Note that there are still other methods of determining your approximate location.
+      Usługi lokalizacyjne umożliwiają witrynom internetowym uzyskanie informacji o Twojej fizycznej lokalizacji w celu poprawy jakości obsługi. Funkcję tę należy wyłączyć w ustawieniach. Należy pamiętać, że istnieją również inne metody określania przybliżonej lokalizacji użytkownika.
 
-  - point: Disallow Camera/ Microphone access
+  - point: Zablokuj dostęp do kamery/mikrofonu
     priority: Plus
     details: >-
-      Check browser settings to ensure that no websites are granted access to webcam or microphone. It may also
-      be beneficial to use physical protection such as a webcam cover and microphone blocker.
+      Sprawdź ustawienia przeglądarki, aby upewnić się, że żadna strona internetowa nie ma dostępu do kamery internetowej lub mikrofonu. Korzystne może być również zastosowanie fizycznych zabezpieczeń, takich jak osłona kamery internetowej i blokada mikrofonu.
 
-  - point: Disable Browser Password Saves
+  - point: Wyłącz zapisywanie haseł w przeglądarce
     priority: Plus
     details: >-
-      Do not allow your browser to store usernames and passwords. These can be easily viewed or accessed.
-      Instead use a password manager.
+      Nie zezwalaj przeglądarce na zapisywanie nazw użytkownika i haseł. Mogą one zostać łatwo wyświetlone lub uzyskane. Zamiast tego używaj menedżera haseł.
 
-  - point: Disable Browser Autofill
+  - point: Wyłącz autouzupełnianie przeglądarki
     priority: Plus
     details: >-
-      Turn off autofill for any confidential or personal details. This feature can be harmful if your browser
-      is compromised in any way. Instead, consider using your password manager's Notes feature.
+      Wyłącz autouzupełnianie dla wszelkich poufnych lub osobistych danych. Ta funkcja może być szkodliwa, jeśli Twoja przeglądarka zostanie w jakikolwiek sposób naruszona. Zamiast tego rozważ użycie funkcji Notatki w menedżerze haseł.
 
-  - point: Protect from Exfil Attack
+  - point: Ochrona przed atakiem typu Exfil
     priority: Plus
     details: >-
-      The CSS Exfiltrate attack is a method where credentials and other sensitive details can be snagged with
-      just pure CSS. You can stay protected,
-      with the [CSS Exfil Protection](https://awesome-privacy.xyz/security-tools/browser-extensions/css-exfil-protection) plugin.
+      Atak CSS Exfiltrate to metoda, w której dane uwierzytelniające i inne poufne informacje mogą zostać przechwycone za pomocą samego CSS. Możesz zapewnić sobie ochronę, korzystając z wtyczki CSS Exfil Protection.
 
-  - point: Deactivate ActiveX
+  - point: Wyłącz ActiveX
     priority: Plus
     details: >-
-      ActiveX is a browser extension API that built into Microsoft IE, and enabled by default. It's not commonly
-      used anymore, but since it gives plugins intimate access rights, and can be dangerous, therefore you should
-      disable it.
+      ActiveX to rozszerzenie przeglądarki API wbudowane w przeglądarkę Microsoft IE i domyślnie włączone. Nie jest już powszechnie używane, ale ponieważ zapewnia wtyczkom szerokie uprawnienia dostępu i może być niebezpieczne, należy je wyłączyć.
 
   - point: Wyłącz WebRTC
     priority: Plus
     details: >-
-      WebRTC allows high-quality audio/video communication and peer-to-peer file-sharing straight from the
-      browser. However it can pose as a privacy leak. To learn more, check out this guide.
+      WebRTC umożliwia wysokiej jakości komunikację audio/wideo oraz wymianę plików peer-to-peer bezpośrednio z poziomu przeglądarki. Może to jednak stanowić zagrożenie dla prywatności. Aby dowiedzieć się więcej, zapoznaj się z tym przewodnikiem.
 
   - point: Fałszywy HTML5 Canvas Sig
     priority: Plus
     details: >-
-      Canvas Fingerprinting allows websites to identify and track users very accurately. You can use the
-      Canvas-Fingerprint-Blocker extension to spoof your fingerprint or
-      use [Tor](https://awesome-privacy.xyz/networking/mix-networks/tor).
+      Canvas Fingerprinting pozwala stronom internetowym bardzo dokładnie identyfikować i śledzić użytkowników. Możesz użyć rozszerzenia Canvas-Fingerprint-Blocker, aby sfałszować swój odcisk palca, lub skorzystać z przeglądarki Tor.
 
   - point: Fałszywy User Agent
     priority: Plus
     details: >-
-      The user agent tells the website what device, browser and version you are using. Switching user agent
-      periodically is one small step you can take to become less unique.
+      User agent informuje stronę internetową o tym, jakiego urządzenia, przeglądarki i wersji używasz. Okresowa zmiana user agenta to niewielki krok, który możesz podjąć, aby stać się mniej unikalnym.
 
   - point: Zignoruj DNT
     priority: Plus
     details: >-
-      Enabling Do Not Track has very limited impact, since many websites do not respect or follow this. Since
-      it is rarely used, it may also add to your signature, making you more unique.
+      Włączenie funkcji „Nie śledź” ma bardzo ograniczony wpływ, ponieważ wiele stron internetowych nie respektuje ani nie stosuje się do niej. Ponieważ jest ona rzadko używana, może również dodać coś do Twojego podpisu, czyniąc Cię bardziej wyjątkowym.
 
   - point: Zapobieganie śledzeniu HSTS
     priority: Plus
     details: >-
-      HSTS was designed to help secure websites, but privacy concerns have been raised as it allowed site
-      operators to plant super-cookies. It can be disabled by visiting chrome://net-internals/#hsts in
-      Chromium-based browsers.
+      HSTS zostało zaprojektowane w celu zapewnienia bezpieczeństwa stron internetowych, ale pojawiły się obawy dotyczące prywatności, ponieważ umożliwiało operatorom stron umieszczanie supercookies. Można je wyłączyć, odwiedzając stronę [chrome://net-internals/#hsts](chrome://net-internals/#hsts) w przeglądarkach opartych na Chromium.
 
   - point: Zapobieganie automatycznym połączeniom przeglądarki
     priority: Plus
     details: >-
-      Even when you are not using your browser, it may call home to report on usage activity, analytics and
-      diagnostics. You may wish to disable some of this, which can be done through the settings.
+      Nawet gdy nie korzystasz z przeglądarki, może ona łączyć się z serwerem macierzystym w celu przekazania informacji o aktywności użytkownika, analizach i diagnostyce. Możesz wyłączyć niektóre z tych funkcji w ustawieniach.
 
   - point: Włącz izolację pierwszej strony
     priority: Plus
     details: >-
-      [First Party Isolation](https://awesome-privacy.xyz/security-tools/browser-extensions/first-party-isolation) means
-      that all identifier sources and browser state are scoped using the URL bar
-      domain, this can greatly reduce tracking.
+      Izolacja pierwszej strony oznacza, że wszystkie źródła identyfikatorów i stan przeglądarki są ograniczone do domeny paska adresu URL, co może znacznie ograniczyć śledzenie.
 
   - point: Usuwanie parametrów śledzenia z adresów URL
     priority: Pro
     details: >-
-      Websites often append additional GET parameters to URLs that you click, to identify information like
-      source/referrer. You can sanitize manually,
-      or use an extension like [ClearURLs](https://awesome-privacy.xyz/security-tools/browser-extensions/clearurls) to strip tracking data
-      from URLs automatically.
+     Witryny internetowe często dodają dodatkowe parametry GET do adresów URL, które klikasz, aby zidentyfikować informacje, takie jak źródło/odsyłacz. Możesz je ręcznie oczyścić lub użyć rozszerzenia takiego jak ClearURLs, aby automatycznie usunąć dane śledzące z adresów URL.
 
   - point: Bezpieczeństwo przy pierwszym uruchomieniu
     priority: Pro
     details: >-
-      After installing a web browser, the first time you launch it (prior to configuring its privacy settings),
-      most browsers will call home. Therefore, after installing a browser, you should first disable your internet
-      connection, then configure privacy options before reenabling your internet connectivity.
+      Po zainstalowaniu przeglądarki internetowej, przy pierwszym uruchomieniu (przed skonfigurowaniem ustawień prywatności), większość przeglądarek połączy się z serwerem macierzystym. Dlatego po zainstalowaniu przeglądarki należy najpierw wyłączyć połączenie internetowe, a następnie skonfigurować opcje prywatności przed ponownym włączeniem połączenia internetowego.
 
   - point: Użyj przeglądarki Tor
     priority: Pro
     details: >-
-      The [Tor](https://awesome-privacy.xyz/networking/mix-networks/tor) Project provides a browser that encrypts and routes your traffic through multiple nodes, keeping
-      users safe from interception and tracking. The main drawbacks are speed and user experience.
+      Wiele nowoczesnych aplikacji internetowych jest opartych na JavaScript, więc wyłączenie go znacznie pogorszy komfort przeglądania stron. Jeśli jednak naprawdę chcesz się zaangażować, to znacznie zmniejszy to powierzchnię ataku.
 
   - point: Wyłącz JavaScript
     priority: Pro
@@ -418,14 +322,10 @@
       Many modern web apps are JavaScript-based, so disabling it will greatly decrease your browsing experience.
       But if you really want to go all out, then it will really reduce your attack surface.
   softwareLinks:
-    - title: Privacy Browsers
-      url: https://github.com/Lissy93/awesome-privacy#browsers
-    - title: Search Engines
-      utl: https://github.com/Lissy93/awesome-privacy#search-engines
-    - title: Browser Extensions
-      url: https://github.com/Lissy93/awesome-privacy#browser-extensions
-    - title: Browser & Bookmark Sync
-      url: https://github.com/Lissy93/awesome-privacy#browser-sync
+    - title: Tor Browser
+      url: https://www.torproject.org/download/
+    - title: LibreWolf
+      url: https://librewolf.net/
   color: emerald
 
 - title: Poczta elektroniczna
