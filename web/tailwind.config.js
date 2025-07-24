@@ -1,10 +1,9 @@
-
-
-const applyCustomColors = (theme, front, back) => {
+const applyCustomColors = (theme, front, back, primary = "220 100% 50%") => {
   return {
     ...require("daisyui/src/theming/themes")[`[data-theme=${theme}]`],
     "--front":front,
     "--back": back || `${front} /0.75`,
+    "--p": primary,
   };
 };
 
@@ -16,7 +15,6 @@ module.exports = {
       colors: {
         "front": "hsl(var(--front, 0deg 0% 60% / 10%))",
         "back": "hsl(var(--back, 212 14% 10% / 1))",
-        "--p": primary,
       },
     },
   },
