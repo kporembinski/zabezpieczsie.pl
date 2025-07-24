@@ -40,24 +40,6 @@ export default component$(() => {
         <div class="flex-none hidden md:flex">
           <ul class="menu menu-horizontal px-1">
             <li>
-              <details>
-                <summary>
-                  <Icon icon="checklist" width={16} height={16}  />
-                  Checklisty
-                </summary>
-                <ul class="p-2 bg-base-100 rounded-t-none z-10">
-                  {data.value.map((item: Section, index: number) => (
-                    <li key={`checklist-nav-${index}`} class={`hover:bg-${item.color}-600 hover:bg-opacity-15`}>
-                      <a href={`/checklist/${item.slug}`}>
-                      <Icon color={item.color} class="mr-2" icon={item.icon} width={16} height={16}  />
-                        {item.title}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </details>
-            </li>
-            <li>
               <a href="https://github.com/kporembinski/personal-security-checklist"
                 class="tooltip flex tooltip-bottom" data-tip="Zobacz/edycja źródła i danych">
                 <Icon icon="github" width={16} height={16}  />GitHub
