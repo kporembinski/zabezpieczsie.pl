@@ -16,12 +16,13 @@ module.exports = {
       colors: {
         "front": "hsl(var(--front, 0deg 0% 60% / 10%))",
         "back": "hsl(var(--back, 212 14% 10% / 1))",
+        "--p": primary,
       },
     },
   },
   daisyui: {
     themes: [
-      { light: applyCustomColors("light", "237 9% 86% / 0.75", "237 9% 86% / 1") },
+      { light: applyCustomColors("light", "237 9% 86% / 0.75", "237 9% 86% / 1", "220 100% 50%") },
       { dark: applyCustomColors("dark", "217 14% 17%", "212 14% 10%") },
       { night: applyCustomColors("night", "220deg 44.68% 9.22%", "219.2, 38.2%, 13.3%") },
 
