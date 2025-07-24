@@ -89,7 +89,7 @@ export default component$(() => {
       || fallback;
     }
     // Define colors and styles for progress chart
-    const primaryColor = color || 'hsl(var(--pf, 220, 13%, 69%))';
+    const primaryColor = color || 'hsl(var(--pf, 226, 100%, 50%))';
     const foregroundColor = 'hsl(var(--nc, 220, 13%, 69%))';
     const red = `hsl(${getCssVariableValue('--er', '0 91% 71%')})`;
     const green = `hsl(${getCssVariableValue('--su', '158 64% 52%')})`;

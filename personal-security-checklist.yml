@@ -991,12 +991,6 @@
     details: >-
       Prevent permission-hungry apps from accessing your private data with [Island](https://awesome-privacy.xyz/security-tools/mobile-apps/island), a sandbox environment.
 
-  - point: Korzystaj z sieci Tor
-    priority: Pro
-    details: >-
-      [Orbot](https://awesome-privacy.xyz/security-tools/mobile-apps/orbot) provides
-      a system-wide Tor connection, which will help protect you from surveillance and public WiFi threats.
-
   - point: Unikaj niestandardowych klawiatur wirtualnych
     priority: Plus
     details: >-
@@ -1034,6 +1028,12 @@
       Where possible, consider using a secure browser to access sites,
       rather than installing dedicated applications.
 
+  - point: Korzystaj z sieci Tor
+    priority: Pro
+    details: >-
+      [Orbot](https://awesome-privacy.xyz/security-tools/mobile-apps/orbot) provides
+      a system-wide Tor connection, which will help protect you from surveillance and public WiFi threats.
+
   - point: Rozważ uruchomienie niestandardowego ROM-u (Android)
     priority: Pro
     details: >-
@@ -1050,7 +1050,7 @@
 
 - title: Komputer osobisty
   slug: komputer-osobisty
-  description: Securing your PC's operating system, data & activity
+  description: Zabezpieczanie systemu operacyjnego, danych i aktywności komputera
   icon: computer
   intro: >-
     Chociaż systemy Windows i OS X są łatwe w użyciu i wygodne, oba są dalekie od bezpieczeństwa. Twój system operacyjny zapewnia interfejs między sprzętem a aplikacjami, więc jeśli zostanie naruszony, może to mieć szkodliwe skutki.
@@ -1365,7 +1365,7 @@
   icon: finance
   intro: >-
     Oszustwa związane z kartami kredytowymi są najczęstszą formą kradzieży tożsamości (w samym tylko 2017 r. w Stanach Zjednoczonych zgłoszono 133 015 takich przypadków), a łączna strata wyniosła 905 mln dolarów, co stanowiło wzrost o 26% w porównaniu z rokiem poprzednim. Średnia kwota straty na osobę wyniosła w 2017 r. 429 dolarów. Bardziej niż kiedykolwiek ważne jest podjęcie podstawowych kroków, aby uchronić się przed staniem się ofiarą Uwaga dotycząca kart kredytowych: Karty kredytowe są wyposażone w technologie umożliwiające wykrywanie i powstrzymywanie niektórych nieuczciwych transakcji. Główni operatorzy płatności wdrażają te technologie, analizując ogromne ilości danych od posiadaczy kart, aby uzyskać jak najwięcej informacji na temat nawyków zakupowych każdej osoby. Dane te są wykorzystywane do identyfikacji oszustw, ale są również sprzedawane innym brokerom danych. Karty kredytowe są zatem dobre dla bezpieczeństwa, ale fatalne dla prywatności danych.
-    
+
   checklist:
   - point: Zarejestruj się, aby otrzymywać powiadomienia o oszustwach i monitorować kredyt
     priority: Start
