@@ -34,7 +34,7 @@ export default component$(() => {
       <div class="navbar bg-base-100">
         <div class="flex-1">
           <a href="/" class="btn btn-ghost text-xl flex capitalize">
-            <label for="my-drawer-3" aria-label="open sidebar" class="tooltip tooltip-bottom" data-tip="Zobacz wszystkie strony"><Icon class="mr-2" icon="shield" width={28} height={28}  /></label>
+            <label for="my-drawer-3" aria-label="open sidebar" class="tooltip tooltip-bottom" data-tip="Strona główna"><Icon class="mr-2" icon="shield" width={28} height={28}  /></label>
             <h1>Zabezpiecz Się</h1>
           </a>
         </div>
