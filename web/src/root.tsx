@@ -28,7 +28,7 @@ export default component$(() => {
         <RouterHead />
         <ServiceWorkerRegister />
       </head>
-      <body lang="pl" data-theme="dark" class="flex flex-col justify-between min-h-screen">
+      <body lang="pl" data-theme="dark" class="flex flex-col justify-between min-h-screen max-w-full overflow-x-hidden">
         <RouterOutlet />
       </body>
     </QwikCityProvider>
