@@ -2,8 +2,8 @@ import { component$ } from "@builder.io/qwik";
 
 export default component$(() => {
 
-  const ghLink = 'https://github.com/kporembinski/personal-security-checklist';
-  const licenseLink = 'https://github.com/kporembinski/personal-security-checklist/blob/master/LICENSE';
+  const ghLink = 'https://github.com/kporembinski/zabezpieczsie.pl';
+  const licenseLink = 'https://github.com/kporembinski/zabezpieczsie.pl/blob/master/LICENSE';
   const authorLink = 'https://aliciasykes.com';
   const translatorLink = 'https://kamilporembinski.pl';
 

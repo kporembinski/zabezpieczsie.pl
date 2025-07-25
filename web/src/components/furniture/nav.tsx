@@ -58,7 +58,7 @@ export default component$(() => {
               </details>
             </li>
             <li>
-              <a href="https://github.com/kporembinski/personal-security-checklist"
+              <a href="https://github.com/kporembinski/zabezpieczsie.pl"
                 class="tooltip flex tooltip-bottom" data-tip="Zobacz/edycja źródła i danych">
                 <Icon icon="github" width={16} height={16}  />GitHub
               </a>
