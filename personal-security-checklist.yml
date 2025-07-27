@@ -339,152 +339,113 @@
   - point: Posiadaj więcej niż jeden adres e-mail
     priority: Start
     details: >-
-      Consider using a different email address for security-critical communications from trivial mail such
-      as newsletters. This compartmentalization could reduce the amount of damage caused by a data breach,
-      and also make it easier to recover a compromised account.
+      Rozważ użycie innego adresu e-mail do komunikacji o znaczeniu krytycznym dla bezpieczeństwa, oddzielając ją od zwykłych wiadomości, takich jak biuletyny. Takie rozdzielenie może zmniejszyć szkody spowodowane naruszeniem bezpieczeństwa danych, a także ułatwić odzyskanie zainfekowanego konta.
 
   - point: Zachowaj prywatność adresu e-mail
     priority: Start
     details: >-
-      Do not share your primary email publicly, as mail addresses are often the starting point for most
-      phishing attacks.
+      Nie udostępniaj publicznie swojego głównego adresu e-mail, ponieważ adresy pocztowe są często punktem wyjścia dla większości ataków phishingowych.
 
   - point: Zabezpiecz swoje konto
     priority: Start
     details: >-
-      Use a long and unique password, enable 2FA and be careful while logging in. Your email account
-      provides an easy entry point to all your other online accounts for an attacker.
+      Używaj długiego i unikalnego hasła, włącz uwierzytelnianie dwuskładnikowe (2FA) i zachowaj ostrożność podczas logowania. Twoje konto e-mail stanowi dla atakującego łatwy punkt dostępu do wszystkich innych kont internetowych.
 
   - point: Wyłącz automatyczne ładowanie treści zdalnych
     priority: Start
     details: >-
-      Email messages can contain remote content such as images or stylesheets, often automatically loaded
-      from the server. You should disable this, as it exposes your IP address and device information, and
-      is often used for tracking. For more info, see [this article](https://www.theverge.com/2019/7/3/20680903/email-pixel-trackers-how-to-stop-images-automatic-download).
+      Wiadomości e-mail mogą zawierać zdalne treści, takie jak obrazy lub arkusze stylów, często ładowane automatycznie z serwera. Należy wyłączyć tę funkcję, ponieważ ujawnia ona adres IP i informacje o urządzeniu, a często jest wykorzystywana do śledzenia.
 
   - point: Użyj zwykłego tekstu
     priority: Plus
     details: >-
-      There are two main types of emails on the internet: plaintext and HTML. The former is strongly preferred
-      for privacy & security as HTML messages often include identifiers in links and inline images, which can
-      collect usage and personal data. There's also numerous risks of remote code execution targeting the HTML
-      parser of your mail client, which cannot be exploited if you are using plaintext. For more info, as well
-      as setup instructions for your mail provider, see [UsePlaintext.email](https://useplaintext.email/).
+      W Internecie istnieją dwa główne typy wiadomości e-mail: zwykły tekst i HTML. Pierwszy z nich jest zdecydowanie preferowany ze względu na prywatność i bezpieczeństwo, ponieważ wiadomości HTML często zawierają identyfikatory w linkach i obrazach wbudowanych, które mogą gromadzić dane dotyczące użytkowania i dane osobowe. Istnieje również wiele zagrożeń związanych z zdalnym wykonywaniem kodu skierowanym przeciwko parserowi HTML klienta poczty, które nie mogą zostać wykorzystane w przypadku korzystania z zwykłego tekstu. Więcej informacji, a także instrukcje konfiguracji dla dostawcy poczty, można znaleźć na stronie [UsePlaintext.email](https://useplaintext.email/).
 
   - point: Nie łącz aplikacji innych firm ze swoim kontem e-mail.
     priority: Plus
     details: >-
-      If you give a third-party app or plug-in full access to your inbox, they effectively have full unhindered
-      access to all your emails and their contents, which poses significant security and privacy risks.
+      Jeśli udzielisz aplikacji lub wtyczce innej firmy pełnego dostępu do swojej skrzynki odbiorczej, uzyska ona nieograniczony dostęp do wszystkich Twoich wiadomości e-mail i ich treści, co stanowi poważne zagrożenie dla bezpieczeństwa i prywatności.
 
   - point: Nie udostępniaj poufnych danych za pośrednictwem poczty elektronicznej.
     priority: Plus
     details: >-
-      Emails are very easily intercepted. Furthermore, you can’t be sure of how secure your recipient's
-      environment is. Therefore, emails cannot be considered safe for exchanging confidential information,
-      unless it is encrypted.
+      E-maile są bardzo łatwe do przechwycenia. Ponadto nie można mieć pewności co do bezpieczeństwa środowiska odbiorcy. Dlatego też e-maile nie mogą być uznane za bezpieczny sposób wymiany poufnych informacji, chyba że są one szyfrowane.
 
   - point: Rozważ przejście na bezpiecznego dostawcę poczty elektronicznej
     priority: Plus
     details: >-
-      Secure and reputable email providers such as [Forward Email](https://awesome-privacy.xyz/communication/encrypted-email/forward-email),
-      [ProtonMail](https://awesome-privacy.xyz/communication/mail-forwarding/protonmail),
-      and [Tutanota](https://awesome-privacy.xyz/communication/encrypted-email/tuta) allow for end-to-end
-      encryption, full privacy as well as more security-focused features. Unlike typical email providers, your
-      mailbox cannot be read by anyone but you, since all messages are encrypted.
+      Bezpieczni i renomowani dostawcy poczty elektronicznej, zapewniają szyfrowanie typu end-to-end, pełną prywatność, a także funkcje zwiększające bezpieczeństwo. W przeciwieństwie do typowych i bezpłatnych dostawców poczty elektronicznej, Twoja skrzynka pocztowa nie może być odczytana przez nikogo poza Tobą, ponieważ wszystkie wiadomości są szyfrowane.
 
   - point: Użyj inteligentnego klucza
     priority: Pro
     details: >-
-      OpenPGP does not support Forward secrecy, which means if either your or the recipient's private key is
-      ever stolen, all previous messages encrypted with it will be exposed. Therefore, you should take great
-      care to keep your private keys safe. One method of doing so, is to use a USB Smart Key to sign or decrypt
-      messages, allowing you to do so without your private key leaving the USB device.
+      OpenPGP nie obsługuje funkcji Forward secrecy, co oznacza, że jeśli klucz prywatny użytkownika lub odbiorcy zostanie kiedykolwiek skradziony, wszystkie poprzednie wiadomości zaszyfrowane za jego pomocą zostaną ujawnione. Dlatego należy bardzo uważać, aby chronić swoje klucze prywatne. Jedną z metod jest użycie klucza USB Smart Key do podpisywania lub odszyfrowywania wiadomości, co pozwala na wykonanie tych czynności bez konieczności opuszczania klucza prywatnego przez urządzenie USB.
 
   - point: Użyj aliasingu / anonimowego przekazywania
     priority: Pro
     details: >-
-      Email aliasing allows messages to be sent to [anything]@my-domain.com and still land in your primary inbox.
-      Effectively allowing you to use a different, unique email address for each service you sign up for. This means
-      if you start receiving spam, you can block that alias and determine which company leaked your email address.
+      Aliasy adresów e-mail umożliwiają wysyłanie wiadomości na adres [dowolny]@moja-domena.com, które nadal trafiają do głównej skrzynki odbiorczej. Dzięki temu można używać innego, unikalnego adresu e-mail dla każdej usługi, z której się korzysta. Oznacza to, że w przypadku otrzymywania spamu można zablokować ten alias i ustalić, która firma ujawniła adres e-mail.
 
   - point: Podadresowanie
     priority: Plus
     details: >-
-      An alternative to aliasing is subaddressing, where anything after the `+` symbol is omitted during mail delivery.
-      This enables you to keep track of who shared/ leaked your email address, but unlike aliasing, it will not protect
-      against your real address being revealed.
+      Alternatywą dla aliasów jest subadresowanie, w którym wszystko po symbolu „+” jest pomijane podczas dostarczania poczty. Umożliwia to śledzenie, kto udostępnił/ujawnił Twój adres e-mail, ale w przeciwieństwie do aliasów nie chroni przed ujawnieniem Twojego prawdziwego adresu.
 
   - point: Użyj domeny niestandardowej
     priority: Pro
     details: >-
-      Using a custom domain means that you are not dependent on the address assigned by your mail provider. So you can
-      easily switch providers in the future and do not need to worry about a service being discontinued.
+      Korzystanie z domeny niestandardowej oznacza, że nie jesteś uzależniony od adresu przypisanego przez dostawcę poczty. Dzięki temu możesz w przyszłości łatwo zmienić dostawcę i nie musisz martwić się o zaprzestanie świadczenia usługi.
 
   - point: Synchronizacja z klientem w celu wykonania kopii zapasowej
     priority: Pro
     details: >-
-      To avoid losing temporary or permanent access to your emails during an unplanned event (such as an outage or
-      account lock), Thunderbird can sync/ backup messages from multiple accounts via IMAP and store locally on your
-      primary device.
+      Aby uniknąć utraty tymczasowego lub stałego dostępu do wiadomości e-mail podczas nieplanowanego zdarzenia (takiego jak awaria lub blokada konta), Thunderbird może synchronizować/tworzyć kopie zapasowe wiadomości z wielu kont za pośrednictwem protokołu IMAP i przechowywać je lokalnie na głównym urządzeniu.
 
   - point: Uważaj na podpisy w wiadomościach e-mail
     priority: Pro
     details: >-
-      You do not know how secure of an email environment the recipient of your message may have. There are several
-      extensions that automatically crawl messages, and create a detailed database of contact information based upon
-      email signatures.
+      Nie wiesz, jak bezpieczne jest środowisko poczty elektronicznej odbiorcy Twojej wiadomości. Istnieje kilka rozszerzeń, które automatycznie przeszukują wiadomości i tworzą szczegółową bazę danych informacji kontaktowych na podstawie podpisów e-mailowych.
 
   - point: Uważaj na automatyczne odpowiedzi
     priority: Pro
     details: >-
-      Out-of-office automatic replies are very useful for informing people there will be a delay in replying, but all
-      too often people reveal too much information- which can be used in social engineering and targeted attacks.
+      Automatyczne odpowiedzi o nieobecności w biurze są bardzo przydatne do informowania osób, że odpowiedź będzie opóźniona, ale zbyt często ujawniają one zbyt wiele informacji, które mogą zostać wykorzystane w socjotechnice i ukierunkowanych atakach.
 
   - point: Wybierz odpowiedni protokół pocztowy
     priority: Pro
     details: >-
-      Do not use outdated protocols (below IMAPv4 or POPv3), both have known vulnerabilities and out-dated security.
+      Nie należy używać przestarzałych protokołów (poniżej IMAPv4 lub POPv3), ponieważ oba mają znane luki w zabezpieczeniach i przestarzałe zabezpieczenia.
 
   - point: Samodzielne hostowanie
     priority: Pro
     details: >-
-      Self-hosting your own mail server is not recommended for non-advanced users, since correctly securing it is
-      critical yet requires strong networking knowledge.
+      Samodzielne hostowanie własnego serwera pocztowego nie jest zalecane dla użytkowników nieposiadających zaawansowanej wiedzy, ponieważ prawidłowe zabezpieczenie serwera ma kluczowe znaczenie, ale wymaga dużej wiedzy z zakresu sieci.
 
   - point: Zawsze używaj portów TLS
     priority: Pro
     details: >-
-      There are SSL options for POP3, IMAP, and SMTP as standard TCP/IP ports. They are easy to use, and widely
-      supported so should always be used instead of plaintext email ports.
+      Dostępne są opcje SSL dla protokołów POP3, IMAP i SMTP jako standardowe porty TCP/IP. Są one łatwe w użyciu i szeroko obsługiwane, dlatego zawsze należy ich używać zamiast portów poczty elektronicznej w postaci zwykłego tekstu.
 
   - point: Dostępność DNS
     priority: Pro
     details: >-
-      For self-hosted mail servers, to prevent DNS problems impacting availability- use at least 2 MX records, with
-      secondary and tertiary MX records for redundancy when the primary MX record fails.
+      W przypadku samodzielnie hostowanych serwerów pocztowych, aby zapobiec problemom z DNS wpływającym na dostępność, należy używać co najmniej 2 rekordów MX, z drugorzędnymi i trzeciorzędnymi rekordami MX zapewniającymi nadmiarowość na wypadek awarii głównego rekordu MX.
 
   - point: Zapobieganie atakom DDoS i atakom brute force
     priority: Pro
     details: >-
-      For self-hosted mail servers (specifically SMTP), limit your total number of simultaneous connections, and maximum
-      connection rate to reduce the impact of attempted bot attacks.
+      W przypadku samodzielnie hostowanych serwerów pocztowych (w szczególności SMTP) należy ograniczyć całkowitą liczbę jednoczesnych połączeń oraz maksymalną szybkość połączeń, aby zmniejszyć wpływ prób ataków botów.
 
   - point: Utrzymanie czarnej listy adresów IP
     priority: Pro
     details: >-
-      For self-hosted mail servers, you can improve spam filters and harden security, through maintaining an up-to-date
-      local IP blacklist and a spam URI realtime block lists to filter out malicious hyperlinks.
+      W przypadku samodzielnie hostowanych serwerów pocztowych można poprawić filtry antyspamowe i wzmocnić zabezpieczenia poprzez utrzymywanie aktualnej lokalnej czarnej listy adresów IP oraz listy adresów URI blokowanych w czasie rzeczywistym w celu odfiltrowania złośliwych hiperłączy.
   color: teal
   softwareLinks:
-    - title: Secure Email Providers
-      url: https://github.com/Lissy93/awesome-privacy#encrypted-email
-    - title: Mail Forwarding
-      url: https://github.com/Lissy93/awesome-privacy#anonymous-mail-forwarding
-    - title: Pre-Configured Mail Servers
-      url: https://github.com/Lissy93/awesome-privacy#pre-configured-mail-servers
-    - title: Email Clients
-      url: https://github.com/Lissy93/awesome-privacy#email-clients
+    - title: Dostawcy bezpiecznej poczty elektronicznej
+      url: https://www.privacytools.io/privacy-email
+    - title: Ukryj mój adres email i iCloud+
+      url: https://support.apple.com/pl-pl/guide/icloud/mme38e1602db/icloud
 
 - title: Komunikacja
   slug: komunikacja
@@ -497,125 +458,100 @@
   - point: Korzystaj wyłącznie z komunikatorów z pełnym szyfrowaniem typu end-to-end.
     priority: Start
     details: >-
-      End-to-end encryption is a system of communication where messages are encrypted on your device and
-      not decrypted until they reach the intended recipient. This ensures that any actor who intercepts
-      traffic cannot read the message contents, nor can anybody with access to the central servers where
-      data is stored.
+      Szyfrowanie typu end-to-end to system komunikacji, w którym wiadomości są szyfrowane na urządzeniu użytkownika i nie są odszyfrowywane, dopóki nie dotrą do adresata. Dzięki temu żadna osoba przechwytująca ruch sieciowy nie może odczytać treści wiadomości, podobnie jak żadna osoba mająca dostęp do centralnych serwerów, na których przechowywane są dane.
 
   - point: Korzystaj wyłącznie z platform komunikacyjnych typu open source.
     priority: Start
     details: >-
-      If code is open source then it can be independently examined and audited by anyone qualified to do
-      so, to ensure that there are no backdoors, vulnerabilities, or other security issues.
+      Jeśli kod jest otwarty, może być niezależnie sprawdzany i kontrolowany przez każdą osobę posiadającą odpowiednie kwalifikacje, aby upewnić się, że nie ma żadnych tylnych drzwi, luk w zabezpieczeniach ani innych problemów związanych z bezpieczeństwem.
 
   - point: Korzystaj z „wiarygodnej” platformy komunikacyjnej
     priority: Start
     details: >-
-      When selecting an encrypted messaging app, ensure it's fully open source, stable, actively maintained,
-      and ideally backed by reputable developers.
+      Wybierając aplikację do szyfrowania wiadomości, upewnij się, że jest ona w pełni otwarta, stabilna, aktywnie utrzymywana i najlepiej wspierana przez renomowanych programistów.
 
   - point: Sprawdź ustawienia zabezpieczeń
     priority: Start
     details: >-
-      Enable security settings, including contact verification, security notifications, and encryption.
-      Disable optional non-security features such as read receipt, last online, and typing notification.
+      Włącz ustawienia zabezpieczeń, w tym weryfikację kontaktów, powiadomienia dotyczące bezpieczeństwa i szyfrowanie. Wyłącz opcjonalne funkcje niezwiązane z bezpieczeństwem, takie jak potwierdzenie odczytu, ostatnia aktywność online i powiadomienia o pisaniu.
 
   - point: Upewnij się, że środowisko odbiorców jest bezpieczne.
     priority: Start
     details: >-
-      Your conversation can only be as secure as the weakest link. Often the easiest way to infiltrate a
-      communications channel is to target the individual or node with the least protection.
+      Twoja rozmowa może być tak bezpieczna, jak najsłabsze ogniwo. Często najłatwiejszym sposobem na infiltrację kanału komunikacyjnego jest skupienie się na osobie lub węźle o najsłabszej ochronie.
 
   - point: Wyłącz usługi w chmurze
     priority: Start
     details: >-
-      Some mobile messaging apps offer a web or desktop companion. This not only increases attack surface but
-      it has been linked to several critical security issues, and should therefore be avoided, if possible.
+      Niektóre aplikacje do przesyłania wiadomości mobilnych oferują wersję internetową lub komputerową. Nie tylko zwiększa to powierzchnię ataku, ale jest również powiązane z kilkoma krytycznymi problemami bezpieczeństwa, dlatego w miarę możliwości należy tego unikać.
 
   - point: Bezpieczne czaty grupowe
     priority: Start
     details: >-
-      The risk of compromise rises exponentially, the more participants are in a group, as the attack surface
-      increases. Periodically check that all participants are legitimate.
+      Ryzyko naruszenia bezpieczeństwa rośnie wykładniczo wraz ze wzrostem liczby uczestników w grupie, ponieważ zwiększa się powierzchnia ataku. Należy okresowo sprawdzać, czy wszyscy uczestnicy są uprawnieni.
 
   - point: Stwórz bezpieczne środowisko do komunikacji
     priority: Start
     details: >-
-      There are several stages where your digital communications could be monitored or intercepted. This includes:
-      your or your participants' device, your ISP, national gateway or government logging, the messaging provider,
-      the servers.
+      Istnieje kilka etapów, na których Twoja komunikacja cyfrowa może być monitorowana lub przechwytywana. Obejmują one: urządzenie Twoje lub uczestników, dostawcę usług internetowych, krajową bramę lub rejestrację rządową, dostawcę usług przesyłania wiadomości, serwery.
 
   - point: Uzgodnij plan komunikacji
     priority: Plus
     details: >-
-      In certain situations, it may be worth making a communication plan. This should include primary and backup
-      methods of securely getting in hold with each other.
+      W niektórych sytuacjach warto opracować plan komunikacji. Powinien on obejmować podstawowe i zapasowe metody bezpiecznego nawiązywania kontaktu.
 
   - point: Usuń metadane z multimediów
     priority: Plus
     details: >-
-      Metadata is "Data about Data" or additional information attached to a file or transaction. When you send a
-      photo, audio recording, video, or document you may be revealing more than you intended to.
+      Metadane to „dane o danych” lub dodatkowe informacje dołączone do pliku lub transakcji. Wysyłając zdjęcie, nagranie audio, wideo lub dokument, możesz ujawnić więcej informacji, niż zamierzałeś.
 
   - point: Usuwanie adresów URL
     priority: Plus
     details: >-
-      Sending links via various services can unintentionally expose your personal information. This is because,
-      when a thumbnail or preview is generated- it happens on the client-side.
+      Wysyłanie linków za pośrednictwem różnych serwisów może nieumyślnie ujawnić Twoje dane osobowe. Dzieje się tak, ponieważ gdy generowana jest miniatura lub podgląd, odbywa się to po stronie klienta.
 
   - point: Zweryfikuj odbiorcę
     priority: Plus
     details: >-
-      Always ensure you are talking to the intended recipient, and that they have not been compromised. One method
-      for doing so is to use an app which supports contact verification.
+      Zawsze upewnij się, że rozmawiasz z zamierzonym odbiorcą i że nie został on zhakowany. Jedną z metod jest użycie aplikacji, która obsługuje weryfikację kontaktów.
 
   - point: Włącz wiadomości efemeryczne
     priority: Plus
     details: >-
-      Self-destructing messages is a feature that causes your messages to automatically delete after a set amount
-      of time. This means that if your device is lost, stolen, or seized, an adversary will only have access to the
-      most recent communications.
+      Wiadomości samoniszczące się to funkcja, która powoduje automatyczne usuwanie wiadomości po upływie określonego czasu. Oznacza to, że w przypadku zgubienia, kradzieży lub zajęcia urządzenia przeciwnik będzie miał dostęp tylko do najnowszych wiadomości.
 
   - point: Unikaj SMSów
     priority: Plus
     details: >-
-      SMS may be convenient, but it's not secure. It is susceptible to threats such as interception, sim swapping,
-      manipulation, and malware.
+      SMS-y mogą być wygodne, ale nie są bezpieczne. Są podatne na zagrożenia, takie jak przechwycenie, podmiana karty SIM, manipulacja i złośliwe oprogramowanie.
 
   - point: Uważaj na trackery
     priority: Plus
     details: >-
-      Be wary of messaging applications with trackers, as the detailed usage statistics they collect are often very
-      invasive, and can sometimes reveal your identity as well as personal information that you would otherwise not
-      intend to share.
+      Należy zachować ostrożność w przypadku aplikacji do przesyłania wiadomości z modułami śledzącymi, ponieważ szczegółowe statystyki użytkowania, które gromadzą, są często bardzo inwazyjne i mogą czasami ujawniać tożsamość użytkownika, a także dane osobowe, których w innym przypadku nie chciałby on udostępniać.
 
   - point: Rozważ jurysdykcję
     priority: Pro
     details: >-
-      The jurisdictions where the organisation is based, and data is hosted should also be taken into account.
+      Należy również wziąć pod uwagę jurysdykcje, w których organizacja ma siedzibę i w których przechowywane są dane.
 
   - point: Korzystaj z anonimowej platformy
     priority: Pro
     details: >-
-      If you believe you may be targeted, you should opt for an anonymous messaging platform that does not require
-      a phone number, or any other personally identifiable information to sign up or use.
+      Jeśli uważasz, że możesz być celem ataku, powinieneś wybrać anonimową platformę komunikacyjną, która nie wymaga podania numeru telefonu ani żadnych innych danych osobowych do rejestracji lub korzystania z niej.
 
   - point: Upewnij się, że funkcja Forward Secrecy jest obsługiwana.
     priority: Pro
     details: >-
-      Opt for a platform that implements forward secrecy. This is where your app generates a new encryption key
-      for every message.
+      Wybierz platformę, która wdraża forward secrecy. W tym przypadku Twoja aplikacja generuje nowy klucz szyfrujący dla każdej wiadomości.
 
   - point: Rozważ platformę zdecentralizowaną
     priority: Pro
     details: >-
-      If all data flows through a central provider, you have to trust them with your data and meta-data. You cannot
-      verify that the system running is authentic without back doors.
+      Jeśli wszystkie dane przepływają przez centralnego dostawcę, musisz mu powierzyć swoje dane i metadane. Nie możesz sprawdzić, czy system działa autentycznie, bez tylnych drzwi.
   softwareLinks:
-    - title: Secure Messaging Apps
-      url: https://github.com/Lissy93/awesome-privacy#encrypted-messaging
-    - title: P2P Messaging Platforms
-      url: https://github.com/Lissy93/awesome-privacy#p2p-messaging
+    - title: Prywatne komunikatory
+      url: https://www.privacytools.io/privacy-messaging
   color: cyan
 
 - title: Social Media
@@ -629,104 +565,83 @@
   - point: Zabezpiecz swoje konto
     priority: Start
     details: >-
-      Social media profiles get stolen or taken over all too often. To protect your account: use a unique
-      and strong password, and enable 2-factor authentication.
+      Profile w mediach społecznościowych są zbyt często kradzione lub przejmowane. Aby chronić swoje konto: używaj unikalnego i silnego hasła oraz włącz uwierzytelnianie dwuskładnikowe.
 
   - point: Sprawdź ustawienia prywatności
     priority: Start
     details: >-
-      Most social networks allow you to control your privacy settings. Ensure that you are comfortable with
-      what data you are currently exposing and to whom.
+      Większość serwisów społecznościowych umożliwia kontrolowanie ustawień prywatności. Upewnij się, że nie masz zastrzeżeń co do tego, jakie dane obecnie udostępniasz i komu.
 
   - point: Traktuj wszystkie interakcje jako publiczne
     priority: Start
     details: >-
-      There are still numerous methods of viewing a users 'private' content across many social networks.
-      Therefore, before uploading, posting or commenting on anything, think "Would I mind if this was totally public?"
+      Wciąż istnieje wiele sposobów przeglądania „prywatnych” treści użytkowników w wielu sieciach społecznościowych. Dlatego przed przesłaniem, opublikowaniem lub skomentowaniem czegokolwiek należy zadać sobie pytanie: „Czy nie miałbym nic przeciwko, gdyby ta treść była całkowicie publiczna?”.
 
   - point: Traktuj wszystkie interakcje jako trwałe
     priority: Start
     details: >-
-      Pretty much every post, comment, photo etc is being continuously backed up by a myriad of third-party
-      services, who archive this data and make it indexable and publicly available almost forever.
+      Praktycznie każdy post, komentarz, zdjęcie itp. jest nieustannie archiwizowany przez niezliczone usługi stron trzecich, które archiwizują te dane i sprawiają, że są one indeksowalne i publicznie dostępne niemal na zawsze.
 
   - point: Nie ujawniaj zbyt wiele
     priority: Start
     details: >-
-      Profile information creates a goldmine of info for hackers, the kind of data that helps them personalize
-      phishing scams. Avoid sharing too much detail (DoB, Hometown, School etc).
+      Informacje profilowe stanowią dla hakerów prawdziwą kopalnię danych, które pomagają im personalizować oszustwa phishingowe. Unikaj podawania zbyt wielu szczegółów (data urodzenia, miasto rodzinne, szkoła itp.).
 
   - point: Uważaj, co przesyłasz
     priority: Start
     details: >-
-      Status updates, comments, check-ins and media can unintentionally reveal a lot more than you intended
-      them to. This is especially relevant to photos and videos, which may show things in the background.
+      Aktualizacje statusu, komentarze, zameldowania i multimedia mogą nieumyślnie ujawnić znacznie więcej, niż zamierzałeś. Dotyczy to zwłaszcza zdjęć i filmów, które mogą pokazywać rzeczy w tle.
 
   - point: Nie udostępniaj adresu e-mail ani numeru telefonu
     priority: Start
     details: >-
-      Posting your real email address or mobile number, gives hackers, trolls and spammers more munition to
-      use against you, and can also allow separate aliases, profiles or data points to be connected.
+      Podanie prawdziwego adresu e-mail lub numeru telefonu komórkowego daje hakerom, trollom i spamerom więcej amunicji do wykorzystania przeciwko Tobie, a także może umożliwić połączenie oddzielnych aliasów, profili lub punktów danych.
 
   - point: Nie udzielaj niepotrzebnych uprawnień
     priority: Start
     details: >-
-      By default many of the popular social networking apps will ask for permission to access your contacts,
-      call log, location, messaging history etc. If they don’t need this access, don’t grant it.
+      Domyślnie wiele popularnych aplikacji społecznościowych prosi o pozwolenie na dostęp do kontaktów, historii połączeń, lokalizacji, historii wiadomości itp. Jeśli nie potrzebują tego dostępu, nie udzielaj go.
 
   - point: Uważaj na integracje stron trzecich
     priority: Start
     details: >-
-      Avoid signing up for accounts using a Social Network login, revoke access to social apps you no longer
-      use.
+      Unikaj rejestrowania się na kontach przy użyciu loginu z serwisów społecznościowych, cofnij dostęp do aplikacji społecznościowych, z których już nie korzystasz.
 
   - point: Unikaj publikowania danych geograficznych, gdy nadal jesteś na miejscu
     priority: Start
     details: >-
-      If you plan to share any content that reveals a location, then wait until you have left that place.
-      This is particularly important when you are taking a trip, at a restaurant, campus, hotel/resort, public
-      building or airport.
+      Jeśli planujesz udostępnić treści, które ujawniają lokalizację, poczekaj, aż opuścisz dane miejsce. Jest to szczególnie ważne podczas podróży, w restauracji, na terenie kampusu, w hotelu/ośrodku wypoczynkowym, budynku publicznym lub na lotnisku.
 
   - point: Usuń metadane przed przesłaniem multimediów
     priority: Plus
     details: >-
-      Most smartphones and some cameras automatically attach a comprehensive set of additional data (called
-      EXIF data) to each photograph. Remove this data before uploading.
+      Większość smartfonów i niektóre aparaty automatycznie dołączają do każdego zdjęcia obszerny zestaw dodatkowych danych (zwanych danymi EXIF). Przed przesłaniem zdjęć należy usunąć te dane.
 
   - point: Wdrożenie ukrywania obrazów
     priority: Pro
     details: >-
-      Tools like Fawkes can be used to very subtly, slightly change the structure of faces within photos in a
-      way that is imperceptible by humans, but will prevent facial recognition systems from being able to recognize
-      a given face.
+      Narzędzia takie jak Fawkes mogą być używane do bardzo subtelnej, niewielkiej zmiany struktury twarzy na zdjęciach w sposób niewidoczny dla ludzi, ale uniemożliwiający systemom rozpoznawania twarzy rozpoznanie danej twarzy.
 
   - point: Rozważ spoofing GPS w pobliżu domu
     priority: Pro
     details: >-
-      Even if you yourself never use social media, there is always going to be others who are not as careful,
-      and could reveal your location.
+      Nawet jeśli sam nigdy nie korzystasz z mediów społecznościowych, zawsze znajdą się osoby, które nie są tak ostrożne i mogą ujawnić Twoją lokalizację.
 
   - point: Rozważ fałszywe informacje
     priority: Pro
     details: >-
-      If you just want to read, and do not intend on posting too much- consider using an alias name, and false
-      contact details.
+      Jeśli chcesz tylko czytać i nie zamierzasz zbyt często publikować postów, rozważ użycie pseudonimu i fałszywych danych kontaktowych.
 
   - point: Brak kont w mediach społecznościowych
     priority: Pro
     details: >-
-      Social media is fundamentally un-private, so for maximum online security and privacy, avoid using any
-      mainstream social networks.
+      Media społecznościowe są z natury nieprywatne, więc aby zapewnić sobie maksymalne bezpieczeństwo i prywatność w Internecie, unikaj korzystania z popularnych serwisów społecznościowych.
 
   softwareLinks:
-    - title: Alternative Social Media
-      url: https://github.com/Lissy93/awesome-privacy#social-networks
-    - title: Alternative Video Platforms
-      url: https://github.com/Lissy93/awesome-privacy#video-platforms
-    - title: Alternative Blogging Platforms
-      url: https://github.com/Lissy93/awesome-privacy#blogging-platforms
-    - title: News Readers and Aggregation
-      url: https://github.com/Lissy93/awesome-privacy#news-readers-and-aggregation
+    - title: Mastodon
+      url: https://mastodon.social/
+    - title: Aether
+      url: https://getaether.net/
   color: blue
 
 - title: Sieć
@@ -740,169 +655,131 @@
   - point: Użyj VPN
     priority: Start
     details: >-
-      Use a reputable, paid-for VPN. This can help protect sites you visit from logging your real IP, reduce
-      the amount of data your ISP can collect, and increase protection on public WiFi.
+      Korzystaj z renomowanej, płatnej sieci VPN. Pomaga to chronić odwiedzane strony przed rejestrowaniem Twojego prawdziwego adresu IP, ogranicza ilość danych, które może gromadzić Twój dostawca usług internetowych.
 
   - point: Zmień hasło routera
     priority: Start
     details: >-
-      After getting a new router, change the password. Default router passwords are publicly available,
-      meaning anyone within proximity would be able to connect.
+      Po zakupie nowego routera należy zmienić hasło. Domyślne hasła routerów są publicznie dostępne, co oznacza, że każda osoba znajdująca się w pobliżu może się z nimi połączyć.
 
   - point: Użyj protokołu WPA2 i silnego hasła
     priority: Start
     details: >-
-      There are different authentication protocols for connecting to WiFi. Currently, the most secure options
-      are WPA2 and WPA3 (on newer routers).
+      Istnieją różne protokoły uwierzytelniania służące do łączenia się z siecią WiFi. Obecnie najbezpieczniejsze opcje to WPA2 i WPA3 (w nowszych routerach).
 
   - point: Aktualizuj oprogramowanie routera
     priority: Start
     details: >-
-      Manufacturers release firmware updates that fix security vulnerabilities, implement new standards, and
-      sometimes add features or improve the performance of your router.
+      Producenci wydają aktualizacje oprogramowania sprzętowego, które naprawiają luki w zabezpieczeniach, wdrażają nowe standardy, a czasami dodają funkcje lub poprawiają wydajność routera.
 
   - point: Wdrożenie sieci VPN obejmującej całą sieć
     priority: Plus
     details: >-
-      If you configure your VPN on your router, firewall, or home server, then traffic from all devices will
-      be encrypted and routed through it, without needing individual VPN apps.
+      Jeśli skonfigurujesz VPN na routerze, zaporze sieciowej lub serwerze domowym, ruch ze wszystkich urządzeń będzie szyfrowany i kierowany przez nie, bez konieczności instalowania indywidualnych aplikacji VPN.
 
   - point: Ochrona przed wyciekami DNS
     priority: Plus
     details: >-
-      When using a VPN, it is extremely important to exclusively use the DNS server of your VPN provider or
-      secure service.
+      Podczas korzystania z VPN niezwykle ważne jest, aby używać wyłącznie serwera DNS dostawcy VPN lub bezpiecznej usługi.
 
   - point: Użyj bezpiecznego protokołu VPN
     priority: Plus
     details: >-
-      OpenVPN and WireGuard are open source, lightweight, and secure tunneling protocols. Avoid using PPTP
-      or SSTP.
+      OpenVPN i WireGuard to otwarte, lekkie i bezpieczne protokoły tunelowania. Należy unikać stosowania PPTP lub SSTP.
 
   - point: Bezpieczny DNS
     priority: Plus
     details: >-
-      Use DNS-over-HTTPS which performs DNS resolution via the HTTPS protocol, encrypting data between you
-      and your DNS resolver.
+      Użyj DNS-over-HTTPS, który wykonuje rozpoznawanie DNS za pośrednictwem protokołu HTTPS, szyfrując dane między Tobą a Twoim serwerem rozpoznającym DNS.
 
   - point: Unikaj darmowego routera od dostawcy usług internetowych.
     priority: Plus
     details: >-
-      Typically they’re manufactured cheaply in bulk in China, with insecure propriety firmware that doesn't
-      receive regular security updates.
+      Zazwyczaj są one produkowane tanio w Chinach, z niebezpiecznym oprogramowaniem, które nie otrzymuje regularnych aktualizacji zabezpieczeń.
 
   - point: Dodaj adresy MAC do białej listy
     priority: Plus
     details: >-
-      You can whitelist MAC addresses in your router settings, disallowing any unknown devices to immediately
-      connect to your network, even if they know your credentials.
+      W ustawieniach routera można dodać adresy MAC do białej listy, uniemożliwiając nieznanym urządzeniom natychmiastowe połączenie się z siecią, nawet jeśli znają one dane uwierzytelniające.
 
   - point: Zmień lokalny adres IP routera
     priority: Plus
     details: >-
-      It is possible for a malicious script in your web browser to exploit a cross-site scripting vulnerability,
-      accessing known-vulnerable routers at their local IP address and tampering with them.
+      Złośliwy skrypt w przeglądarce internetowej może wykorzystać lukę w zabezpieczeniach typu cross-site scripting, uzyskując dostęp do znanych podatnych routerów pod ich lokalnym adresem IP i manipulując nimi.
 
   - point: Nie ujawniaj danych osobowych w SSID
     priority: Plus
     details: >-
-      You should update your network name, choosing an SSID that does not identify you, include your flat
-      number/address, and does not specify the device brand/model.
+      Należy zaktualizować nazwę sieci, wybierając identyfikator SSID, który nie pozwala na identyfikację użytkownika, nie zawiera numeru mieszkania/adresu i nie określa marki/modelu urządzenia.
 
   - point: Publiczne listy z sieciami SSID
     priority: Plus
     details: >-
-      WiFi SSIDs are scanned, logged, and then published on various websites, which is a serious privacy
-      concern for some.
+      Identyfikatory SSID sieci WiFi są skanowane, rejestrowane, a następnie publikowane na różnych stronach internetowych, co dla niektórych stanowi poważny problem związany z prywatnością.
 
   - point: Ukryj swój identyfikator SSID
     priority: Plus
     details: >-
-      Your router's Service Set Identifier is simply the network name. If it is not visible, it may receive
-      less abuse.
+      Identyfikator zestawu usług routera to po prostu nazwa sieci. Jeśli nie jest widoczna, może być mniej narażona na nadużycia.
 
   - point: Wyłącz WPS
     priority: Plus
     details: >-
-      Wi-Fi Protected Setup provides an easier method to connect, without entering a long WiFi password, but
-      WPS introduces a series of major security issues.
+      Wi-Fi Protected Setup zapewnia łatwiejszy sposób łączenia się bez konieczności wprowadzania długiego hasła WiFi, ale WPS wprowadza szereg poważnych problemów związanych z bezpieczeństwem.
 
   - point: Wyłącz UPnP
     priority: Plus
     details: >-
-      Universal Plug and Play allows applications to automatically forward a port on your router, but it has
-      a long history of serious security issues.
+      Universal Plug and Play pozwala aplikacjom na automatyczne przekierowanie portu w routerze, ale ma długą historię poważnych problemów związanych z bezpieczeństwem.
 
   - point: Korzystaj z sieci dla gości
     priority: Plus
     details: >-
-      Do not grant access to your primary WiFi network to visitors, as it enables them to interact with other
-      devices on the network.
+      Nie udzielaj gościom dostępu do swojej głównej sieci WiFi, ponieważ umożliwia im to interakcję z innymi urządzeniami w sieci.
 
   - point: Zmień domyślny adres IP routera
     priority: Plus
     details: >-
-      Modifying your router admin panel's default IP address will make it more difficult for malicious scripts
-      targeting local IP addresses.
+      Zmiana domyślnego adresu IP panelu administracyjnego routera utrudni działanie złośliwych skryptów atakujących lokalne adresy IP.
 
   - point: Wyłącz nieużywane procesy i usługi na routerze
     priority: Plus
     details: >-
-      Services like Telnet and SSH that provide command-line access to devices should never be exposed to the
-      internet and should also be disabled on the local network unless they're actually needed.
+      Usługi takie jak Telnet i SSH, które zapewniają dostęp do urządzeń za pomocą wiersza poleceń, nigdy nie powinny być udostępniane w Internecie i powinny być również wyłączone w sieci lokalnej, chyba że są rzeczywiście potrzebne.
 
   - point: Nie pozostawiaj otwartych portów
     priority: Plus
     details: >-
-      Close any open ports on your router that are not needed. Open ports provide an easy entrance for hackers.
+      Zamknij wszystkie otwarte porty w routerze, które nie są potrzebne. Otwarte porty stanowią łatwe wejście dla hakerów.
 
   - point: Wyłącz nieużywane protokoły zdalnego dostępu
     priority: Plus
     details: >-
-      When protocols such as PING, Telnet, SSH, UPnP, and HNAP etc are enabled, they allow your router to be
-      probed from anywhere in the world.
+      Gdy protokoły takie jak PING, Telnet, SSH, UPnP, HNAP itp. są włączone, umożliwiają one skanowanie routera z dowolnego miejsca na świecie.
 
   - point: Wyłącz zarządzanie w chmurze
     priority: Plus
     details: >-
-      You should treat your router's admin panel with the utmost care, as considerable damage can be caused
-      if an attacker is able to gain access.
+      Należy traktować panel administracyjny routera z najwyższą ostrożnością, ponieważ uzyskanie dostępu przez osobę nieuprawnioną może spowodować znaczne szkody.
 
   - point: Prawidłowo zarządzaj zasięgiem
     priority: Plus
     details: >-
-      It's common to want to pump your router's range to the max, but if you reside in a smaller flat, your
-      attack surface is increased when your WiFi network can be picked up across the street.
+      Często zdarza się, że użytkownicy chcą maksymalnie zwiększyć zasięg routera, ale jeśli mieszkasz w mniejszym mieszkaniu, powierzchnia ataku jest większa, gdy sieć WiFi może być przechwycona po drugiej stronie ulicy.
 
   - point: Przekieruj cały ruch przez Tor
     priority: Pro
     details: >-
-      VPNs have their weaknesses. For increased security, route all your internet traffic through the [Tor](https://awesome-privacy.xyz/networking/mix-networks/tor)
-      network.
+      Sieci VPN mają swoje słabe strony. Aby zwiększyć bezpieczeństwo, przekieruj cały ruch internetowy przez sieć Tor.
 
   - point: Wyłącz WiFi na wszystkich urządzeniach
     priority: Pro
     details: >-
-      Connecting to even a secure WiFi network increases your attack surface. Disabling your home WiFi and
-      connect each device via Ethernet.
+      Podłączenie się nawet do bezpiecznej sieci WiFi zwiększa powierzchnię ataku. Wyłącz domową sieć WiFi i podłącz każde urządzenie za pomocą kabla Ethernet.
   color: violet
   softwareLinks:
-  - title: Virtual Private Networks
-    url: https://github.com/Lissy93/awesome-privacy#virtual-private-networks
-  - title: Mix Networks
-    url: https://github.com/Lissy93/awesome-privacy#mix-networks
-  - title: Router Firmware
-    url: https://github.com/Lissy93/awesome-privacy#router-firmware
-  - title: Open Source Proxies
-    url: https://github.com/Lissy93/awesome-privacy#proxies
-  - title: DNS Providers
-    url: https://github.com/Lissy93/awesome-privacy#dns
-  - title: Firewalls
-    url: https://github.com/Lissy93/awesome-privacy#firewalls
-  - title: Network Analysis Tools
-    url: https://github.com/Lissy93/awesome-privacy#network-analysis
-  - title: Self-Hosted Network Security Tools
-    url: https://github.com/Lissy93/awesome-privacy#self-hosted-network-security
+  - title: Mullvad VPN
+    url: https://mullvad.net/
 
 - title: Urządzenia mobilne
   slug: urzadzenia-mobilne
@@ -915,138 +792,118 @@
   - point: Szyfruj swoje urządzenie
     priority: Start
     details: >-
-      In order to keep your data safe from physical access, use file encryption. This will mean if your
-      device is lost or stolen, no one will have access to your data.
+      Aby zabezpieczyć swoje dane przed fizycznym dostępem, użyj szyfrowania plików. Dzięki temu w przypadku zagubienia lub kradzieży urządzenia nikt nie będzie miał dostępu do Twoich danych.
 
   - point: Wyłącz funkcje łączności, które nie są używane
     priority: Start
     details: >-
-      When you're not using WiFi, Bluetooth, NFC etc, turn those features off. There are several common threats
-      that utilise these features.
+      Kiedy nie korzystasz z WiFi, Bluetooth, NFC itp., wyłącz te funkcje. Istnieje kilka powszechnych zagrożeń wykorzystujących te funkcje.
 
   - point: Ogranicz liczbę aplikacji do minimum
     priority: Start
     details: >-
-      Uninstall apps that you don’t need or use regularly. As apps often run in the background, slowing your
-      device down, but also collecting data.
+      Odinstaluj aplikacje, których nie potrzebujesz lub nie używasz regularnie. Aplikacje często działają w tle, spowalniając działanie urządzenia, ale także gromadząc dane.
 
   - point: Uprawnienia aplikacji
     priority: Start
     details: >-
-      Don’t grant apps permissions that they don’t need. For Android, [Bouncer](https://awesome-privacy.xyz/security-tools/mobile-apps/bouncer) is an app that allows you to grant
-      temporary/ 1-off permissions.
+      Nie udzielaj aplikacjom uprawnień, których nie potrzebują. W przypadku systemu Android aplikacja Bouncer pozwala na udzielanie tymczasowych/jednorazowych uprawnień.
 
   - point: Instaluj tylko aplikacje z oficjalnych źródeł
     priority: Start
     details: >-
-      Applications on Apple App Store and Google Play Store are scanned and cryptographically signed, making them
-      less likely to be malicious.
+      Aplikacje w sklepach Apple App Store i Google Play Store są skanowane i podpisywane kryptograficznie, co zmniejsza prawdopodobieństwo, że będą one złośliwe.
 
   - point: Skonfiguruj kod PIN operatora komórkowego
     priority: Start
     details: >-
-      SIM hijacking is when a hacker is able to get your mobile number transferred to their sim. The easiest way
-      to protect against this is to set up a PIN through your mobile provider.
+      SIM hijacking to sytuacja, w której haker jest w stanie przenieść Twój numer telefonu komórkowego na swoją kartę SIM. Najprostszym sposobem
+      ochrony przed tym jest ustawienie kodu PIN za pośrednictwem operatora komórkowego.
 
   - point: Zrezygnuj z wyświetlania identyfikatora dzwoniącego
     priority: Plus
     details: >-
-      To keep your details private, you can unlist your number from caller ID apps like TrueCaller, CallApp, SyncMe,
-      and Hiya.
+      Aby zachować prywatność swoich danych, możesz usunąć swój numer z aplikacji identyfikujących numer dzwoniącego, takich jak TrueCaller, CallApp, SyncMe i Hiya.
 
   - point: Korzystaj z map offline
     priority: Plus
     details: >-
-      Consider using an offline maps app, such as OsmAnd or Organic Maps, to reduce data leaks from map apps.
+      Rozważ użycie aplikacji z mapami offline, takich jak OsmAnd lub Organic Maps, aby ograniczyć wycieki danych z aplikacji mapowych.
 
   - point: Zrezygnuj z personalizowanych reklam
     priority: Plus
     details: >-
-      You can slightly reduce the amount of data collected by opting-out of seeing personalized ads.
+      Możesz nieco ograniczyć ilość gromadzonych danych, rezygnując z wyświetlania spersonalizowanych reklam.
 
   - point: Usuń dane po zbyt wielu próbach logowania
     priority: Plus
     details: >-
-      To protect against an attacker brute forcing your pin, set your device to erase after too many failed
-      login attempts.
+      Aby zabezpieczyć się przed atakiem brute force na kod PIN, ustaw urządzenie tak, aby wymazywało dane po zbyt wielu nieudanych próbach logowania.
 
   - point: Monitoruj trackery
     priority: Plus
     details: >-
-      [εxodus](https://awesome-privacy.xyz/security-tools/online-tools/εxodus) is a great service which
-      lets you search for any app and see which trackers are embedded in it.
+      εxodus to świetna usługa, która pozwala wyszukiwać dowolną aplikację i sprawdzać, jakie trackery są w niej osadzone.
 
   - point: Korzystaj z mobilnej zapory sieciowej
     priority: Plus
     details: >-
-      To prevent applications from leaking privacy-sensitive data, you can install a firewall app.
+      Aby zapobiec wyciekom danych wrażliwych z aplikacji, można zainstalować aplikację typu firewall.
 
   - point: Ogranicz aktywność w tle
     priority: Plus
     details: >-
-      For Android, SuperFreeze makes it possible to entirely freeze all background activities on a per-app basis.
+      W przypadku systemu Android aplikacja SuperFreeze umożliwia całkowite zamrożenie wszystkich działań w tle dla poszczególnych aplikacji.
 
   - point: Korzystaj z aplikacji mobilnych w trybie sandbox
     priority: Plus
     details: >-
-      Prevent permission-hungry apps from accessing your private data with [Island](https://awesome-privacy.xyz/security-tools/mobile-apps/island), a sandbox environment.
+      Zapobiegaj aplikacjom wymagającym wielu uprawnień w dostępie do Twoich prywatnych danych dzięki [Island](https://island.oasisfeng.com/), środowisku typu sandbox.
 
   - point: Unikaj niestandardowych klawiatur wirtualnych
     priority: Plus
     details: >-
-      It is recommended to stick with your device's stock keyboard. If you choose to use a third-party keyboard app,
-      ensure it is reputable.
+      Zaleca się korzystanie z klawiatury fabrycznej urządzenia. Jeśli zdecydujesz się używać aplikacji klawiatury innej firmy, upewnij się, że jest ona renomowana.
 
   - point: Regularnie restartuj urządzenie
     priority: Plus
     details: >-
-      Restarting your phone at least once a week will clear the app state cached in memory and may run more smoothly
-      after a restart.
+      Ponowne uruchomienie telefonu co najmniej raz w tygodniu spowoduje wyczyszczenie stanu aplikacji zapisanego w pamięci podręcznej i może sprawić, że po ponownym uruchomieniu będzie ona działać płynniej.
 
   - point: Unikaj wiadomości SMS
     priority: Plus
     details: >-
-      SMS should not be used to receive 2FA codes or for communication, instead use an encrypted messaging app,
-      such as [Signal](https://awesome-privacy.xyz/communication/encrypted-messaging/signal).
+      SMS-ów nie należy używać do otrzymywania kodów 2FA ani do komunikacji. Zamiast tego należy korzystać z szyfrowanej aplikacji do przesyłania wiadomości,
+      takiej jak Signal.
 
   - point: Nie ujawniaj swojego numeru telefonu
     priority: Plus
     details: >-
-      [MySudo](https://awesome-privacy.xyz/finance/virtual-credit-cards/mysudo) allows
-      you to create and use virtual phone numbers for different people or groups. This is great for
-      compartmentalisation.
+      [Vyke](https://www.vyke.com/pl/) umożliwia tworzenie i używanie wirtualnych numerów telefonów dla różnych osób lub grup. Jest to świetne rozwiązanie do kompartmentalizacji.
 
   - point: Uważaj na oprogramowanie stalkerware
     priority: Plus
     details: >-
-      Stalkerware is malware that is installed directly onto your device by someone you know.
-      The best way to get rid of it is through a factory reset.
+      Stalkerware to złośliwe oprogramowanie instalowane bezpośrednio na urządzeniu przez osobę, którą znasz. Najlepszym sposobem na pozbycie się go jest przywrócenie ustawień fabrycznych.
 
   - point: Korzystaj raczej z przeglądarki niż dedykowanej aplikacji
     priority: Plus
     details: >-
-      Where possible, consider using a secure browser to access sites,
-      rather than installing dedicated applications.
+      W miarę możliwości należy rozważyć korzystanie z bezpiecznej przeglądarki internetowej w celu uzyskania dostępu do stron internetowych, zamiast instalowania dedykowanych aplikacji.
 
   - point: Korzystaj z sieci Tor
     priority: Pro
     details: >-
-      [Orbot](https://awesome-privacy.xyz/security-tools/mobile-apps/orbot) provides
-      a system-wide Tor connection, which will help protect you from surveillance and public WiFi threats.
+      [Orbot](https://support.torproject.org/glossary/orbot/) zapewnia systemowe połączenie Tor, które pomoże chronić Cię przed inwigilacją i zagrożeniami związanymi z publicznymi sieciami WiFi.
 
   - point: Rozważ uruchomienie niestandardowego ROM-u (Android)
     priority: Pro
     details: >-
-      If you're concerned about your device manufacturer collecting too much
-      personal information, consider a privacy-focused custom ROM.
+      Jeśli obawiasz się, że producent Twojego urządzenia gromadzi zbyt wiele danych osobowych, rozważ użycie niestandardowego ROM-u zorientowanego na prywatność.
   color: fuchsia
   softwareLinks:
-  - title: Mobile Apps, for Security + Privacy
-    url: https://github.com/Lissy93/awesome-privacy#mobile-apps
-  - title: Encrypted Messaging
-    url: https://github.com/Lissy93/awesome-privacy#encrypted-messaging
-  - title: Mobile Operation Systems
-    url: https://github.com/Lissy93/awesome-privacy#mobile-operating-systems
+  - title: Platforma audytu prywatności dla aplikacji Android
+    url: https://reports.exodus-privacy.eu.org/pl/
 
 - title: Komputer osobisty
   slug: komputer-osobisty
@@ -1059,224 +916,184 @@
   - point: Aktualizuj system
     priority: Start
     details: >-
-      System updates contain fixes/patches for security issues, improve performance, and sometimes add new
-      features. Install new updates when prompted.
+      Aktualizacje systemu zawierają poprawki/łatki dotyczące kwestii bezpieczeństwa, poprawiają wydajność, a czasami dodają nowe funkcje. Zainstaluj nowe aktualizacje, gdy pojawi się monit.
 
   - point: Szyfruj urządzenie
     priority: Start
     details: >-
-      Use BitLocker for Windows, FileVault on MacOS, or LUKS on Linux, to enable full disk encryption. This
-      prevents unauthorized access if your computer is lost or stolen.
+      Użyj BitLocker dla Windows, FileVault dla MacOS lub LUKS dla Linux, aby włączyć pełne szyfrowanie dysku. To zapobiega nieautoryzowanemu dostępowi w przypadku zgubienia lub kradzieży komputera.
 
   - point: Twórz kopie zapasowe ważnych danych
     priority: Start
     details: >-
-      Maintaining encrypted backups prevents loss due to ransomware, theft, or damage. Consider using
-      [Cryptomator](https://awesome-privacy.xyz/security-tools/mobile-apps/cryptomator)
-      for cloud files or [VeraCrypt](https://awesome-privacy.xyz/essentials/file-encryption/veracrypt) for USB drives.
+      Tworzenie zaszyfrowanych kopii zapasowych zapobiega utracie danych w wyniku ataku ransomware, kradzieży lub uszkodzenia. Trzymaj kopie w chumrze oraz offline np. na zewnętrznym dysku twardym.
 
   - point: Zachowaj ostrożność podczas podłączania urządzeń USB do komputera
     priority: Start
     details: >-
-      USB devices can pose serious threats. Consider making a USB sanitizer with CIRCLean to safely check USB
-      devices.
+      Urządzenia USB mogą stanowić poważne zagrożenie. Rozważ stworzenie urządzenia do czyszczenia pamięci USB za pomocą CIRCLean, aby bezpiecznie sprawdzać urządzenia USB.
 
   - point: Aktywuj blokadę ekranu, gdy urządzenie jest nieaktywne
     priority: Start
     details: >-
-      Lock your computer when away and set it to require a password on resume from screensaver or sleep to
-      prevent unauthorized access.
+      Zablokuj komputer, gdy się oddalasz, i ustaw go tak, aby wymagał podania hasła po wybudzeniu z trybu wygaszacza ekranu lub uśpienia, aby zapobiec nieautoryzowanemu dostępowi.
 
   - point: Wyłącz Cortanę lub Siri
     priority: Start
     details: >-
-      Voice-controlled assistants can have privacy implications due to data sent back for processing. Disable
-      or limit their listening capabilities.
+      Asystenci sterowani głosem mogą mieć wpływ na prywatność ze względu na dane wysyłane do przetwarzania. Wyłącz lub ogranicz ich możliwości słuchania.
 
   - point: Sprawdź zainstalowane aplikacje
     priority: Start
     details: >-
-      Keep installed applications to a minimum to reduce exposure to vulnerabilities and regularly clear
-      application caches.
+      Ogranicz liczbę zainstalowanych aplikacji do minimum, aby zmniejszyć narażenie na luki w zabezpieczeniach, i regularnie czyść pamięć podręczną aplikacji.
 
   - point: Zarządzaj uprawnieniami
     priority: Start
     details: >-
-      Control which apps have access to your location, camera, microphone, contacts, and other sensitive
-      information.
+      Kontroluj, które aplikacje mają dostęp do Twojej lokalizacji, aparatu, mikrofonu, kontaktów i innych poufnych informacji.
 
   - point: Nie zezwalaj na wysyłanie danych użytkowania do chmury
     priority: Start
     details: >-
-      Limit the amount of usage information or feedback sent to the cloud to protect your privacy.
+      Ogranicz ilość informacji o użytkowaniu lub opinii przesyłanych do chmury, aby chronić swoją prywatność.
 
   - point: Unikaj szybkiego odblokowywania
     priority: Start
     details: >-
-      Use a strong password instead of biometrics or short PINs for unlocking your computer to enhance
-      security.
+      Aby zwiększyć bezpieczeństwo, używaj silnego hasła zamiast danych biometrycznych lub krótkich kodów PIN do odblokowywania komputera.
 
   - point: Wyłączaj komputer zamiast przełączać go w tryb czuwania
     priority: Start
     details: >-
-      Shut down your device when not in use, especially if your disk is encrypted, to keep data secure.
+      Wyłącz urządzenie, gdy nie jest używane, zwłaszcza jeśli dysk jest zaszyfrowany, aby zapewnić bezpieczeństwo danych.
 
   - point: Nie łącz komputera z kontem Microsoft lub Apple
     priority: Plus
     details: >-
-      Use a local account only to prevent data syncing and exposure. Avoid using sync services that compromise
-      privacy.
+      Używaj wyłącznie konta lokalnego, aby zapobiec synchronizacji danych i ich ujawnieniu. Unikaj korzystania z usług synchronizacji, które zagrażają prywatności.
 
   - point: Sprawdź, które usługi udostępniania są włączone
     priority: Plus
     details: >-
-      Disable network sharing features you are not using to close gateways to common threats.
+      Wyłącz funkcje udostępniania sieciowego, których nie używasz, aby zamknąć bramy dla typowych zagrożeń.
 
   - point: Nie używaj konta root/administratora do zadań nieadministracyjnych
     priority: Plus
     details: >-
-      Use an unprivileged user account for daily tasks and only elevate permissions for administrative changes
-      to mitigate vulnerabilities.
+      Do codziennych zadań używaj konta użytkownika bez uprawnień i podnoś uprawnienia tylko w przypadku zmian administracyjnych,
+      aby ograniczyć podatność na zagrożenia.
 
   - point: Zablokuj kamerę internetową i mikrofon
     priority: Plus
     details: >-
-      Cover your webcam when not in use and consider blocking unauthorized audio recording to protect privacy.
+      Zakryj kamerę internetową, gdy nie jest używana, i rozważ zablokowanie nieautoryzowanego nagrywania dźwięku, aby chronić prywatność.
 
   - point: Używaj filtra prywatności
     priority: Plus
     details: >-
-      Use a screen privacy filter in public spaces to prevent shoulder surfing and protect sensitive
-      information.
+      W miejscach publicznych używaj filtra prywatności ekranu, aby zapobiec podglądaniu przez osoby postronne i chronić poufne informacje.
 
   - point: Zabezpiecz fizycznie urządzenie
     priority: Plus
     details: >-
-      Use a Kensington Lock to secure your laptop in public spaces and consider port locks to prevent
-      unauthorized physical access.
+      Użyj zamka Kensington, aby zabezpieczyć laptopa w miejscach publicznych, i rozważ zastosowanie blokad portów, aby zapobiec nieuprawnionemu dostępowi fizycznemu.
 
   - point: Nie ładuj urządzeń z komputera
     priority: Plus
     details: >-
-      Use a power bank or AC wall charger instead of your PC to avoid security risks associated with USB
-      connections.
+      Aby uniknąć zagrożeń związanych z połączeniami USB, należy używać powerbanku lub ładowarki sieciowej zamiast komputera.
 
   - point: Losowo zmieniaj adres sprzętowy w sieci Wi-Fi
     priority: Plus
     details: >-
-      Modify or randomize your MAC address to protect against tracking across different WiFi networks.
+      Zmodyfikuj lub losowo wybierz swój adres MAC, aby chronić się przed śledzeniem w różnych sieciach WiFi.
 
   - point: Używaj zapory sieciowej
     priority: Plus
     details: >-
-      Install a firewall app to monitor and block unwanted internet access by certain applications, protecting
-      against remote access attacks and privacy breaches.
+      Zainstaluj aplikację firewall, aby monitorować i blokować niepożądany dostęp do Internetu przez niektóre aplikacje, chroniąc przed atakami zdalnego dostępu i naruszeniami prywatności.
 
   - point: Chroń się przed keyloggerami
     priority: Plus
     details: >-
-      Use key stroke encryption tools to protect against software keyloggers recording your keystrokes.
+      Używaj narzędzi do szyfrowania naciśnięć klawiszy, aby chronić się przed programami rejestrującymi naciśnięcia klawiszy.
 
   - point: Sprawdź połączenie klawiatury
     priority: Plus
     details: >-
-      Be vigilant for hardware keyloggers when using public or unfamiliar computers by checking keyboard
-      connections.
+      Podczas korzystania z komputerów publicznych lub nieznanych należy zachować czujność w stosunku do sprzętowych keyloggerów, sprawdzając połączenia klawiatury.
 
   - point: Zapobiegaj atakom typu keystroke injection
     priority: Plus
     details: >-
-      Lock your PC when away and consider using USBGuard or similar tools to protect against keystroke
-      injection attacks.
+      Zablokuj komputer, gdy jesteś poza domem, i rozważ użycie programu USBGuard lub podobnych narzędzi, aby chronić się przed atakami polegającymi na wprowadzaniu niepożądanych znaków.
 
   - point: Nie używaj komercyjnych „bezpłatnych” programów antywirusowych
     priority: Plus
     details: >-
-      Rely on built-in security tools and avoid free anti-virus applications due to their potential for
-      privacy invasion and data collection.
+      Polegaj na wbudowanych narzędziach bezpieczeństwa i unikaj darmowych aplikacji antywirusowych ze względu na ich potencjał naruszenia prywatności i gromadzenia danych.
 
   - point: Okresowo sprawdzaj, czy nie ma rootkitów
     priority: Pro
     details: >-
-      Regularly check for rootkits to detect and mitigate full system control threats using tools like
-      [chkrootkit](https://awesome-privacy.xyz/operating-systems/linux-defenses/chkrootkit).
+      Regularnie sprawdzaj, czy nie ma rootkitów, aby wykrywać i ograniczać zagrożenia związane z przejęciem pełnej kontroli nad systememd
 
   - point: Hasło rozruchowe BIOS-u
     priority: Pro
     details: >-
-      Enable a BIOS or UEFI password to add an additional security layer during boot-up, though be aware of
-      its limitations.
+      Włącz hasło BIOS lub UEFI, aby dodać dodatkową warstwę zabezpieczeń podczas uruchamiania systemu, ale pamiętaj o jego ograniczeniach.
 
   - point: Używaj systemu operacyjnego zorientowanego na bezpieczeństwo
     priority: Pro
     details: >-
-      Consider switching to Linux or a security-focused distro like QubeOS or
-      [Tails](https://awesome-privacy.xyz/operating-systems/desktop-operating-systems/tails)
-      for enhanced privacy and
-      security.
+      Rozważ przejście na system Linux lub dystrybucję skupiającą się na bezpieczeństwie, taką jak Qubes OS.
 
   - point: Korzystaj z maszyn wirtualnych
     priority: Pro
     details: >-
-      Use virtual machines for risky activities or testing suspicious software to isolate potential threats
-      from your primary system.
+      Wykorzystaj maszyny wirtualne do wykonywania ryzykownych czynności lub testowania podejrzanego oprogramowania, aby odizolować potencjalne zagrożenia od głównego systemu.
 
   - point: Segmentuj dane i programy
     priority: Pro
     details: >-
-      Isolate different programs and data sources from one another as much as possible to limit the extent of
-      potential breaches.
+      W miarę możliwości należy izolować od siebie różne programy i źródła danych, aby ograniczyć zakres potencjalnych naruszeń.
 
   - point: Wyłącz niepożądane funkcje (Windows)
     priority: Pro
     details: >-
-      Disable unnecessary Windows "features" and services that run in the background to reduce data collection
-      and resource use.
+      Wyłącz niepotrzebne „funkcje” i usługi systemu Windows działające w tle, aby ograniczyć gromadzenie danych i zużycie zasobów.
 
   - point: Secure Boot
     priority: Pro
     details: >-
-      Ensure that Secure Boot is enabled to prevent malware from replacing your boot loader and other critical
-      software.
+      Upewnij się, że funkcja Secure Boot jest włączona, aby zapobiec zastąpieniu programu rozruchowego i innego krytycznego oprogramowania przez złośliwe oprogramowanie.
 
   - point: Bezpieczny dostęp SSH
     priority: Pro
     details: >-
-      Take steps to protect SSH access from attacks by changing the default port, using SSH keys, and
-      configuring firewalls.
+      Podejmij kroki w celu ochrony dostępu SSH przed atakami, zmieniając domyślny port, używając kluczy SSH i konfigurując zapory sieciowe.
 
   - point: Zamknij nieużywane otwarte port
     priority: Pro
     details: >-
-      Turn off services listening on external ports that are not needed to protect against remote exploits and
-      improve security.
+      Wyłącz usługi nasłuchujące na zewnętrznych portach, które nie są potrzebne, aby chronić się przed zdalnymi atakami i zwiększyć bezpieczeństwo.
 
   - point: Wprowadź obowiązkową kontrolę dostępu
     priority: Pro
     details: >-
-      Restrict privileged access to limit the damage that can be done if a system is compromised.
+      Ogranicz dostęp uprzywilejowany, aby ograniczyć szkody, które mogą zostać wyrządzone w przypadku naruszenia bezpieczeństwa systemu.
 
   - point: Używaj tokenów Canary
     priority: Pro
     details: >-
-      Deploy canary tokens to detect unauthorized access to your files or emails faster and gather
-      information about the intruder.
+      Wprowadź tokeny Canary, aby szybciej wykrywać nieautoryzowany dostęp do plików lub wiadomości e-mail oraz gromadzić informacje o intruzie.
   color: pink
   softwareLinks:
-  - title: Secure Operating Systems
-    url: https://github.com/Lissy93/awesome-privacy#desktop-operating-systems
-  - title: Linux Defenses
-    url: https://github.com/Lissy93/awesome-privacy#linux-defences
-  - title: Windows Defenses
-    url: https://github.com/Lissy93/awesome-privacy#windows-defences
-  - title: Mac OS Defenses
-    url: https://github.com/Lissy93/awesome-privacy#mac-os-defences
-  - title: Anti-Malware
-    url: https://github.com/Lissy93/awesome-privacy#anti-malware
-  - title: Firewalls
-    url: https://github.com/Lissy93/awesome-privacy#firewalls-1
-  - title: File Encryption
-    url: https://github.com/Lissy93/awesome-privacy#file-encryption
+  - title: Qubes OS
+    url: https://www.qubes-os.org/
+  - title: VirusTotal
+    url: https://www.virustotal.com/
 
 - title: Smart Home
   slug: smart-home
@@ -1289,75 +1106,74 @@
   - point: Zmień nazwy urządzeń, aby nie określały marki/modelu
     priority: Start
     details: >-
-      Change default device names to something generic to prevent targeted attacks by obscuring brand or model information.
+      Zmień domyślne nazwy urządzeń na bardziej ogólne, aby zapobiec atakom ukierunkowanym poprzez ukrycie informacji o marce lub modelu.
 
   - point: Wyłącz mikrofon i kamerę, gdy nie są używane
     priority: Start
     details: >-
-      Use hardware switches to turn off microphones and cameras on smart devices to protect against accidental recordings or targeted access.
+      Użyj przełączników sprzętowych, aby wyłączyć mikrofony i kamery w urządzeniach inteligentnych, aby chronić się przed przypadkowymi nagraniami lub celowym dostępem.
 
   - point: Dowiedz się, jakie dane są gromadzone, przechowywane i przesyłane
     priority: Start
     details: >-
-      Research and ensure comfort with the data handling practices of smart home devices before purchase, avoiding devices that share data with third parties.
+      Przed zakupem sprawdź i upewnij się, że praktyki dotyczące przetwarzania danych przez urządzenia inteligentnego domu są dla Ciebie satysfakcjonujące, unikając urządzeń, które udostępniają dane stronom trzecim.
 
   - point: Ustaw ustawienia prywatności i zrezygnuj z udostępniania danych stronom trzecim
     priority: Start
     details: >-
-      Adjust app settings for strictest privacy controls and opt-out of data sharing with third parties wherever possible.
+      Dostosuj ustawienia aplikacji, aby zapewnić najściślejszą kontrolę prywatności i zrezygnuj z udostępniania danych stronom trzecim, gdy tylko jest to możliwe.
 
   - point: Nie łącz urządzeń inteligentnego domu z prawdziwą tożsamością
     priority: Start
     details: >-
-      Use anonymous usernames and passwords, avoiding sign-up/log-in via social media or other third-party services to maintain privacy.
+      Aby zachować prywatność, używaj anonimowych nazw użytkownika i haseł, unikając rejestracji/logowania za pośrednictwem mediów społecznościowych lub innych usług stron trzecich.
 
   - point: Aktualizuj oprogramowanie sprzętowe
     priority: Start
     details: >-
-      Regularly update smart device firmware to apply security patches and enhancements.
+      Regularnie aktualizuj oprogramowanie sprzętowe urządzeń inteligentnych, aby zainstalować poprawki bezpieczeństwa i ulepszenia.
 
   - point: Chroń swoją sieć
     priority: Start
     details: >-
-      Secure your home WiFi and network to prevent unauthorized access to smart devices.
+      Zabezpiecz domową sieć WiFi i sieć, aby zapobiec nieautoryzowanemu dostępowi do urządzeń inteligentnych.
 
   - point: Uważaj na urządzenia do noszenia
     priority: Plus
     details: >-
-      Consider the extensive data collection capabilities of wearable devices and their implications for privacy.
+      Rozważ rozległe możliwości gromadzenia danych przez urządzenia do noszenia na ciele oraz ich wpływ na prywatność.
 
   - point: Nie łącz krytycznej infrastruktury domu z Internetem
     priority: Plus
     details: >-
-      Evaluate the risks of internet-connected thermostats, alarms, and detectors due to potential remote access by hackers.
+      Oceń ryzyko związane z termostatami, alarmami i czujnikami podłączonymi do Internetu ze względu na potencjalny zdalny dostęp hakerów.
 
   - point: Ogranicz ryzyko związane z Alexą/Google Home
     priority: Plus
     details: >-
-      Consider privacy-focused alternatives like
-      [Mycroft](https://awesome-privacy.xyz/smart-home-and-iot/voice-assistants/mycroft) or use
-      Project Alias to prevent idle listening by voice-activated assistants.
+      Rozważ alternatywne rozwiązania skupiające się na prywatności, takie jak [Mycroft](https://mycroft-ai.gitbook.io/mark-ii) lub skorzystaj z Project Alias, aby zapobiec bezczynnemu nasłuchiwaniu przez asystentów aktywowanych głosem.
 
   - point: Ściśle monitoruj swoją sieć domową
     priority: Plus
     details: >-
-      Use tools like FingBox or router features to monitor for unusual network activity.
+      Użyj narzędzi takich jak FingBox lub funkcji routera, aby monitorować nietypową aktywność sieciową.
 
   - point: W miarę możliwości odmawiaj dostępu do Internetu
     priority: Pro
     details: >-
-      Use firewalls to block internet access for devices that don't need it, limiting operation to local network use.
+      Używaj zapór sieciowych, aby blokować dostęp do Internetu urządzeniom, które go nie potrzebują, ograniczając działanie do korzystania z sieci lokalnej.
 
   - point: Oceniaj ryzyko
     priority: Pro
     details: >-
-      Consider the privacy implications for all household members and adjust device settings for security and privacy, such as disabling devices at certain times.
+      Należy rozważyć kwestie prywatności wszystkich członków gospodarstwa domowego i dostosować ustawienia urządzeń pod kątem bezpieczeństwa i prywatności, np. wyłączając urządzenia w określonych godzinach.
+
   color: red
   softwareLinks:
-  - title: Home Automation
-    url: https://github.com/Lissy93/awesome-privacy#home-automation
-  - title: AI Voice Assistants
-    url: https://github.com/Lissy93/awesome-privacy#ai-voice-assistants
+  - title: Kalliope
+    url: https://kalliope-project.github.io/
+  - title: Mycroft
+    url: https://mycroft-ai.gitbook.io/mark-ii
 
 - title: Finanse
   slug: finanse
@@ -1367,82 +1183,59 @@
     Oszustwa związane z kartami kredytowymi są najczęstszą formą kradzieży tożsamości (w samym tylko 2017 r. w Stanach Zjednoczonych zgłoszono 133 015 takich przypadków), a łączna strata wyniosła 905 mln dolarów, co stanowiło wzrost o 26% w porównaniu z rokiem poprzednim. Średnia kwota straty na osobę wyniosła w 2017 r. 429 dolarów. Bardziej niż kiedykolwiek ważne jest podjęcie podstawowych kroków, aby uchronić się przed staniem się ofiarą Uwaga dotycząca kart kredytowych: Karty kredytowe są wyposażone w technologie umożliwiające wykrywanie i powstrzymywanie niektórych nieuczciwych transakcji. Główni operatorzy płatności wdrażają te technologie, analizując ogromne ilości danych od posiadaczy kart, aby uzyskać jak najwięcej informacji na temat nawyków zakupowych każdej osoby. Dane te są wykorzystywane do identyfikacji oszustw, ale są również sprzedawane innym brokerom danych. Karty kredytowe są zatem dobre dla bezpieczeństwa, ale fatalne dla prywatności danych.
 
   checklist:
-  - point: Zarejestruj się, aby otrzymywać powiadomienia o oszustwach i monitorować kredyt
+  - point: Zarejestruj się, aby otrzymywać powiadomienia o kredytach
     priority: Start
     details: >-
-      Enable fraud alerts and credit monitoring through Experian, TransUnion, or Equifax to be alerted of suspicious activity.
+      Włącz alerty o oszustwach i monitorowanie kredytów za pośrednictwem BIK, aby otrzymywać powiadomienia o podejrzanych działaniach.
 
   - point: Zastrzeż numer PESEL
     priority: Start
     details: >-
-      Enable fraud alerts and credit monitoring through Experian, TransUnion, or Equifax to be alerted of suspicious activity
-
-  - point: Zastosuj zamrożenie kredytu
-    priority: Start
-    details: >-
-      Prevent unauthorized credit inquiries by freezing your credit through Experian, TransUnion, and Equifax.
+      Zastrzeż numer PESEL za pomocą aplikacji mObywatel, aby uniemożliwić udzielenie kredytu na Twoje dane.
 
   - point: Korzystaj z wirtualnych kart
     priority: Plus
     details: >-
-      Utilize virtual card numbers for online transactions to protect your real banking details. Services like [Privacy.com](https://awesome-privacy.xyz/finance/virtual-credit-cards/privacy.com) and [MySudo](https://awesome-privacy.xyz/finance/virtual-credit-cards/mysudo) offer such features.
+      Wykorzystaj wirtualne numery kart do transakcji internetowych, aby chronić swoje prawdziwe dane bankowe.
 
   - point: Korzystaj z gotówki w lokalnych transakcjach
     priority: Plus
     details: >-
-      Pay with [Cash](https://awesome-privacy.xyz/finance/other-payment-methods/cash) for local and everyday purchases to avoid financial profiling by institutions.
+      Płać za pomoca gotówki.
 
   - point: Korzystaj z kryptowalut w transakcjach internetowych
     priority: Plus
     details: >-
-      Opt for privacy-focused cryptocurrencies like
-      [Monero](https://awesome-privacy.xyz/finance/cryptocurrencies/monero) for
-      online transactions to maintain anonymity. Use cryptocurrencies wisely to ensure privacy.
+      Wybierz kryptowaluty nastawione na prywatność, takie jak Monero do transakcji online, aby zachować anonimowość. Korzystaj z kryptowalut w sposób rozsądny, aby zapewnić sobie prywatność.
 
   - point: Przechowuj kryptowaluty w bezpieczny sposó
     priority: Pro
     details: >-
-      Securely store cryptocurrencies using offline wallet generation, hardware wallets
-      like [Trezor](https://awesome-privacy.xyz/finance/crypto-wallets/trezor) or
-      [ColdCard](https://awesome-privacy.xyz/finance/crypto-wallets/coldcard), or
-      consider long-term storage solutions like
-      [CryptoSteel](https://awesome-privacy.xyz/finance/crypto-wallets/cryptosteel).
+      Bezpiecznie przechowuj kryptowaluty, korzystając z generowania portfeli offline i portfeli sprzętowych.
 
   - point: Kupuj kryptowaluty anonimowo
     priority: Pro
     details: >-
-      Purchase cryptocurrencies without linking to your identity through services
-      like [LocalBitcoins](https://awesome-privacy.xyz/finance/crypto-exchanges/localbitcoins),
-      [Bisq](https://awesome-privacy.xyz/finance/crypto-exchanges/bisq), or Bitcoin ATMs.
+      Kupuj kryptowaluty bez podawania swoich danych osobowych np. poprzez bankomaty Bitcoin.
 
   - point: Mieszaj monety
     priority: Pro
     details: >-
-      Use a bitcoin mixer or CoinJoin before converting Bitcoin to currency to obscure transaction trails.
+      Przed zamianą bitcoinów na walutę użyj miksera bitcoinów lub CoinJoin, aby ukryć ślady transakcji.
 
   - point: Korzystaj z pseudonimów podczas zakupów online
     priority: Pro
     details: >-
-      For online purchases, consider using alias details, forwarding email addresses, VOIP numbers, and secure delivery methods to protect your identity.
+      W przypadku zakupów online warto rozważyć użycie pseudonimów, adresów e-mail do przekazywania wiadomości, numerów VOIP oraz bezpiecznych metod dostawy, aby chronić swoją tożsamość.
 
   - point: Korzystaj z alternatywnego adresu dostawy
     priority: Pro
     details: >-
-      Opt for deliveries to non-personal addresses such as PO Boxes, forwarding addresses, or local pickup locations to avoid linking purchases directly to you.
+      Wybierz dostawę na adresy nieosobowe, takie jak skrytki pocztowe, adresy do przekazywania przesyłek lub lokalne punkty odbioru, aby uniknąć powiązania zakupów bezpośrednio z Tobą.
   color: purple
   softwareLinks:
-  - title: Virtual Credit Cards
-    url: https://github.com/Lissy93/awesome-privacy#virtual-credit-cards
-  - title: Cryptocurrencies
-    url: https://github.com/Lissy93/awesome-privacy#cryptocurrencies
-  - title: Crypto Wallets
-    url: https://github.com/Lissy93/awesome-privacy#crypto-wallets
-  - title: Crypto Exchanges
-    url: https://github.com/Lissy93/awesome-privacy#crypto-exchanges
-  - title: Other Payment Methods
-    url: https://github.com/Lissy93/awesome-privacy#other-payment-methods
-  - title: Budgeting Tools
-    url: https://github.com/Lissy93/awesome-privacy#budgeting-tools
+  - title: Wirtualne karty Revolut
+    url: https://revolut.com/referral/?referral-code=kporembinski!JUL1-25-AR-H1&geo-redirect
 
 - title: Aspekt ludzki
   slug: aspekt-ludzki
@@ -1455,73 +1248,72 @@
   - point: Weryfikuj odbiorców
     priority: Start
     details: >-
-      Emails can be easily spoofed. Verify the sender's authenticity, especially for sensitive actions, and prefer entering URLs manually rather than clicking links in emails.
+      E-maile można łatwo sfałszować. Sprawdź autentyczność nadawcy, zwłaszcza w przypadku działań wymagających szczególnej ostrożności, i zamiast klikać linki w wiadomościach e-mail, lepiej wpisuj adresy URL ręcznie.
 
   - point: Nie ufaj powiadomieniom wyskakującym
     priority: Start
     details: >-
-      Fake pop-ups can be deployed by malicious actors. Always check the URL before entering any information on a popup.
+      Fałszywe wyskakujące okienka mogą być wykorzystywane przez złośliwe podmioty. Zawsze sprawdzaj adres URL przed wprowadzeniem jakichkolwiek informacji w wyskakującym okienku.
 
   - point: Nigdy nie pozostawiaj urządzenia bez nadzoru
     priority: Start
     details: >-
-      Unattended devices can be compromised even with strong passwords. Use encryption and remote erase features like Find My Phone for lost devices.
+      Niezabezpieczone urządzenia mogą zostać naruszone nawet przy użyciu silnych haseł. W przypadku zgubienia urządzenia należy skorzystać z funkcji szyfrowania i zdalnego kasowania danych, takich jak Find My Phone.
 
   - point: Zapobiegaj camfectingowi
     priority: Start
     details: >-
-      Protect against camfecting by using webcam covers and microphone blockers. Mute home assistants when not in use or discussing sensitive matters.
+      Chroń się przed camfectingiem, używając osłon kamer internetowych i blokad mikrofonów. Wyciszaj asystentów domowych, gdy nie są używane lub gdy rozmawiasz o sprawach poufnych.
 
   - point: Chroń się przed podglądaczami
     priority: Start
     details: >-
-      Use privacy screens on laptops and mobiles to prevent others from reading your screen in public spaces.
+      Używaj osłon prywatności na laptopach i telefonach komórkowych, aby uniemożliwić innym osobom podglądanie ekranu w miejscach publicznych.
 
   - point: Zdobądź wiedzę na temat ataków phishingowych
     priority: Start
     details: >-
-      Be cautious of phishing attempts. Verify URLs, context of received messages, and employ good security practices like using 2FA and not reusing passwords.
+      Uważaj na próby phishingu. Sprawdzaj adresy URL, kontekst otrzymanych wiadomości i stosuj dobre praktyki bezpieczeństwa, takie jak używanie uwierzytelniania dwuskładnikowego (2FA) i niepowtarzanie haseł.
 
   - point: Uważaj na oprogramowanie szpiegujące
     priority: Start
     details: >-
-      Be aware of stalkerware installed by acquaintances for spying. Look out for signs like unusual battery usage and perform factory resets if suspected.
+      Uważaj na oprogramowanie szpiegowskie zainstalowane przez znajomych w celu szpiegowania. Zwracaj uwagę na takie oznaki, jak nietypowe zużycie baterii, a w razie podejrzeń przywróć ustawienia fabryczne.
 
   - point: Instaluj renomowane oprogramowanie z zaufanych źródeł
     priority: Start
     details: >-
-      Only download software from legitimate sources and check files with tools
-      like [Virus Total](https://awesome-privacy.xyz/security-tools/online-tools/virus-total) before installation.
+      Pobieraj oprogramowanie wyłącznie z legalnych źródeł i przed instalacją sprawdzaj pliki za pomocą narzędzi takich jak Virus Total.
 
   - point: Przechowuj dane osobowe w bezpieczny sposób
     priority: Start
     details: >-
-      Ensure all personal data on devices or in the cloud is encrypted to protect against unauthorized access.
+      Upewnij się, że wszystkie dane osobowe na urządzeniach lub w chmurze są szyfrowane, aby chronić je przed nieautoryzowanym dostępem.
 
   - point: Ukrywaj dane osobowe w dokumentach
     priority: Start
     details: >-
-      When sharing documents, obscure personal details with opaque rectangles to prevent information leakage.
+      Podczas udostępniania dokumentów należy zasłonić poufne dane osobowe nieprzezroczystymi prostokątami, aby zapobiec wyciekowi informacji.
 
   - point: Nie zakładaj, że strona jest bezpieczna tylko dlatego, że ma protokół „HTTPS”
     priority: Start
     details: >-
-      HTTPS does not guarantee a website's legitimacy. Verify URLs and exercise caution with personal data.
+      HTTPS nie gwarantuje legalności strony internetowej. Sprawdź adresy URL i zachowaj ostrożność w przypadku danych osobowych.
 
   - point: Korzystaj z wirtualnych kart podczas płatności online
     priority: Plus
     details: >-
-      Use virtual cards for online payments to protect your banking details and limit transaction risks.
+      Korzystaj z wirtualnych kart do płatności online, aby chronić swoje dane bankowe i ograniczyć ryzyko związane z transakcjami.
 
   - point: Sprawdzaj uprawnienia aplikacji
     priority: Plus
     details: >-
-      Regularly review and manage app permissions to ensure no unnecessary access to sensitive device features.
+      Regularnie sprawdzaj i zarządzaj uprawnieniami aplikacji, aby zapewnić, że nie ma niepotrzebnego dostępu do wrażliwych funkcji urządzenia.
 
   - point: Rezygnuj z publicznych list
     priority: Plus
     details: >-
-      Remove yourself from public databases and marketing lists to reduce unwanted contacts and potential risks.
+      Nie podawaj dodatkowych danych osobowych podczas rezygnacji z usług związanych z danymi, aby uniknąć dalszego gromadzenia danych.
 
   - point: Nigdy nie podawaj dodatkowych danych osobowych podczas rezygnacji
     priority: Plus
@@ -1531,32 +1323,32 @@
   - point: Rezygnuj z udostępniania danych
     priority: Plus
     details: >-
-      Many apps and services default to data sharing settings. Opt out to protect your data from being shared with third parties.
+      Wiele aplikacji i usług domyślnie udostępnia dane. Wyłącz tę opcję, aby chronić swoje dane przed udostępnianiem ich stronom trzecim.
 
   - point: Sprawdzaj i aktualizuj ustawienia prywatności w mediach społecznościowych
     priority: Plus
     details: >-
-      Regularly check and update your social media settings due to frequent terms updates that may affect your privacy settings.
+      Regularnie sprawdzaj i aktualizuj ustawienia mediów społecznościowych ze względu na częste aktualizacje warunków, które mogą mieć wpływ na Twoje ustawienia prywatności.
 
   - point: Segmentaryzacja
     priority: Pro
     details: >-
-      Keep different areas of digital activity separate to limit data exposure in case of a breach.
+      Rozdziel różne obszary działalności cyfrowej, aby ograniczyć narażenie danych w przypadku naruszenia bezpieczeństwa.
 
   - point: Ochrona prywatności WhoIs
     priority: Pro
     details: >-
-      Use WhoIs Privacy Guard for domain registrations to protect your personal information from public searches.
+      Skorzystaj z funkcji WhoIs Privacy Guard podczas rejestracji domeny, aby chronić swoje dane osobowe przed publicznym wyszukiwaniem.
 
   - point: Korzystaj z adresu do przekazywania poczty
     priority: Pro
     details: >-
-      Use a PO Box or forwarding address for mail to prevent companies from knowing your real address, adding a layer of privacy protection.
+      Użyj skrzynki pocztowej lub adresu do przekazywania poczty, aby firmy nie znały Twojego prawdziwego adresu, co zapewni Ci dodatkową ochronę prywatności.
 
   - point: Korzystaj z anonimowych metod płatności
     priority: Pro
     details: >-
-      Opt for anonymous payment methods like cryptocurrencies to avoid entering identifiable information online.
+      Wybierz anonimowe metody płatności, takie jak kryptowaluty, aby uniknąć podawania danych umożliwiających identyfikację w Internecie.
 
   color: indigo
 
@@ -1571,71 +1363,81 @@
   - point: Niszcz poufne dokumenty
     priority: Start
     details: >-
-      Shred or redact sensitive documents before disposal to protect against identity theft and maintain confidentiality.
+      Przed utylizacją należy zniszczyć lub ocenzurować poufne dokumenty, aby zapobiec kradzieży tożsamości i zachować poufność.
 
   - point: Rezygnacja z rejestrów publicznych
     priority: Start
     details: >-
-      Contact people search websites to opt-out from listings that show persona
-      information, using guides like Michael Bazzell's Personal Data Removal Workbook.
+     Skontaktuj się z serwisami internetowymi wyszukującymi osoby, aby zrezygnować z wyświetlania informacji osobowych, korzystając z przewodników takich jak [„Personal Data Removal Workbook” Michaela Bazzella](https://inteltechniques.com/data/workbook.pdf).
 
   - point: Dokumenty z znakiem wodnym
     priority: Start
     details: >-
-      Add a watermark with the recipient's name and date to digital copies of
-      personal documents to trace the source of a breach.
+      Dodaj znak wodny z nazwiskiem odbiorcy i datą do cyfrowych kopii dokumentów osobistych, aby śledzić źródło naruszenia.
 
   - point: Nie ujawniaj informacji podczas połączeń przychodzących
     priority: Start
     details: >-
-      Only share personal data on calls you initiate and verify the recipient's phone number.
+      Udostępniaj dane osobowe wyłącznie podczas połączeń zainicjowanych przez siebie i sprawdzaj numer telefonu odbiorcy.
 
   - point: Bądź czujny
     priority: Start
-    details: Be aware of your surroundings and assess potential risks in new environments.
+    details: >-
+      Zwracaj uwagę na otoczenie i oceniaj potencjalne zagrożenia w nowych środowiskach.
 
-  - point: Zabezpiecz obwód
+  - point: Zabezpieczenie fizycznego obwodu
     priority: Start
-    details: Ensure physical security of locations storing personal info devices, minimizing external access and using intrusion detection systems.
+    details: >-
+      Zapobiegaj sytuacjom, w których urządzenia są widoczne z zewnątrz, aby ograniczyć ryzyko podsłuchu przy użyciu laserów oraz kradzieży.
 
   - point: Zabezpiecz fizycznie urządzenia
     priority: Start
-    details: Use physical security measures like Kensington locks, webcam covers, and privacy screens for devices.
+    details: >-
+      Zastosuj fizyczne środki bezpieczeństwa, takie jak zamki Kensington, osłony kamer internetowych i ekrany prywatności dla urządzeń.
 
   - point: Trzymaj urządzenia poza zasięgiem wzroku
     priority: Start
-    details: Prevent devices from being visible from outside to mitigate risks from lasers and theft.
+    details: >-
+      Zapobiegaj widoczności urządzeń z zewnątrz, aby ograniczyć ryzyko związane z laserami i kradzieżą.
 
   - point: Chroń swój kod PIN
     priority: Start
-    details: Chroń swój kod PIN przed wzrokiem osób postronnych i kamerami oraz wyczyść ekran dotykowy po użyciu.
+    details: >-
+      Chroń swój kod PIN przed wzrokiem osób postronnych i kamerami oraz wyczyść ekran dotykowy po użyciu.
 
   - point: Sprawdź, czy nie ma skimmerów
     priority: Start
-    details: Przed użyciem sprawdź bankomaty i urządzenia publiczne pod kątem obecności urządzeń do skimmingu i śladów manipulacji.
+    details: >-
+      Przed użyciem sprawdź bankomaty i urządzenia publiczne pod kątem obecności urządzeń do skimmingu i śladów manipulacji.
 
   - point: Chroń swój adres domowy
     priority: Plus
-    details: Aby chronić swój adres domowy, korzystaj z alternatywnych lokalizacji, adresów do przekazywania przesyłek i anonimowych metod płatności.
+    details: >-
+      Aby chronić swój adres domowy, korzystaj z alternatywnych lokalizacji, adresów do przekazywania przesyłek i anonimowych metod płatności.
 
   - point: Używaj kodu PIN, a nie danych biometrycznych
     priority: Pro
-    details: W sytuacjach, w których może dojść do prawnego wymuszenia odblokowania urządzenia, należy preferować kody PIN zamiast danych biometrycznych w celu zapewnienia bezpieczeństwa urządzenia.
+    details: >-
+      W sytuacjach, w których może dojść do prawnego wymuszenia odblokowania urządzenia, należy preferować kody PIN zamiast danych biometrycznych w celu zapewnienia bezpieczeństwa urządzenia.
 
   - point: Ogranicz narażenie na działanie kamer CCTV
     priority: Pro
-    details: Noś przebrania i wybieraj trasy z mniejszą liczbą kamer, aby uniknąć inwigilacji.
+    details: >-
+      Noś przebrania i wybieraj trasy z mniejszą liczbą kamer, aby uniknąć inwigilacji.
 
   - point: Odzież chroniąca przed rozpoznawaniem twarzy
     priority: Pro
-    details: Noś ubrania z wzorami, które oszukują technologię rozpoznawania twarzy.
+    details: >-
+      Noś ubrania z wzorami, które oszukują technologię rozpoznawania twarzy.
 
   - point: Ogranicz narażenie na widzenie noktowizyjne
     priority: Pro
-    details: Użyj źródeł światła podczerwonego lub okularów odblaskowych, aby zasłonić kamery noktowizyjne.
+    details: >-
+      Użyj źródeł światła podczerwonego lub okularów odblaskowych, aby zasłonić kamery noktowizyjne.
 
   - point: Chroń swoje DNA
     priority: Pro
-    details: Unikaj udostępniania DNA serwisom internetowym zajmującym się dziedzictwem kulturowym i zachowaj ostrożność przy pozostawianiu śladów DNA.
+    details: >-
+      Unikaj udostępniania DNA serwisom internetowym zajmującym się dziedzictwem kulturowym i zachowaj ostrożność przy pozostawianiu śladów DNA.
 
   color: lime
