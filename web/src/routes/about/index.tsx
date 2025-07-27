@@ -21,7 +21,7 @@ export default component$(() => {
   };
 
   const contributorsResource = useResource$<Contributor[]>(async () => {
-    const url = 'https://api.github.com/repos/lissy93/personal-security-checklist/contributors?per_page=100';
+    const url = 'https://api.github.com/repos/kporembinski/zabezpieczsie.pl/contributors?per_page=100';
     const response = await fetch(url);
     if (!response.ok) {
       throw new Error('Failed to fetch contributors');
@@ -30,7 +30,7 @@ export default component$(() => {
   });
 
   const sponsorsResource = useResource$<Contributor[]>(async () => {
-    const url = 'https://github-sponsors.as93.workers.dev/lissy93';
+    const url = 'https://github-sponsors.as93.workers.dev/kporembinski';
     const response = await fetch(url);
     if (!response.ok) {
       throw new Error('Failed to fetch sponsors');
@@ -42,7 +42,7 @@ export default component$(() => {
   return (
     <div class="m-4 md:mx-16">
       <article class="bg-back p-8 mx-auto max-w-[1200px] m-8 rounded-lg shadow-md">
-        <h2 class="text-3xl mb-2">About the Security Checklist</h2>
+        <h2 class="text-3xl mb-2">O stronie ZabezpieczSie.pl</h2>
         {intro.map((paragraph, index) => (
           <p class="mb-2" key={index}>{paragraph}</p>
         ))}        
@@ -50,7 +50,7 @@ export default component$(() => {
       <div class="divider"></div>
 
       <article class="bg-back p-8 mx-auto max-w-[1200px] m-8 rounded-lg shadow-md">
-        <h2 class="text-3xl mb-2">Contributing</h2>
+        <h2 class="text-3xl mb-2">Rozwijanie</h2>
         {contributing.map((paragraph, index) => (
           <p class="mb-2" key={index} dangerouslySetInnerHTML={parseMarkdown(paragraph)}></p>
         ))}        
