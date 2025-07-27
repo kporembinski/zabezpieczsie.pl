@@ -1,13 +1,8 @@
-# Contributor Covenant Code of Conduct
+# Kodeks postępowania współpracowników
 
-## Our Pledge
+## Nasza obietnica
 
-In the interest of fostering an open and welcoming environment, we as
-contributors and maintainers pledge to making participation in our project and
-our community a harassment-free experience for everyone, regardless of age, body
-size, disability, ethnicity, sex characteristics, gender identity and expression,
-level of experience, education, socio-economic status, nationality, personal
-appearance, race, religion, or sexual identity and orientation.
+W trosce o tworzenie otwartego i przyjaznego środowiska, my, jako współtwórcy i opiekunowie, zobowiązujemy się do tego, aby udział w naszym projekcie i naszej społeczności był dla wszystkich doświadczeniem wolnym od prześladowań, niezależnie od wieku, rozmiaru ciała, niepełnosprawności, pochodzenia etnicznego, cech płciowych, tożsamości i ekspresji płciowej, poziomu doświadczenia, wykształcenia, statusu społeczno-ekonomicznego, narodowości, wyglądu zewnętrznego, rasy, religii lub tożsamości i orientacji seksualnej.
 
 ## Our Standards
 

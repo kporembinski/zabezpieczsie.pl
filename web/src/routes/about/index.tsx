@@ -24,7 +24,7 @@ export default component$(() => {
     const url = 'https://api.github.com/repos/kporembinski/zabezpieczsie.pl/contributors?per_page=100';
     const response = await fetch(url);
     if (!response.ok) {
-      throw new Error('Failed to fetch contributors');
+      throw new Error('Nie udało się pobrać danych o autorach');
     }
     return await response.json();
   });
@@ -33,7 +33,7 @@ export default component$(() => {
     const url = 'https://github-sponsors.as93.workers.dev/kporembinski';
     const response = await fetch(url);
     if (!response.ok) {
-      throw new Error('Failed to fetch sponsors');
+      throw new Error('Nie udało się pobrać sponsorów');
     }
     return await response.json();
   });
@@ -58,13 +58,13 @@ export default component$(() => {
       <div class="divider"></div>
 
       <article class="bg-back p-8 mx-auto max-w-[1200px] m-8 rounded-lg shadow-md">
-        <h2 class="text-3xl mb-2">Acknowledgments</h2>
+        <h2 class="text-3xl mb-2">Podziękowania</h2>
 
 
-        <h3 class="text-2xl mb-2">Sponsors</h3>
+        <h3 class="text-2xl mb-2">Sponsorzy</h3>
 
         <p>
-          Huge thanks to the following sponsors, for their ongoing support 💖
+          Ogromne podziękowania dla poniższych sponsorów za ich nieustające wsparcie.
         </p>
 
         <div class="flex flex-wrap gap-4 my-4 mx-auto">
@@ -98,10 +98,9 @@ export default component$(() => {
 
         <div class="divider"></div>
 
-        <h3 class="text-2xl mb-2">Contributors</h3>
+        <h3 class="text-2xl mb-2">Autorzy</h3>
         <p>
-          This project exists thanks to all the people who've helped build and maintain it.<br />
-          Special thanks to the below, top-100 contributors 🌟
+          Ten projekt istnieje dzięki wszystkim osobom, które pomogły go stworzyć i utrzymać. Szczególne podziękowania dla poniższych 100 najlepszych współpracowników.
         </p>
         <div class="flex flex-wrap gap-4 my-4 mx-auto">
           <Resource
@@ -115,7 +114,7 @@ export default component$(() => {
                   target="_blank"
                   rel="noopener noreferrer"
                   key={contributor.login}
-                  data-tip={`@${contributor.login} has contributed ${contributor.contributions} times\n\nClick to view their profile`}
+                  data-tip={`@${contributor.login} has contributed ${contributor.contributions} times\n\nKliknij, aby wyświetlić ich profil`}
                 >
                   <img
                     class="avatar rounded"
@@ -136,15 +135,13 @@ export default component$(() => {
       <div class="divider"></div>
 
       <article class="bg-back p-8 mx-auto max-w-[1200px] my-8 rounded-lg shadow-md">
-        <h2 class="text-3xl mb-2" id="author">About the Author</h2>
+        <h2 class="text-3xl mb-2" id="author">O autorze</h2>
           <p>
-            This project was originally started by
-            me, <a href="https://aliciasykes.com" class="link link-primary">Alicia Sykes</a>
-            - with a lot of help from the community.
+            Projekt ten został pierwotnie zainicjowany przez <a href="https://aliciasykes.com" class="link link-primary">Alicię Sykes</a> – przy znacznym wsparciu społeczności.
           </p>
           <br />
           <div class="ml-4 float-right">
-            <img class="rounded-lg" width="180" height="240" alt="Alicia Sykes" src="https://i.ibb.co/fq10qhL/DSC-0597.jpg" />
+            <img class="rounded-lg" width="180" height="240" alt="Kamil Porembiński" src="https://kamilporembinski.pl/media/posts/328/gallery/kamil-porembinski-7.jpg" />
             <div class="flex gap-2 my-2 justify-between">
               {
                 socials.map((social, index) => (
@@ -156,12 +153,11 @@ export default component$(() => {
             </div>
           </div>
           <p class="text-lg italic font-thin">
-            I write apps which aim to help people <b>escape big tech, secure their data, and protect their privacy</b>.
+            Szkolę, wykładam, pomagam, zarządzam, doradzam, żegluję, nurkuję, pilotuję.
           </p>
           <br />
           <p>
-            I have a particular interest in self-hosting, Linux, security and OSINT.<br />
-            So if this type of stuff interests you, check out these other projects:
+            Cześć, nazywam się Kamil Porembiński i jestem upierdliwy, ale potrzebny. Od ponad dwudziestu lat pomagam małym i dużym firmom w ulepszaniu ich biznesu, dzięki technologii. Automatyzuję procesy, wdrażam sztuczną inteligencję oraz dbam o ich cyberbezpieczeństwo.
           </p>
           <ul class="list-disc pl-8">
             {
@@ -177,9 +173,7 @@ export default component$(() => {
           </ul>
           <br />
           <p>
-            For a more open source apps I've published,
-            see <a href="https://apps.aliciasykes.com/" class="link link-primary">apps.aliciasykes.com</a>,
-            or <a href="https://github.com/lissy93" class="link link-primary">follow me on GitHub</a>
+            Więcej na temat cyberbezpieczeństwa znajdziesz u mnie na stronie <a href="https://kamilporembinski.pl/">kamilporembinski.pl</a> lub obsewrwuj mnie na <a href="https://www.linkedin.com/in/kamilporembinski/">LinkedIn</a>.
           </p>
 
       </article>
@@ -187,32 +181,22 @@ export default component$(() => {
       <div class="divider"></div>
 
       <article class="bg-back p-8 mx-auto max-w-[1200px] m-8 rounded-lg shadow-md">
-        <h2 class="text-3xl mb-2">License</h2>
-        <p>
-          This project is split-licensed, with the checklist content (located
-          in <a class="link" href="https://github.com/Lissy93/personal-security-checklist/blob/HEAD/personal-security-checklist.yml">
-            <code>personal-security-checklist.yml</code>
-          </a>) being licensed
-          under <b><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></b>.
-          And everything else (including all the code), licensed
-          under <b><a href="https://gist.github.com/Lissy93/143d2ee01ccc5c052a17">MIT</a></b>.
+        <h2 class="text-3xl mb-2">Licencja</h2>
+        <p>Projekt ten jest objęty podwójną licencją, przy czym zawartość listy kontrolnej (znajdująca się w pliku <a class="link" href="https://github.com/kporembinski/zabezpieczsie.pl/blob/HEAD/personal-security-checklist.yml">personal-security-checklist.yml)</a> jest objęta licencją CC BY-NC-SA 4.0. Wszystkie pozostałe elementy (w tym cały kod) są objęte licencją MIT.
         </p>
         <pre class="bg-front whitespace-break-spaces rounded text-xs my-2 mx-auto p-2">
           {license}
         </pre>
         <details class="collapse">
           <summary class="collapse-title">
-            <h3 class="mt-2">What does this means for you?</h3>
+            <h3 class="mt-2">Co to oznacza dla Ciebie?</h3>
           </summary>
           <div class="collapse-content">
             <p class="mb-2">
-              This means that for everything (except the checklist YAML file), you have almost unlimited freedom to
-              use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of this software.
-              All that we ask is that you include the original copyright notice and permission notice in any copies of the software
+              Oznacza to, że w odniesieniu do wszystkich elementów (z wyjątkiem pliku YAML zawierającego listę kontrolną) użytkownik ma niemal nieograniczoną swobodę w zakresie użytkowania, kopiowania, modyfikowania, łączenia, publikowania, dystrybucji, udzielania sublicencji i/lub sprzedaży kopii tego oprogramowania. Jedynym wymogiem jest umieszczenie oryginalnej informacji o prawach autorskich i zezwoleniu w każdej kopii oprogramowania.
             </p>
             <p class="mb-2">
-              And for the security-list content you can share and adapt this content as long as you give appropriate credit,
-              don't use it for commercial purposes, and distribute your contributions under the same license.
+              W przypadku treści z listy bezpieczeństwa możesz udostępniać i dostosowywać te treści, o ile podasz odpowiednią informację o autorstwie, nie wykorzystasz ich do celów komercyjnych i udostępnisz swoje materiały na tej samej licencji.
             </p>
           </div>
         </details>
@@ -224,11 +208,11 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-  title: "About | Digital Defense",
+  title: "O projekcie | ZabezpieczSie.pl",
   meta: [
     {
       name: "description",
-      content: "This project aims to give you practical guidance on how to improve your digital security, and protect your privacy online",
+      content: "Projekt ten ma na celu dostarczenie praktycznych wskazówek dotyczących poprawy bezpieczeństwa cyfrowego i ochrony prywatności w Internecie.",
     },
   ],
 };

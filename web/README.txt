@@ -1,10 +1,8 @@
 
-This is the source for the https://digital-defense.io website, which displays the checklist data interactively
+Jest to źródło strony internetowej https://zabezpieczsie.pl, która wyświetla dane z listy kontrolnej w sposób interaktywny.
 
-For build, development and deploy instructions, see the main README
+Instrukcje dotyczące kompilacji, rozwoju i wdrażania znajdują się w głównym pliku README.
 
-If you wish to make content changes, the only file you need to edit is `personal-security-checklist.yml`, in the repo's root
+Jeśli chcesz wprowadzić zmiany w treści, jedynym plikiem, który musisz edytować, jest `personal-security-checklist.yml` znajdujący się w katalogu głównym repozytorium.
 
-All code here is licensed under MIT
-
-
+Cały kod jest objęty licencją MIT.

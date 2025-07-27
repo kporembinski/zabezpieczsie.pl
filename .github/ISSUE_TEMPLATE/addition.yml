@@ -1,17 +1,17 @@
-name: Addition
-description: 🆕 Suggest something to be added to the list
-title: '[ADDITION] <title>'
+name: Dodaj
+description: 🆕 Zaproponuj coś, co można dodać do listy
+title: '[Dodaj] <title>'
 labels: ['Suggested Addition', 'Awaiting Review']
 assignees:
-  - lissy93
+  - kporembinski
 body:
   # Location
   - type: input
     id: location
     attributes:
-      label: Location
+      label: Lokalizacja
       description: >-
-        Indicate which section (and if applicable sub-section) the addition should be made
+        Wskaż, w której sekcji (i ewentualnie podsekcji) należy dokonać uzupełnienia.
       placeholder:
     validations:
       required: true
