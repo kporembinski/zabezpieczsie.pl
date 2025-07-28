@@ -1,6 +1,6 @@
-name: Amendment
-description: ✏️ Suggest an edit or bring attention to a mistake
-title: '[AMENDMENT] <title>'
+name: Poprawka
+description: ✏️ Zaproponuj zmianę lub zwróć uwagę na błąd
+title: '[POPRAWKA] <title>'
 labels: ['Suggested Amendment', 'Awaiting Review']
 assignees:
   - kporembinski
@@ -9,9 +9,9 @@ body:
   - type: input
     id: location
     attributes:
-      label: Location
+      label: Lokalizacja
       description: >-
-        Indicate which section (and if applicable sub-section) the amendment should be made
+        Wskaż, w której sekcji (i ewentualnie podsekcji) należy wprowadzić zmianę.
       placeholder:
     validations:
       required: true
@@ -20,8 +20,8 @@ body:
   - type: textarea
     id: amendments
     attributes:
-      label: Amendments
-      description: |
+      label: Poprawka
+      description: >-
         Please describe what amendments should be made.
         If relating to content change, please also provide links to backup any information
       placeholder: 
@@ -32,25 +32,24 @@ body:
   - type: dropdown
     id: canImplement
     attributes:
-      label: Would you like to submit a PR?
-      description: Is this amendment something that you are willing to submit a pull request for?
+      label: Czy chcesz przesłać Pull Request?
+      description: Czy jesteś gotów zgłosić pull request dotyczący tego dodatku?
       options:
-        - 'No'
-        - 'Maybe'
-        - 'Yes'
+        - 'Nie'
+        - 'Może'
+        - 'Tak'
     validations:
       required: false
-
 
   # Confirmation checkboxes
   - type: checkboxes
     id: idiot-check
     attributes:
-      label: Please tick the boxes
+      label: Proszę zaznaczyć odpowiednie pola
       options:
-        - label: To the best of my knowledge, the information I've provided is correct
+        - label: Zgodnie z moją najlepszą wiedzą, podane przeze mnie informacje są prawidłowe.
           required: true
-        - label: I have checked that a similar ticket has not previously been opened
+        - label: Sprawdziłem, że podobne zgłoszenie nie zostało wcześniej otwarte.
           required: true
-        - label: I agree to the repositories [Code of Conduct](https://github.com/Lissy93/personal-security-checklist/blob/master/.github/CODE_OF_CONDUCT.md)
+        - label: Zgadzam się z zasadami repozytorium [Kodeks postępowania](https://github.com/kporembinski/zabezpieczsie.pl/blob/master/.github/CODE_OF_CONDUCT.md)
           required: true

@@ -1,5 +1,5 @@
 <!--
-Thank you for contributing the The Personal Security Checklist 🫶
+Thank you for contributing the ZabezpieczSie.pl 🫶
 So that your PR can be reviewed quickly, please complete the following sections:
 -->
 

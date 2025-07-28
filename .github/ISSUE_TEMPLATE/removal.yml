@@ -1,6 +1,6 @@
-name: Removal
-description: ❌ Suggest something that should be removed from the list
-title: '[REMOVAL] <title>'
+name: Usuń
+description: ❌ Zaproponuj coś, co powinno zostać usunięte z listy.
+title: '[USUŃ] <title>'
 labels: ['Suggested Removal', 'Awaiting Review']
 assignees:
   - kporembinski
@@ -9,9 +9,9 @@ body:
   - type: input
     id: location
     attributes:
-      label: What should be removed?
+      label: Lokalizacja
       description: >-
-        Indicate which point, and from which section you are referring to
+        Wskaż, o który punkt chodzi i z której sekcji pochodzi.
       placeholder:
     validations:
       required: true
@@ -20,10 +20,9 @@ body:
   - type: textarea
     id: removal
     attributes:
-      label: Justification
-      description: |
-        Describe why this should be removed
-        Where applicable, provide links to reputable sources to back up any info
+      label: Uzasadnienie
+      description: >-
+        Opisz, dlaczego należy to usunąć. W stosownych przypadkach podaj linki do wiarygodnych źródeł potwierdzających wszelkie informacje.
       placeholder: 
     validations:
       required: true
@@ -32,12 +31,12 @@ body:
   - type: dropdown
     id: canImplement
     attributes:
-      label: Would you like to submit a PR?
-      description: Is this removal something that you are willing to submit a pull request for?
+      label: Czy chcesz przesłać Pull Request?
+      description: Czy jesteś gotów zgłosić pull request dotyczący tego dodatku?
       options:
-        - 'No'
-        - 'Maybe'
-        - 'Yes'
+        - 'Nie'
+        - 'Może'
+        - 'Tak'
     validations:
       required: false
 
@@ -45,12 +44,12 @@ body:
   - type: checkboxes
     id: idiot-check
     attributes:
-      label: Please tick the boxes
+      label: Proszę zaznaczyć odpowiednie pola
       options:
-        - label: To the best of my knowledge, the information I've provided is correct
+        - label: Zgodnie z moją najlepszą wiedzą, podane przeze mnie informacje są prawidłowe.
           required: true
-        - label: I have checked that a similar ticket has not previously been opened
+        - label: Sprawdziłem, że podobne zgłoszenie nie zostało wcześniej otwarte.
           required: true
-        - label: I agree to the repositories [Code of Conduct](https://github.com/Lissy93/personal-security-checklist/blob/master/.github/CODE_OF_CONDUCT.md)
+        - label: Zgadzam się z zasadami repozytorium [Kodeks postępowania](https://github.com/kporembinski/zabezpieczsie.pl/blob/master/.github/CODE_OF_CONDUCT.md)
           required: true
 

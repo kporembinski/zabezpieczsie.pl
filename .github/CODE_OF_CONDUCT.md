@@ -4,68 +4,47 @@
 
 W trosce o tworzenie otwartego i przyjaznego środowiska, my, jako współtwórcy i opiekunowie, zobowiązujemy się do tego, aby udział w naszym projekcie i naszej społeczności był dla wszystkich doświadczeniem wolnym od prześladowań, niezależnie od wieku, rozmiaru ciała, niepełnosprawności, pochodzenia etnicznego, cech płciowych, tożsamości i ekspresji płciowej, poziomu doświadczenia, wykształcenia, statusu społeczno-ekonomicznego, narodowości, wyglądu zewnętrznego, rasy, religii lub tożsamości i orientacji seksualnej.
 
-## Our Standards
+## Nasze standardy
 
-Examples of behavior that contributes to creating a positive environment
-include:
+Przykłady zachowań, które przyczyniają się do tworzenia pozytywnego środowiska, obejmują:
 
-* Using welcoming and inclusive language
-* Being respectful of differing viewpoints and experiences
-* Gracefully accepting constructive criticism
-* Focusing on what is best for the community
-* Showing empathy towards other community members
+* Używanie języka przyjaznego i integracyjnego
+* Szanowanie różnych punktów widzenia i doświadczeń
+* Z godnością przyjmowanie konstruktywnej krytyki
+* Skupianie się na tym, co jest najlepsze dla społeczności
+* Okazywanie empatii wobec innych członków społeczności
 
-Examples of unacceptable behavior by participants include:
+Przykłady niedopuszczalnych zachowań uczestników obejmują:
 
-* The use of sexualized language or imagery and unwelcome sexual attention or
- advances
-* Trolling, insulting/derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or electronic
- address, without explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
- professional setting
+* Używanie języka lub obrazów o charakterze seksualnym oraz niepożądane uwagi lub
+ zaloty seksualne
+* Trolling, obraźliwe/obraźliwe komentarze oraz ataki osobiste lub polityczne
+* Publiczne lub prywatne nękanie
+* Publikowanie prywatnych informacji innych osób, takich jak adres fizyczny lub elektroniczny,
+ bez wyraźnej zgody
+* Inne zachowania, które można uznać za nieodpowiednie w
+ środowisku zawodowym
 
-## Our Responsibilities
+## Nasze obowiązki
 
-Project maintainers are responsible for clarifying the standards of acceptable
-behavior and are expected to take appropriate and fair corrective action in
-response to any instances of unacceptable behavior.
+Osoby odpowiedzialne za projekt są zobowiązane do wyjaśnienia standardów akceptowalnego zachowania i oczekuje się od nich podjęcia odpowiednich i sprawiedliwych działań naprawczych w odpowiedzi na wszelkie przypadki niedopuszczalnego zachowania.
 
-Project maintainers have the right and responsibility to remove, edit, or
-reject comments, commits, code, wiki edits, issues, and other contributions
-that are not aligned to this Code of Conduct, or to ban temporarily or
-permanently any contributor for other behaviors that they deem inappropriate,
-threatening, offensive, or harmful.
+Osoby odpowiedzialne za projekt mają prawo i obowiązek usuwania, edytowania lub odrzucania komentarzy, commitów, kodu, edycji wiki, zgłoszeń i innych treści, które nie są zgodne z niniejszym Kodeksem postępowania, lub tymczasowego lub trwałego zablokowania dostępu dowolnemu użytkownikowi za inne zachowania, które uznają za nieodpowiednie, groźne, obraźliwe lub szkodliwe.
 
-## Scope
+## Zakres
 
-This Code of Conduct applies both within project spaces and in public spaces
-when an individual is representing the project or its community. Examples of
-representing a project or community include using an official project e-mail
-address, posting via an official social media account, or acting as an appointed
-representative at an online or offline event. Representation of a project may be
-further defined and clarified by project maintainers.
+Niniejszy Kodeks postępowania ma zastosowanie zarówno w ramach przestrzeni projektowych, jak i w przestrzeni publicznej, gdy dana osoba reprezentuje projekt lub jego społeczność. Przykłady reprezentowania projektu lub społeczności obejmują korzystanie z oficjalnego adresu e-mail projektu, publikowanie postów za pośrednictwem oficjalnego konta w mediach społecznościowych lub pełnienie funkcji wyznaczonego przedstawiciela podczas wydarzenia online lub offline. Reprezentowanie projektu może zostać dokładniej zdefiniowane i wyjaśnione przez opiekunów projektu.
 
-## Enforcement
+## Egzekwowanie
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported by contacting the project team at alicia@as93.net. All
-complaints will be reviewed and investigated and will result in a response that
-is deemed necessary and appropriate to the circumstances. The project team is
-obligated to maintain confidentiality with regard to the reporter of an incident.
-Further details of specific enforcement policies may be posted separately.
+Przypadki obraźliwego, napastliwego lub w inny sposób niedopuszczalnego zachowania można zgłaszać, kontaktując się z zespołem projektu pod adresem alicia@as93.net. Wszystkie skargi zostaną rozpatrzone i zbadane, a w wyniku tego zostanie podjęta odpowiedź, która zostanie uznana za niezbędną i odpowiednią do okoliczności. Zespół projektu jest zobowiązany do zachowania poufności w odniesieniu do osoby zgłaszającej incydent. Dalsze szczegóły dotyczące konkretnych zasad egzekwowania mogą zostać opublikowane oddzielnie.
 
-Project maintainers who do not follow or enforce the Code of Conduct in good
-faith may face temporary or permanent repercussions as determined by other
-members of the project's leadership.
+Opiekunowie projektu, którzy nie przestrzegają lub nie egzekwują Kodeksu postępowania w dobrej wierze, mogą ponieść tymczasowe lub trwałe konsekwencje określone przez innych członków kierownictwa projektu.
 
-## Attribution
+## Przypisanie
 
-This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
-available at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html
+Niniejszy Kodeks postępowania został zaadaptowany z [Contributor Covenant][strona główna], wersja 1.4, dostępnego pod adresem https://www.contributor-covenant.org/version/1/4/code-of-conduct.html
 
-[homepage]: https://www.contributor-covenant.org
+[strona główna]: https://www.contributor-covenant.org
 
-For answers to common questions about this code of conduct, see
-https://www.contributor-covenant.org/faq
+Odpowiedzi na najczęściej zadawane pytania dotyczące niniejszego kodeksu postępowania można znaleźć na stronie https://www.contributor-covenant.org/faq

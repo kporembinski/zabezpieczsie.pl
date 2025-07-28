@@ -1,6 +1,6 @@
 name: Dodaj
 description: 🆕 Zaproponuj coś, co można dodać do listy
-title: '[Dodaj] <title>'
+title: '[DODAJ] <title>'
 labels: ['Suggested Addition', 'Awaiting Review']
 assignees:
   - kporembinski
@@ -20,10 +20,9 @@ body:
   - type: textarea
     id: addition
     attributes:
-      label: Addition
-      description: |
-        Please describe what should be added
-        Where applicable, provide links to reputable sources to back up any info
+      label: Dodaj
+      description: >-
+        Proszę opisać, co należy dodać. W stosownych przypadkach proszę podać linki do wiarygodnych źródeł potwierdzających wszelkie informacje.
       placeholder: 
     validations:
       required: true
@@ -32,25 +31,24 @@ body:
   - type: dropdown
     id: canImplement
     attributes:
-      label: Would you like to submit a PR?
-      description: Is this addition something that you are willing to submit a pull request for?
+      label: Czy chcesz przesłać Pull Request?
+      description: Czy jesteś gotów zgłosić pull request dotyczący tego dodatku?
       options:
-        - 'No'
-        - 'Maybe'
-        - 'Yes'
+        - 'Nie'
+        - 'Może'
+        - 'Tak'
     validations:
       required: false
-
 
   # Confirmation checkboxes
   - type: checkboxes
     id: idiot-check
     attributes:
-      label: Please tick the boxes
+      label: Proszę zaznaczyć odpowiednie pola
       options:
-        - label: To the best of my knowledge, the information I've provided is correct
+        - label: Zgodnie z moją najlepszą wiedzą, podane przeze mnie informacje są prawidłowe.
           required: true
-        - label: I have checked that a similar ticket has not previously been opened
+        - label: Sprawdziłem, że podobne zgłoszenie nie zostało wcześniej otwarte.
           required: true
-        - label: I agree to the repositories [Code of Conduct](https://github.com/Lissy93/personal-security-checklist/blob/master/.github/CODE_OF_CONDUCT.md)
+        - label: Zgadzam się z zasadami repozytorium [Kodeks postępowania](https://github.com/kporembinski/zabezpieczsie.pl/blob/master/.github/CODE_OF_CONDUCT.md)
           required: true
