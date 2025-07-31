@@ -42,6 +42,24 @@ export default component$(() => {
             <li>
               <details>
                 <summary>
+                  <Icon icon="coffee" width={16} height={16}  />
+                  Postaw kawę
+                </summary>
+                <ul class="p-2 bg-base-100 rounded-t-none z-10">
+                  {data.value.map((item: Section, index: number) => (
+                    <li key={`checklist-nav-${index}`} class={`hover:bg-${item.color}-600 hover:bg-opacity-15`}>
+                      <a href="https://suppi.pl/kporembinski">
+                      <Icon color={item.color} class="mr-2" icon={item.icon} width={16} height={16}  />
+                        {item.title}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>
                   <Icon icon="checklist" width={16} height={16}  />
                   Checklisty
                 </summary>
