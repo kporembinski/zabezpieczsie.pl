@@ -41,7 +41,7 @@ export default component$(() => {
           <ul class="menu menu-horizontal px-1">
             <li>
               <a href="https://suppi.pl/kporembinski"
-                class="tooltip flex tooltip-bottom" data-tip="Postaw mi kawkę za dobrą robotę">
+                class="tooltip flex tooltip-bottom" data-tip="Postaw mi kawkę za dobrą robotę.">
                 <Icon icon="coffee" width={16} height={16}  />Postaw kawkę
               </a>
             </li>
