@@ -40,22 +40,10 @@ export default component$(() => {
         <div class="flex-none hidden md:flex">
           <ul class="menu menu-horizontal px-1">
             <li>
-              <details>
-                <summary>
-                  <Icon icon="coffee" width={16} height={16}  />
-                  Postaw kawę
-                </summary>
-                <ul class="p-2 bg-base-100 rounded-t-none z-10">
-                  {data.value.map((item: Section, index: number) => (
-                    <li key={`checklist-nav-${index}`} class={`hover:bg-${item.color}-600 hover:bg-opacity-15`}>
-                      <a href="https://suppi.pl/kporembinski">
-                      <Icon color={item.color} class="mr-2" icon={item.icon} width={16} height={16}  />
-                        {item.title}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </details>
+              <a href="https://suppi.pl/kporembinski"
+                class="tooltip flex tooltip-bottom" data-tip="Postaw mi kawkę za dobrą robotę">
+                <Icon icon="coffee" width={16} height={16}  />Postaw kawkę
+              </a>
             </li>
             <li>
               <details>
