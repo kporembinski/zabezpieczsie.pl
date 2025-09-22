@@ -396,7 +396,7 @@ Rejestry publiczne często zawierają wrażliwe dane osobowe (imię i nazwisko, 
 ----
 
 #### There's an interactive version!
-- [ZabezpieszSie.pl](https://zabezpieczsie.pl) - przeglądaj szczegóły, sprawdzaj pozycje i śledź swoje postępy
+- [ZabezpieczSie.pl](https://zabezpieczsie.pl) - przeglądaj szczegóły, sprawdzaj pozycje i śledź swoje postępy
 
 ----
 
