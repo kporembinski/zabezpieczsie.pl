@@ -1191,7 +1191,7 @@
   - point: Zastrzeż numer PESEL
     priority: Start
     details: >-
-      Zastrzeż numer PESEL za pomocą aplikacji mObywatel, aby uniemożliwić udzielenie kredytu na Twoje dane.
+      Zastrzeż numer PESEL za pomocą aplikacji mObywatel, aby uniemożliwić udzielenie kredytu na Twoje dane, wyrobienie duplikatu karty SIM, albo założenie konta w banku.
 
   - point: Korzystaj z wirtualnych kart
     priority: Plus
