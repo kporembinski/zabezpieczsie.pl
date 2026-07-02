@@ -101,6 +101,11 @@
     details: >-
       Klucz bezpieczeństwa U2F/FIDO2 to urządzenie USB (lub NFC), które podłącza się podczas logowania do serwisu internetowego w celu weryfikacji tożsamości zamiast wprowadzania jednorazowego hasła (OTP) z urządzenia uwierzytelniającego. Przykładami takich kluczy są [Yubico](https://www.x-kom.pl/p/683066-klucz-sprzetowy-yubico-yubikey-5-nfc.html?sm=zRk3mSEc). Zapewniają one szereg korzyści związanych z bezpieczeństwem. Ponieważ przeglądarka komunikuje się bezpośrednio z urządzeniem, nie można jej oszukać co do tego, który host żąda uwierzytelnienia, ponieważ sprawdzany jest certyfikat TLS. Ten post stanowi dobre wyjaśnienie bezpieczeństwa korzystania z tokenów FIDO U2F. Oczywiście ważne jest, aby przechowywać fizyczny klucz w bezpiecznym miejscu lub mieć go przy sobie. Niektóre konta internetowe pozwalają na włączenie kilku metod 2FA.
 
+  - point: Korzystaj z Passkeys (kluczy dostępu)
+    priority: Pro
+    details: >-
+      Passkeys (klucze dostępu) to nowoczesny standard uwierzytelniania oparty na FIDO2/WebAuthn, który pozwala logować się bez hasła. Zamiast hasła używana jest para kluczy kryptograficznych — klucz prywatny nigdy nie opuszcza Twojego urządzenia, a serwis przechowuje jedynie klucz publiczny. Dzięki temu Passkeys są odporne na phishing (nie da się ich wyłudzić na fałszywej stronie, bo są powiązane z konkretną domeną), na wycieki baz danych oraz na ataki polegające na przechwyceniu haseł. Logowanie potwierdzasz w naturalny sposób — odciskiem palca, skanem twarzy lub kodem PIN urządzenia. Passkeys mogą być synchronizowane między urządzeniami przez menedżera (np. Apple iCloud Keychain, Google Password Manager, Bitwarden czy 1Password) albo przechowywane na kluczu sprzętowym U2F/FIDO2 dla maksymalnego bezpieczeństwa. Coraz więcej serwisów (m.in. Google, Apple, Microsoft, GitHub) wspiera Passkeys — warto włączyć je wszędzie tam, gdzie są dostępne.
+
   - point: Rozważ użycie menedżera haseł offline
     priority: Pro
     details: >-
