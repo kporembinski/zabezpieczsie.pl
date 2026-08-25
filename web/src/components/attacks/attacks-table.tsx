@@ -16,11 +16,18 @@ const formatMonthLabel = (date: string): string => {
   return month ? `${month}.${year}` : year;
 };
 
+const formatDatePl = (date: string): string => {
+  const [year, month, day] = date.split('-');
+  if (day) return `${day}.${month}.${year}`;
+  if (month) return `${month}.${year}`;
+  return year;
+};
+
 const formatDiscovered = (iso: string): string => {
   const d = new Date(iso);
   if (Number.isNaN(d.getTime())) return iso;
   const pad = (n: number) => String(n).padStart(2, '0');
-  return `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())} ${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())} UTC`;
+  return `${pad(d.getUTCDate())}.${pad(d.getUTCMonth() + 1)}.${d.getUTCFullYear()} ${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())} UTC`;
 };
 
 type Group = { label: string; items: Attack[] };
@@ -109,7 +116,7 @@ export default component$((props: { attacks: Attack[] }) => {
                   </div>
                 </div>
                 <p class="text-xs opacity-60 mt-1">
-                  {attack.type === 'ransomware' ? 'Szacowana data ataku' : 'Data wycieku'}: {attack.date}
+                  {attack.type === 'ransomware' ? 'Szacowana data ataku' : 'Data wycieku'}: {formatDatePl(attack.date)}
                   {attack.discovered && <> · Wykryto: {formatDiscovered(attack.discovered)}</>}
                 </p>
                 {attack.description && (

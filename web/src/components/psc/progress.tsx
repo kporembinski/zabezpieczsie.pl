@@ -326,11 +326,11 @@ export default component$(() => {
       {/* Something ??? */}
       <div class="p-4 rounded-box bg-front shadow-md w-96 flex-grow">
         <p class="text-sm opacity-80 mb-2">
-          Następnie rozważ przejście na bezpieczniejsze i
-          bardziej szanujące prywatność aplikacje i usługi.
+          Chcesz zobaczyć, dlaczego to się przydaje? Sprawdź, jakie
+          ataki i wycieki danych dotknęły ostatnio polskie firmy.
         </p>
         <p class="text-lg">
-          Poszukaj oprogramowania nastawionego na prywatność na: <a class="link link-secondary font-bold" href="https://www.privacytools.io/">privacytools.io</a>
+          Zobacz historię ataków: <a class="link link-secondary font-bold" href="/cyberataki">Cyberataki na polskie firmy</a>
         </p>
       </div>
     </div>

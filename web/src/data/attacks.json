@@ -198,7 +198,7 @@
     "source": "bezpiecznedane.gov.pl",
     "sourceUrl": "https://bezpiecznedane.gov.pl/historia-wyciekow",
     "verified": true,
-    "description": "W lipcu 2026 roku doszło do nieuprawnionego dostępu do zasobów testowej instancji systemów wydawnictwa WAM (wydawnictwowam.pl). Dane testowe, do których uzyskały dostęp osoby nieupoważnione, stanowią kilka procent danych produkcyjnych z okresu…"
+    "description": "W lipcu 2026 roku doszło do nieuprawnionego dostępu do zasobów testowej instancji systemów wydawnictwa WAM (wydawnictwowam.pl). Dane testowe, do których uzyskały dostęp osoby nieupoważnione, stanowią kilka procent danych produkcyjnych z okresu 09.2016 - 08.2021 i obejmują imiona, nazwiska, numery telefonów, adresy e-mail, kody pocztowe oraz nazwy kont zarejestrowane w systemie wydawnictwa. Potwierdzono, że baza danych klientów serwisu została opublikowana do pobrania na jednym z forów dla cyberprzestępców. Incydent objął około 60 tysięcy unikalnych rekordów."
   },
   {
     "company": "MakoLab",
@@ -327,7 +327,7 @@
     "source": "bezpiecznedane.gov.pl",
     "sourceUrl": "https://bezpiecznedane.gov.pl/historia-wyciekow",
     "verified": true,
-    "description": "W maju 2026 roku ujawniono informację o wycieku danych pochodzących ze strony internetowej arbiko.pl. Potwierdzono, że baza danych klientów tego serwisu została opublikowana do pobrania na jednym z forów dla cyberprzestępców. Incydent objął ponad 4…"
+    "description": "W maju 2026 roku ujawniono informację o wycieku danych pochodzących ze strony internetowej arbiko.pl. Potwierdzono, że baza danych klientów tego serwisu została opublikowana do pobrania na jednym z forów dla cyberprzestępców. Incydent objął ponad 4 tysiące unikalnych rekordów. Dane znajdujące się w wykradzionej bazie obejmują adresy e-mail, hasła przechowywane w postaci jawnego tekstu oraz niekiedy numery telefonów. Ze względu na fakt, że hasła nie zostały poddane procesowi hashowania, istnieje bezpośrednie ryzyko przeprowadzenia ataków polegających na przejęciu kont, w przypadku wykorzystywania tej samej kombinacji adresów e-mail i haseł w innych serwisach. Ponadto, biorąc pod uwagę profil działalności firmy ARBIKO, wykradzione dane kontaktowe mogą zostać wykorzystane do ukierunkowanych ataków socjotechnicznych na przedsiębiorstwa, takich jak fałszywe oferty sprzedaży czy oszustwa fakturowe."
   },
   {
     "company": "aliorbank.pl",
@@ -432,7 +432,7 @@
     "source": "bezpiecznedane.gov.pl",
     "sourceUrl": "https://bezpiecznedane.gov.pl/historia-wyciekow",
     "verified": true,
-    "description": "W dniu 24 kwietnia 2026 roku pojawiły się informacje o nieautoryzowanym dostępie do danych użytkowników platformy Udemy. Z uzyskanych przez zespół informacji doszło do pozyskania bazy danych zawierającej około 1,4 miliona rekordów użytkowników.…"
+    "description": "W dniu 24 kwietnia 2026 roku pojawiły się informacje o nieautoryzowanym dostępie do danych użytkowników platformy Udemy. Z uzyskanych przez zespół informacji doszło do pozyskania bazy danych zawierającej około 1,4 miliona rekordów użytkowników. Zakres wykradzionych informacji dane użytkowników platformy, takie jak imię i nazwisko, adres e-mail oraz - w niektórych przypadkach - numer telefonu i inne dane kontaktowe powiązane z kontem użytkownika. Ustalono, że grupa odpowiedzialna za incydent udostępniła pozyskane dane do pobrania w Internecie, co istotnie zwiększa ryzyko ich dalszego rozpowszechniania oraz wykorzystania przez osoby trzecie. Ze względu na charakter pozyskanych danych incydent stwarza ryzyko ich wykorzystania w działaniach socjotechnicznych, w szczególności w kampaniach phishingowych oraz ukierunkowanych próbach wyłudzenia informacji."
   },
   {
     "company": "vegehome.pl i polskiekoldry.pl",
@@ -441,7 +441,7 @@
     "source": "bezpiecznedane.gov.pl",
     "sourceUrl": "https://bezpiecznedane.gov.pl/historia-wyciekow",
     "verified": true,
-    "description": "W kwietniu 2026 roku doszło do włamania do systemów obsługujących sklepy internetowe: vegehome.pl oraz polskiekoldry.pl, w wyniku którego osoba nieuprawniona uzyskała dostęp do bazy danych tych serwisów. Na podstawie analizy materiału potwierdzono,…"
+    "description": "W kwietniu 2026 roku doszło do włamania do systemów obsługujących sklepy internetowe: vegehome.pl oraz polskiekoldry.pl, w wyniku którego osoba nieuprawniona uzyskała dostęp do bazy danych tych serwisów. Na podstawie analizy materiału potwierdzono, że wśród wykradzionych danych znajdowała się baza klientów, która została opublikowana do pobrania na jednym z forów dla cyberprzestępców. Incydent objął ponad 100 000 klientów sklepu. Dane znajdujące się w wykradzionej bazie obejmują m.in. imię i nazwisko, adres e-mail, hash hasła (bcrypt z kosztem 10), w niektórych przypadkach numer telefonu, adres zamieszkania lub adres wysyłki. Ze względu na charakter pozyskanych informacji istnieje ryzyko wykorzystania ich do ataków socjotechnicznych, takich jak spersonalizowane próby wyłudzenia danych wrażliwych."
   },
   {
     "company": "polsat.pl",
@@ -462,7 +462,7 @@
     "source": "haveibeenpwned.com",
     "sourceUrl": "https://haveibeenpwned.com/PwnedWebsites#Paidwork",
     "verified": true,
-    "description": "In March 2026, hackers claimed they had obtained data from the gig economy platform Paidwork which they then listed for sale. Almost 11GB of data allegedly obtained from the platform was subsequently posted publicly in July and contained over 23M…"
+    "description": "In March 2026, hackers claimed they had obtained data from the gig economy platform Paidwork which they then listed for sale. Almost 11GB of data allegedly obtained from the platform was subsequently posted publicly in July and contained over 23M unique email addresses. The breach also included a broad range of other data relating to the operation of the platform including user profile data, banking information, payout history for workers and passwords stored as bcrypt hashes."
   },
   {
     "company": "SYSTHERM INFO",
@@ -506,7 +506,7 @@
     "source": "bezpiecznedane.gov.pl",
     "sourceUrl": "https://bezpiecznedane.gov.pl/historia-wyciekow",
     "verified": true,
-    "description": "W marcu 2026 roku doszło do nieuprawnionego dostępu do zasobów baz danych powiązanych z infrastrukturą sieciową Towarzystwa Opieki nad Ociemniałymi. W wyniku incydentu osoba nieuprawniona mogła uzyskać dostęp do baz zawierających dane osobowe, w tym…"
+    "description": "W marcu 2026 roku doszło do nieuprawnionego dostępu do zasobów baz danych powiązanych z infrastrukturą sieciową Towarzystwa Opieki nad Ociemniałymi. W wyniku incydentu osoba nieuprawniona mogła uzyskać dostęp do baz zawierających dane osobowe, w tym dane kontaktowe oraz imię i nazwisko. Na podstawie dostępnych informacji ustalono, że wykradziona baza danych nie została na ten moment nigdzie opublikowana. Ze względu na zakres pozyskanych danych istnieje ryzyko ich wykorzystania w przyszłych próbach wyłudzeń oraz atakach socjotechnicznych. Ze względu na charakter pozyskanych informacji istnieje ryzyko wykorzystania ich do ataków socjotechnicznych, takich jak spersonalizowane próby wyłudzenia danych wrażliwych."
   },
   {
     "company": "Keller Polska",
@@ -680,7 +680,7 @@
     "source": "bezpiecznedane.gov.pl",
     "sourceUrl": "https://bezpiecznedane.gov.pl/historia-wyciekow",
     "verified": true,
-    "description": "W grudniu 2025 roku doszło do włamania do systemów obsługujących sklep internetowy abfoto.pl, należący do firmy Ab Foto Sp. z o.o., w wyniku którego osoba nieuprawniona uzyskała dostęp do bazy danych klientów. Na podstawie dostępnych informacji…"
+    "description": "W grudniu 2025 roku doszło do włamania do systemów obsługujących sklep internetowy abfoto.pl, należący do firmy Ab Foto Sp. z o.o., w wyniku którego osoba nieuprawniona uzyskała dostęp do bazy danych klientów. Na podstawie dostępnych informacji ustalono, że wykradziona baza danych nie została na ten moment nigdzie opublikowana. Incydent objął ponad 100 000 klientów sklepu. Ze względu na zakres pozyskanych danych istnieje ryzyko ich wykorzystania w przyszłych próbach wyłudzeń oraz atakach socjotechnicznych. Dane znajdujące się w wykradzionej bazie obejmują imię i nazwisko, adres e-mail, numer telefonu, adres zamieszkania lub adres wysyłki, dane firmy (w niektórych przypadkach), numer NIP firmy (w niektórych przypadkach), kwotę zamówienia, liczbę złożonych zamówień. Ze względu na charakter pozyskanych informacji istnieje ryzyko wykorzystania ich do ataków socjotechnicznych, takich jak spersonalizowane próby wyłudzenia danych wrażliwych."
   },
   {
     "company": "wkdzik.pl",
@@ -689,7 +689,7 @@
     "source": "bezpiecznedane.gov.pl",
     "sourceUrl": "https://bezpiecznedane.gov.pl/historia-wyciekow",
     "verified": true,
-    "description": "W grudniu 2025 roku doszło do włamania do systemów obsługujących sklep internetowy wkdzik.pl, w wyniku którego osoba nieuprawniona uzyskała dostęp do kilku baz danych prowadzonych przez firmę. Na podstawie analizy materiału oraz wewnętrznych ustaleń…"
+    "description": "W grudniu 2025 roku doszło do włamania do systemów obsługujących sklep internetowy wkdzik.pl, w wyniku którego osoba nieuprawniona uzyskała dostęp do kilku baz danych prowadzonych przez firmę. Na podstawie analizy materiału oraz wewnętrznych ustaleń potwierdzono, że wykradziono bazę klientów oraz bazę kontrahentów. Dodatkowo, baza danych została wystawiona na sprzedaż przez osobę podającą się za atakującego, co zwiększa ryzyko jej dalszego rozpowszechnienia. Może to oznaczać, że dane te w przyszłości zostaną wykorzystane w próbach wyłudzenia danych wrażliwych. Dane znajdujące się w wykradzionych bazach obejmują: imię, nazwisko, adres e-mail, numer telefonu oraz adres dostawy. Ze względu na charakter pozyskanych informacji istnieje ryzyko wykorzystania ich do ataków socjotechnicznych, takich jak spersonalizowane próby wyłudzenia danych logowania, informacji finansowych lub innych wrażliwych danych."
   },
   {
     "company": "Chemirol",
@@ -818,7 +818,7 @@
     "source": "bezpiecznedane.gov.pl",
     "sourceUrl": "https://bezpiecznedane.gov.pl/historia-wyciekow",
     "verified": true,
-    "description": "30 października 2025 roku w sieci pojawiła się oferta sprzedaży bazy danych klientów biura podróży Itaka. W opisie oferty mówi się o 2,2 miliona rekordów. Jako dowód sprzedający udostępnił próbkę danych około 10 000 rekordów. Itaka potwierdziła, że…"
+    "description": "30 października 2025 roku w sieci pojawiła się oferta sprzedaży bazy danych klientów biura podróży Itaka. W opisie oferty mówi się o 2,2 miliona rekordów. Jako dowód sprzedający udostępnił próbkę danych około 10 000 rekordów. Itaka potwierdziła, że doszło do nieuprawnionego dostępu do części systemu „Strefy Klienta”. Firma wskazuje, że ujawniono dane takie jak adresy e-mail użytkowników, imiona i nazwiska oraz numery telefonów. Zaznaczono przy tym, że nie doszło do wycieku informacji o rezerwacjach np. danych finansowych ani numerów PESEL. Według komunikatów firmy, skala wycieku to co najmniej 10 000 osób, chociaż firma przyznaje, że może być większa. Co ważne: W publicznie dostępnej ofercie (sprzedaży) udostępniono jedynie próbkę 10 000 rekordów i tylko te dane są dostępne w serwisie bezpiecznedane.gov.pl. Osoby, które nie znalazły się w tej próbce, ale mają konto w Strefie Klienta Itaki, powinny skontaktować się bezpośrednio z firmą Itaka, by dowiedzieć się, czy ich dane mogły zostać objęte incydentem."
   },
   {
     "company": "supergrosz.pl",
@@ -827,7 +827,7 @@
     "source": "bezpiecznedane.gov.pl",
     "sourceUrl": "https://bezpiecznedane.gov.pl/historia-wyciekow",
     "verified": true,
-    "description": "30 października 2025 roku w sieci pojawiła się oferta sprzedaży bazy danych klientów serwisu SuperGrosz.pl, a firma potwierdziła, że doszło do naruszenia bezpieczeństwa informacji. Wśród ujawnionych danych znajdowały się imię i nazwisko, adres…"
+    "description": "30 października 2025 roku w sieci pojawiła się oferta sprzedaży bazy danych klientów serwisu SuperGrosz.pl, a firma potwierdziła, że doszło do naruszenia bezpieczeństwa informacji. Wśród ujawnionych danych znajdowały się imię i nazwisko, adres zamieszkania lub pobytu, numer PESEL, adres e-mail, numery telefonów, dane dotyczące dowodu osobistego i dane do logowania. Hasła były zapisane w postaci hashy, ale można je próbować łamać offline metodami słownikowymi, co ułatwiają obecne w wycieku dane takie jak PESEL, e-mail i telefon. Istnieje realne ryzyko odtworzenia prostych haseł użytkowników."
   },
   {
     "company": "VTK Legal",
@@ -859,7 +859,7 @@
     "source": "bezpiecznedane.gov.pl",
     "sourceUrl": "https://bezpiecznedane.gov.pl/historia-wyciekow",
     "verified": true,
-    "description": "We wrześniu 2025 roku na publicznym kanale czatu Telegram zostały opublikowane dane dostępowe w dużej skali. Analiza przeprowadzona przez CERT Polska wskazuje, że znaczna część wpisów to powtórzenia danych z wcześniejszych incydentów. Niemniej,…"
+    "description": "We wrześniu 2025 roku na publicznym kanale czatu Telegram zostały opublikowane dane dostępowe w dużej skali. Analiza przeprowadzona przez CERT Polska wskazuje, że znaczna część wpisów to powtórzenia danych z wcześniejszych incydentów. Niemniej, wśród materiału pojawiają się także rekordy sugerujące, że część danych mogła pochodzić z nowych źródeł, nawet z 2025 roku. Łącznie znalazło się tam ponad 1,8 miliona wpisów: około 1,6 miliona w formie adres e-mail i hasło, około 200 tysięcy w formie adres strony, e-mail i hasło. Część z adresów i haseł powtarza się w innych, wcześniejszych wyciekach, co dodatkowo zwiększa ryzyko ich wykorzystania przez cyberprzestępców."
   },
   {
     "company": "Ekotrade",
@@ -1024,7 +1024,7 @@
     "source": "bezpiecznedane.gov.pl",
     "sourceUrl": "https://bezpiecznedane.gov.pl/historia-wyciekow",
     "verified": true,
-    "description": "W marcu 2025 roku opublikowano wyciek danych zawierający dane około 600 tysięcy klientów sklepu babyhit.pl. Zespół CERT Polska przeanalizował dostępny materiał i stwierdził, że wyciekiem objęte zostały m.in.: imię, nazwisko, dane adresowe, miejse…"
+    "description": "W marcu 2025 roku opublikowano wyciek danych zawierający dane około 600 tysięcy klientów sklepu babyhit.pl. Zespół CERT Polska przeanalizował dostępny materiał i stwierdził, że wyciekiem objęte zostały m.in.: imię, nazwisko, dane adresowe, miejse dostawy, adres e-mail oraz numer telefonu. W celu weryfikacji, czy Państwa dane znalazły się w wycieku, sugerujemy użycie w wyszukiwarce zarówno Państwa adresu e-mail, jak i numeru telefonu."
   },
   {
     "company": "HENRYKA.COM",
@@ -1093,7 +1093,7 @@
     "source": "bezpiecznedane.gov.pl",
     "sourceUrl": "https://bezpiecznedane.gov.pl/historia-wyciekow",
     "verified": true,
-    "description": "Na początku lutego 2025 roku na jednym z forów dla cyberprzestępców opublikowano dużą listę danych. Analiza zebranego materiału przeprowadzona przez CERT Polska wykazała, że znacząca część z upublicznionych danych znajdowała się we wcześniejszych…"
+    "description": "Na początku lutego 2025 roku na jednym z forów dla cyberprzestępców opublikowano dużą listę danych. Analiza zebranego materiału przeprowadzona przez CERT Polska wykazała, że znacząca część z upublicznionych danych znajdowała się we wcześniejszych wyciekach - najstarsze z nich datowane są na 10 lat temu. W plikach znajdowało się 11 milionów unikalnych par w formacie: email i hasło."
   },
   {
     "company": "www.eurocert.pl",
@@ -1186,7 +1186,7 @@
     "source": "bezpiecznedane.gov.pl",
     "sourceUrl": "https://bezpiecznedane.gov.pl/historia-wyciekow",
     "verified": true,
-    "description": "Pod koniec grudnia 2024 roku doszło do wycieku danych osobowych około 10 000 adwokatów i aplikantów adwokackich z izb adwokackich w całej Polsce. 14 lutego 2025 roku NRA - Naczelna Rada Adwokacka poinformowała osoby dotknięte naruszeniem o wycieku…"
+    "description": "Pod koniec grudnia 2024 roku doszło do wycieku danych osobowych około 10 000 adwokatów i aplikantów adwokackich z izb adwokackich w całej Polsce. 14 lutego 2025 roku NRA - Naczelna Rada Adwokacka poinformowała osoby dotknięte naruszeniem o wycieku ich danych. Wśród ujawnionych informacji znalazły się m.in.: imię, nazwisko, numer PESEL oraz hashe haseł."
   },
   {
     "company": "gureco.pl",
@@ -1255,7 +1255,7 @@
     "source": "bezpiecznedane.gov.pl",
     "sourceUrl": "https://bezpiecznedane.gov.pl/historia-wyciekow",
     "verified": true,
-    "description": "W październiku 2024 roku doszło do wycieku danych klientów sieci Superpharm. Na podstawie zebranego materiału oraz współpracy z firmą, zespół CERT Polska stwierdził, że wyciekły dane dotyczące 1.6 miliona klientów internetowego sklepu…"
+    "description": "W październiku 2024 roku doszło do wycieku danych klientów sieci Superpharm. Na podstawie zebranego materiału oraz współpracy z firmą, zespół CERT Polska stwierdził, że wyciekły dane dotyczące 1.6 miliona klientów internetowego sklepu superpharm.pl.Wśród danych objętych wyciekiem były: imię, nazwisko, email oraz hash hasła. Dla części użytkowników wyciekły także dane odnośnie płci czy daty urodzenia."
   },
   {
     "company": "Okręgowa Izba Pielęgniarek i Położnych w Gdańsku",
@@ -1264,7 +1264,7 @@
     "source": "bezpiecznedane.gov.pl",
     "sourceUrl": "https://bezpiecznedane.gov.pl/historia-wyciekow",
     "verified": true,
-    "description": "Na podstawie analizy zebranego materiału zespół CERT Polska stwierdził, że wyciekowi uległy dane z Okręgowej Izby Pielęgniarek i Położnych w Gdańsku. W opublikowanych plikach zawarte są dane osobowe ponad 800 osób. Wśród danych objętych wyciekiem…"
+    "description": "Na podstawie analizy zebranego materiału zespół CERT Polska stwierdził, że wyciekowi uległy dane z Okręgowej Izby Pielęgniarek i Położnych w Gdańsku. W opublikowanych plikach zawarte są dane osobowe ponad 800 osób. Wśród danych objętych wyciekiem można znaleźć imię, nazwisko, pesel oraz adres zamieszkania."
   },
   {
     "company": "www.law-taxes.pl",
@@ -1355,7 +1355,7 @@
     "source": "bezpiecznedane.gov.pl",
     "sourceUrl": "https://bezpiecznedane.gov.pl/historia-wyciekow",
     "verified": true,
-    "description": "W połowie sierpnia 2024 roku doszło do wycieku danych ze sklepu internetowego sklepbaterie.pl. Analiza zebranego materiału przeprowadzona przez CERT Polska wykazała, że wyciek dotyczy ponad 200 tysięcy klientów. Wśród danych objętych wyciekiem były…"
+    "description": "W połowie sierpnia 2024 roku doszło do wycieku danych ze sklepu internetowego sklepbaterie.pl. Analiza zebranego materiału przeprowadzona przez CERT Polska wykazała, że wyciek dotyczy ponad 200 tysięcy klientów. Wśród danych objętych wyciekiem były m.in.: imię, nazwisko, email, numer telefonu, skrót hasła oraz adres dostawy."
   },
   {
     "company": "ALAB",
@@ -1364,7 +1364,7 @@
     "source": "bezpiecznedane.gov.pl",
     "sourceUrl": "https://bezpiecznedane.gov.pl/historia-wyciekow",
     "verified": true,
-    "description": "Analiza wycieku wykazała, że doszło do kradzieży wyników badań osób, które badały się bezpośrednio w placówkach firmy Alab oraz w punktach medycznych, które z firmą współpracują (jednocześnie nie będąc częścią grupy Alab). Wśród danych, które można…"
+    "description": "Analiza wycieku wykazała, że doszło do kradzieży wyników badań osób, które badały się bezpośrednio w placówkach firmy Alab oraz w punktach medycznych, które z firmą współpracują (jednocześnie nie będąc częścią grupy Alab). Wśród danych, które można znaleźć w upublicznionych wynikach badań, znajdują się m.in.: imię, nazwisko, data urodzenia, numer PESEL osoby badanej. Osoba, której dane zostały upublicznione, powinna być przygotowana i świadoma, że cyberprzestępcy mogą te dane wykorzystać."
   },
   {
     "company": "pgd.pl",
@@ -1384,7 +1384,7 @@
     "source": "bezpiecznedane.gov.pl",
     "sourceUrl": "https://bezpiecznedane.gov.pl/historia-wyciekow",
     "verified": true,
-    "description": "Na podstawie analizy zebranego materiału zespół CERT Polska stwierdził, że wyciekowi uległy dane użytkowników portalu megamodels.pl. \\nPomimo, że w wycieku znajdują się informacje o ponad 182 tysiącach kont, to ich znaczna część została założona…"
+    "description": "Na podstawie analizy zebranego materiału zespół CERT Polska stwierdził, że wyciekowi uległy dane użytkowników portalu megamodels.pl. \\nPomimo, że w wycieku znajdują się informacje o ponad 182 tysiącach kont, to ich znaczna część została założona przez automaty i dane nie należą do prawdziwych osób, przez co rzeczywista skala ataku jest mniejsza. Szacujemy, że liczba kont założonych na prawdziwe dane jest mniejsza niż 40 tysięcy. \\nWśród danych objętych wyciekiem można znaleźć m.in.: imię, nazwisko, adres mailowy, skróty haseł, wiek, numer telefonu, województwo i miasto zamieszkania, data urodzenia, wzrost, waga, obwód w talii, rozmiar biustu, kolor i długość włosów, rozmiar obuwia, odzieży oraz biustonosza, opis profilu, a także narodowość. \\nPonieważ skróty haseł zostały stworzone w sposób pozwalający przestępcom na względnie łatwe poznanie prawdziwego hasła, rekomendujemy:}<Zmianę hasła do wszystkich serwisów, w których to samo hasło było używane.><Włączenie dodatkowego zabezpieczenia w serwisach, które umożliwiają weryfikację dwuetapową.><Pozostać wyczulonym na próby ataków wykorzystujące informacje wprowadzone w tym serwisie."
   },
   {
     "company": "P********.pl",
@@ -1655,7 +1655,7 @@
     "source": "haveibeenpwned.com",
     "sourceUrl": "https://haveibeenpwned.com/PwnedWebsites#PolishCredentials",
     "verified": true,
-    "description": "In May 2023, a credential stuffing list of 6.3M Polish email address and password pairs appeared on a local forum. Likely obtained by malware running on victims' machines, each record included an email address and plain text password alongside the…"
+    "description": "In May 2023, a credential stuffing list of 6.3M Polish email address and password pairs appeared on a local forum. Likely obtained by malware running on victims' machines, each record included an email address and plain text password alongside the website the credentials were used on. The data included 1.2M unique email addresses."
   },
   {
     "company": "hk-finance.pl",
@@ -1688,7 +1688,7 @@
     "source": "bezpiecznedane.gov.pl",
     "sourceUrl": "https://bezpiecznedane.gov.pl/historia-wyciekow",
     "verified": true,
-    "description": "W trakcie analizy zbioru danych, zespół CERT Polska wykazał, że dane znajdujące się w wycieku, są złączeniem wielu mniejszych zbiorów pozyskanych przez złośliwe oprogramowanie typu \"[information stealer]…"
+    "description": "W trakcie analizy zbioru danych, zespół CERT Polska wykazał, że dane znajdujące się w wycieku, są złączeniem wielu mniejszych zbiorów pozyskanych przez złośliwe oprogramowanie typu \"[information stealer] (https://cert.pl/posts/2023/02/information-stealer/)\". W związku z tym, przestępcy mogli mieć dostęp zarówno do haseł wpisywanych na klawiaturze i mieli dostęp do danych logowania zapisanych w przeglądarkach czy menedżerach haseł."
   },
   {
     "company": "piszcz.pl",
@@ -1744,7 +1744,7 @@
     "source": "haveibeenpwned.com",
     "sourceUrl": "https://haveibeenpwned.com/PwnedWebsites#CERTPolandPhish",
     "verified": true,
-    "description": "In August 2023, CERT Poland observed a phishing campaign that collected credentials from 68k victims. The campaign collected email addresses and passwords via a phishing email masquerading as a purchase order confirmation. CERT Poland identified a…"
+    "description": "In August 2023, CERT Poland observed a phishing campaign that collected credentials from 68k victims. The campaign collected email addresses and passwords via a phishing email masquerading as a purchase order confirmation. CERT Poland identified a further 202 other phishing campaigns operating on the same C2 server, which has now been dismantled."
   },
   {
     "company": "zagiel.pl",
@@ -1797,7 +1797,7 @@
     "source": "bezpiecznedane.gov.pl",
     "sourceUrl": "https://bezpiecznedane.gov.pl/historia-wyciekow",
     "verified": true,
-    "description": "Funkcjonariusze Zarządu w Białymstoku Centralnego Biura Zwalczania Cyberprzestępczości w toku prowadzonego śledztwa RSD.27/25 rozbili zorganizowaną grupę przestępczą, która za pomocą technik phishingowych wyłudzała dane logowania do kont na…"
+    "description": "Funkcjonariusze Zarządu w Białymstoku Centralnego Biura Zwalczania Cyberprzestępczości w toku prowadzonego śledztwa RSD.27/25 rozbili zorganizowaną grupę przestępczą, która za pomocą technik phishingowych wyłudzała dane logowania do kont na platformie Facebook, a następnie przejmowała do nich dostęp i za pośrednictwem komunikatorów internetowych wyłudzała kody BLIK od kolejnych użytkowników portalu. Łącznie, w okresie od maja 2022 roku do maja 2024 roku zabezpieczono w sprawie ponad 100 000 loginów i haseł do ww. portalu. Sprawcy tworzyli strony internetowe imitujące znane portale informacyjne, zawierające szokujące i skandaliczne treści (np. śmierć znanej osoby). Po kliknięciu w link do takiej strony, pojawiało się okienko logowania do portalu Facebook. Po wpisaniu przez użytkownika loginu i hasła, dane te były przejmowane przez członków grupy, którzy następnie wykorzystywali je w przestępczym procederze. W sprawie zabezpieczono od podejrzanych środki majątkowe o równowartości 1 000 000 zł, które zostaną m.in. rozdysponowane na pokrycie powstałych start w mieniu pokrzywdzonych."
   },
   {
     "company": "nowiny.pl",

@@ -46,10 +46,14 @@ def sanitize_description(text):
         return None
     text = ONION_URL_PATTERN.sub('[link ukryty]', text)
     text = ' '.join(text.split())
-    if len(text) > 250:
-        truncated = text[:250].rsplit(' ', 1)[0]
-        text = f'{truncated}…'
     return text or None
+
+
+def truncate(text, limit=250):
+    if not text or len(text) <= limit:
+        return text
+    truncated = text[:limit].rsplit(' ', 1)[0]
+    return f'{truncated}…'
 
 
 def fetch_ransomware_live(api_key):
@@ -68,7 +72,7 @@ def fetch_ransomware_live(api_key):
             'sourceUrl': item.get('permalink') or 'https://www.ransomware.live/',
             'verified': False,
         }
-        description = sanitize_description(item.get('description'))
+        description = truncate(sanitize_description(item.get('description')))
         for key, value in (('sector', item.get('activity')), ('group', group_name), ('description', description)):
             if value:
                 entry[key] = value
