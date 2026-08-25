@@ -1,6 +1,6 @@
 export type AttackType = 'ransomware' | 'wyciek_danych';
 
-export type AttackSource = 'ransomware.live' | 'bezpiecznedane.gov.pl';
+export type AttackSource = 'ransomware.live' | 'bezpiecznedane.gov.pl' | 'haveibeenpwned.com';
 
 export interface Attack {
   company: string;
@@ -12,4 +12,5 @@ export interface Attack {
   group?: string;
   description?: string;
   verified: boolean;
+  discovered?: string; // full ISO timestamp; ransomware.live only — when the group's leak listing was first observed
 }

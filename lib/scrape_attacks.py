@@ -1,8 +1,8 @@
+import html
 import json
 import logging
 import os
 import re
-import time
 
 import requests
 
@@ -14,16 +14,31 @@ ATTACKS_JSON_PATH = os.path.join(PROJECT_ROOT, 'web', 'src', 'data', 'attacks.js
 
 RANSOMWARE_LIVE_URL = 'https://api-pro.ransomware.live/victims/'
 BEZPIECZNEDANE_URL = 'https://bezpiecznedane.gov.pl/historia-wyciekow'
+BEZPIECZNEDANE_API_URL = 'https://bezpiecznedane.gov.pl/api/proxy/raytha/contentitems/last_leaks'
+HIBP_BREACHES_URL = 'https://haveibeenpwned.com/api/v3/breaches'
+HIBP_USER_AGENT = 'ZabezpieczSie.pl-CyberatakiScraper (https://www.zabezpieczsie.pl)'
 
-ENTRY_PATTERN = re.compile(
-    r'<span class="inline-flex items-center font-normal text-gray-cool-500">([^<]+)</span>'
-    r'<span class="inline-flex items-center before:mx-6[^"]*">([^<]+)</span>'
-)
-NEXT_BUTTON_PATTERN = re.compile(r'aria-label="Przejdź do następnej strony"([^>]*)>')
-
-MAX_PAGES = 100
+# HIBP has no country field. Breaches whose Domain doesn't end in .pl but are
+# still known Polish companies/incidents (confirmed manually against HIBP's
+# own breach descriptions, which explicitly say "Polish" for each of these).
+POLISH_BREACH_NAMES = {
+    'CDProjektRed',
+    'MoreleNet',
+    'Paidwork',
+    'CERTPolandPhish',
+    'PolishCredentials',
+}
 
 ONION_URL_PATTERN = re.compile(r'\S*\.onion\S*', re.IGNORECASE)
+HTML_TAG_PATTERN = re.compile(r'<[^>]+>')
+
+
+def strip_html(text):
+    if not text:
+        return None
+    text = HTML_TAG_PATTERN.sub('', text)
+    text = html.unescape(text)
+    return ' '.join(text.split()) or None
 
 
 def sanitize_description(text):
@@ -57,36 +72,62 @@ def fetch_ransomware_live(api_key):
         for key, value in (('sector', item.get('activity')), ('group', group_name), ('description', description)):
             if value:
                 entry[key] = value
+        discovered = item.get('discovered')
+        if discovered:
+            entry['discovered'] = discovered
         attacks.append(entry)
     return attacks
 
 
 def scrape_bezpiecznedane():
+    response = requests.get(BEZPIECZNEDANE_API_URL, timeout=30)
+    response.raise_for_status()
+    items = response.json()['result']['items']
     attacks = []
-    previous_entries = None
-    page = 1
-    while page <= MAX_PAGES:
-        response = requests.get(BEZPIECZNEDANE_URL, params={'page': page}, timeout=30)
-        response.raise_for_status()
-        html = response.text
-        entries = ENTRY_PATTERN.findall(html)
-        if not entries or entries == previous_entries:
-            break
-        for date_raw, company in entries:
-            attacks.append({
-                'company': company.strip(),
-                'date': date_raw.strip().replace('.', '-'),
-                'type': 'wyciek_danych',
-                'source': 'bezpiecznedane.gov.pl',
-                'sourceUrl': BEZPIECZNEDANE_URL,
-                'verified': True,
-            })
-        next_button = NEXT_BUTTON_PATTERN.search(html)
-        if next_button and 'disabled' in next_button.group(1):
-            break
-        previous_entries = entries
-        page += 1
-        time.sleep(0.5)
+    for item in items:
+        if not item.get('isPublished'):
+            continue
+        content = item.get('publishedContent', {})
+        company = content.get('title', {}).get('text', '').strip()
+        date_raw = content.get('leak_date', {}).get('text', '').strip()
+        if not company or not date_raw:
+            continue
+        entry = {
+            'company': company,
+            'date': date_raw.replace('.', '-'),
+            'type': 'wyciek_danych',
+            'source': 'bezpiecznedane.gov.pl',
+            'sourceUrl': BEZPIECZNEDANE_URL,
+            'verified': True,
+        }
+        description = sanitize_description(content.get('leak_description', {}).get('text'))
+        if description:
+            entry['description'] = description
+        attacks.append(entry)
+    return attacks
+
+
+def fetch_hibp():
+    headers = {'User-Agent': HIBP_USER_AGENT}
+    response = requests.get(HIBP_BREACHES_URL, headers=headers, timeout=30)
+    response.raise_for_status()
+    attacks = []
+    for breach in response.json():
+        is_polish = breach['Domain'].endswith('.pl') or breach['Name'] in POLISH_BREACH_NAMES
+        if not is_polish:
+            continue
+        entry = {
+            'company': breach['Title'],
+            'date': breach['BreachDate'],
+            'type': 'wyciek_danych',
+            'source': 'haveibeenpwned.com',
+            'sourceUrl': f"https://haveibeenpwned.com/PwnedWebsites#{breach['Name']}",
+            'verified': bool(breach['IsVerified']),
+        }
+        description = sanitize_description(strip_html(breach.get('Description')))
+        if description:
+            entry['description'] = description
+        attacks.append(entry)
     return attacks
 
 
@@ -120,8 +161,12 @@ def main():
     leak_attacks = scrape_bezpiecznedane()
     logger.info(f'Found {len(leak_attacks)} bezpiecznedane.gov.pl entries.')
 
+    logger.info('Fetching haveibeenpwned.com...')
+    hibp_attacks = fetch_hibp()
+    logger.info(f'Found {len(hibp_attacks)} haveibeenpwned.com entries.')
+
     existing = load_existing()
-    merged = merge_and_dedupe(existing, ransomware_attacks + leak_attacks)
+    merged = merge_and_dedupe(existing, ransomware_attacks + leak_attacks + hibp_attacks)
 
     with open(ATTACKS_JSON_PATH, 'w', encoding='utf-8') as f:
         json.dump(merged, f, ensure_ascii=False, indent=2)

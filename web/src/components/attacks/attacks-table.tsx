@@ -11,15 +11,16 @@ const TYPE_BADGE_CLASS: Record<AttackType, string> = {
   wyciek_danych: 'badge-warning',
 };
 
-const MONTHS = [
-  'stycznia', 'lutego', 'marca', 'kwietnia', 'maja', 'czerwca',
-  'lipca', 'sierpnia', 'września', 'października', 'listopada', 'grudnia',
-];
-
 const formatMonthLabel = (date: string): string => {
   const [year, month] = date.split('-');
-  const monthIndex = month ? parseInt(month, 10) - 1 : -1;
-  return monthIndex >= 0 && monthIndex < 12 ? `${MONTHS[monthIndex]} ${year}` : year;
+  return month ? `${month}.${year}` : year;
+};
+
+const formatDiscovered = (iso: string): string => {
+  const d = new Date(iso);
+  if (Number.isNaN(d.getTime())) return iso;
+  const pad = (n: number) => String(n).padStart(2, '0');
+  return `${d.getUTCFullYear()}-${pad(d.getUTCMonth() + 1)}-${pad(d.getUTCDate())} ${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())} UTC`;
 };
 
 type Group = { label: string; items: Attack[] };
@@ -107,6 +108,10 @@ export default component$((props: { attacks: Attack[] }) => {
                     )}
                   </div>
                 </div>
+                <p class="text-xs opacity-60 mt-1">
+                  {attack.type === 'ransomware' ? 'Szacowana data ataku' : 'Data wycieku'}: {attack.date}
+                  {attack.discovered && <> · Wykryto: {formatDiscovered(attack.discovered)}</>}
+                </p>
                 {attack.description && (
                   <p class="text-sm opacity-70 mt-2">{attack.description}</p>
                 )}
