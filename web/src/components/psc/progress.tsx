@@ -1,5 +1,4 @@
 import { $, component$, useSignal, useOnWindow, useContext } from "@builder.io/qwik";
-import { Chart, registerables } from 'chart.js';
 
 import { useLocalStorage } from "~/hooks/useLocalStorage";
 import { ChecklistContext } from "~/store/checklist-context";
@@ -222,54 +221,56 @@ export default component$(() => {
   
 
   useOnWindow('load', $(() => {
-    Chart.register(...registerables);
+    import('chart.js').then(({ Chart, registerables }) => {
+      Chart.register(...registerables);
 
-    makeRadarData(checklists.value).then((data) => {
-      if (radarChart.value) {
-        new Chart(radarChart.value, {
-          type: 'radar',
-          data,
-          options: {
-            responsive: true,
-            scales: {
-              r: {
-                angleLines: {
-                  display: true,
-                  color: '#7d7d7da1',
-                },
-                suggestedMin: 0,
-                suggestedMax: 100,
-                ticks: {
-                  stepSize: 25,
-                  callback: (value) => `${value}%`,
-                  color: '#ffffffbf',
-                  backdropColor: '#ffffff3b',
-                },
-                grid: {
-                  display: true,
-                  color: '#7d7d7dd4',
-                },
-              },
-            },
-            plugins: {
-              legend: {
-                position: 'bottom',
-                labels: {
-                  font: {
-                    size: 10,
+      makeRadarData(checklists.value).then((data) => {
+        if (radarChart.value) {
+          new Chart(radarChart.value, {
+            type: 'radar',
+            data,
+            options: {
+              responsive: true,
+              scales: {
+                r: {
+                  angleLines: {
+                    display: true,
+                    color: '#7d7d7da1',
+                  },
+                  suggestedMin: 0,
+                  suggestedMax: 100,
+                  ticks: {
+                    stepSize: 25,
+                    callback: (value) => `${value}%`,
+                    color: '#ffffffbf',
+                    backdropColor: '#ffffff3b',
+                  },
+                  grid: {
+                    display: true,
+                    color: '#7d7d7dd4',
                   },
                 },
               },
-              tooltip: {
-                callbacks: {
-                  label: (ctx) => `Zrobiono ${Math.round(ctx.parsed.r)}% z ${ctx.dataset.label || ''} punktów`,
+              plugins: {
+                legend: {
+                  position: 'bottom',
+                  labels: {
+                    font: {
+                      size: 10,
+                    },
+                  },
+                },
+                tooltip: {
+                  callbacks: {
+                    label: (ctx) => `Zrobiono ${Math.round(ctx.parsed.r)}% z ${ctx.dataset.label || ''} punktów`,
+                  }
                 }
-              }
-            },
-          }
-        });
-        
-      }
+              },
+            }
+          });
+
+        }
+      });
     });
   }));
 

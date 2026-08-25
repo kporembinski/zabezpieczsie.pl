@@ -12,12 +12,7 @@ export default component$(() => {
 
   const { theme, setTheme } = useTheme();
 
-  const themes = [
-    'dark', 'light', 'night', 'cupcake', 
-    'bumblebee', 'corporate', 'synthwave', 'retro', 
-    'valentine', 'halloween', 'aqua', 'lofi', 
-    'fantasy', 'dracula'
-  ];
+  const themes = ['dark', 'light'];
 
     const deleteAllData = $(() => {
     const isConfirmed = confirm('Czy na pewno chcesz usunąć wszystkie dane lokalne? Spowoduje to utratę postępów.');
