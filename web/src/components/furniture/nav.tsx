@@ -64,6 +64,12 @@ export default component$(() => {
               </details>
             </li>
             <li>
+              <a href="/cyberataki"
+                class="tooltip flex tooltip-bottom" data-tip="Ataki i wycieki danych w polskich firmach">
+                <Icon icon="articles" width={16} height={16}  />Cyberataki
+              </a>
+            </li>
+            <li>
               <a href="https://github.com/kporembinski/zabezpieczsie.pl"
                 class="tooltip flex tooltip-bottom" data-tip="Zobacz/edycja źródła i danych">
                 <Icon icon="github" width={16} height={16}  />GitHub
