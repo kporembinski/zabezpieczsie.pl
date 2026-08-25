@@ -25,13 +25,19 @@ module.exports = {
     ],
   },
   safelist: [
-    { // TODO: This adds a lot of overhead. Go through code, and remove any un-needed variants.
-      pattern: /(bg|outline|text|tw-color|border)-(yellow|lime|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|red)-(200|300|400|500|600)/,
-      variants: ['light', 'dark', 'hover', 'focus'],
+    {
+      // Colors are interpolated dynamically from `section.color` (YAML content) in
+      // nav.tsx, section-link-grid.tsx, progress.tsx and checklist/index.tsx, so
+      // Tailwind's static scanner can't see the literal class names — only the
+      // combinations actually built at runtime are listed here.
+      pattern: /(bg|outline|text|border)-(yellow|lime|emerald|teal|cyan|blue|indigo|violet|purple|fuchsia|pink|red)-(400|500|600)/,
+      variants: ['hover'],
     },
     {
-      pattern: /(badge|bg|checkbox|toggle)-(success|warning|error|info|neutral)/,
-      variants: ['light', 'dark', 'hover', 'focus', 'checked'],
+      // Same reason: badgeColor in checklist-table.tsx is built dynamically from
+      // getBadgeClass(), which only ever returns these four DaisyUI status names.
+      pattern: /(badge|bg|checkbox|toggle)-(success|warning|error|neutral)/,
+      variants: ['hover', 'checked'],
     }
   ],
 };
