@@ -324,6 +324,22 @@ export default component$(() => {
         </div>
         ))}
       </div>
+
+      {/* Training upsell */}
+      <div class="rounded-box bg-front shadow-md w-96 p-4">
+        <h3 class="text-primary text-2xl">Podnieś poziom</h3>
+        <p class="text-sm opacity-80 mb-2">Chcesz pogłębić temat? Sprawdź moje szkolenia.</p>
+        <div class="flex gap-2">
+          <a
+            href="https://szkolenia.kamilporembinski.pl/"
+            target="_blank" rel="noopener noreferrer"
+            class="btn btn-primary btn-xs">Kurs online</a>
+          <a
+            href="https://kamilporembinski.pl/szkolenia-i-konsultacje/"
+            target="_blank" rel="noopener noreferrer"
+            class="btn btn-outline btn-xs">Szkolenie dla firm</a>
+        </div>
+      </div>
     </div>
 
     {/* Radar Chart showing total progress per category and level */}
