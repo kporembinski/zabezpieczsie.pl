@@ -324,16 +324,6 @@ export default component$(() => {
         </div>
         ))}
       </div>
-      {/* Something ??? */}
-      <div class="p-4 rounded-box bg-front shadow-md w-96 flex-grow">
-        <p class="text-sm opacity-80 mb-2">
-          Chcesz zobaczyć, dlaczego to się przydaje? Sprawdź, jakie
-          ataki i wycieki danych dotknęły ostatnio polskie firmy.
-        </p>
-        <p class="text-lg">
-          Zobacz historię ataków: <a class="link link-secondary font-bold" href="/cyberataki">Cyberataki na polskie firmy</a>
-        </p>
-      </div>
     </div>
 
     {/* Radar Chart showing total progress per category and level */}
@@ -353,7 +343,7 @@ export default component$(() => {
                     'my-2 w-80 flex justify-between items-center tooltip transition',
                     `hover:text-${section.color}-400`
                   ]}
-                  data-tip={`Completed ${sectionCompletion.value[index]}% of ${section.checklist.length} items.`}
+                  data-tip={`Ukończono ${sectionCompletion.value[index]}% z ${section.checklist.length} punktów.`}
                 >
                 <p class="text-sm m-0 flex items-center text-left gap-1 text-nowrap overflow-hidden max-w-40">
                   <Icon icon={section.icon} width={14} />

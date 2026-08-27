@@ -70,7 +70,7 @@ export default component$(() => {
         <div class="flex flex-wrap gap-4 my-4 mx-auto">
           <Resource
               value={sponsorsResource}
-              onPending={() => <p>Loading...</p>}
+              onPending={() => <p>Ładowanie...</p>}
               onResolved={(contributors: Contributor[]) => (
                 contributors.map((contributor: Contributor) => (
                   <a
@@ -79,7 +79,7 @@ export default component$(() => {
                     target="_blank"
                     rel="noopener noreferrer"
                     key={contributor.login}
-                    data-tip={`Thank you @${contributor.login}`}
+                    data-tip={`Dziękujemy @${contributor.login}`}
                   >
                     <img
                       class="avatar rounded"
