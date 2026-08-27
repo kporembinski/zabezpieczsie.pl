@@ -9,7 +9,7 @@ export default component$(() => {
         <div class="max-w-2xl flex flex-col place-items-center">
           <p>zabezpieczsie.pl</p>
           <h1 class="text-5xl font-bold">Zabezpiecz Się</h1>
-          <p class="subtitle pb-6">Twój przewodnik po zabezpieczaniu życia cyfrowego i ochronie prywatności</p>
+          <p class="subtitle pb-6">Interaktywna checklista bezpieczeństwa cyfrowego — odhaczaj punkty, śledź postęp, chroń swoją prywatność.</p>
           <Icon class="mb-4" icon="shield" width={60} height={60}  />
         </div>
       </div>

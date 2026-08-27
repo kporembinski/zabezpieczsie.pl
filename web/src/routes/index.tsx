@@ -28,7 +28,7 @@ export const head: DocumentHead = {
   meta: [
     {
       name: "description",
-      content: "Kompletna lista kontrolna bezpieczeństwa osobistego, zapewniająca bezpieczeństwo Twojego cyfrowego życia.",
+      content: "Interaktywna checklista bezpieczeństwa cyfrowego — odhaczaj punkty, śledź postęp, chroń swoją prywatność.",
     },
   ],
 };

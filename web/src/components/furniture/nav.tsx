@@ -65,6 +65,18 @@ export default component$(() => {
               </a>
             </li>
             <li>
+              <a href="https://szkolenia.kamilporembinski.pl/"
+                class="tooltip flex tooltip-bottom" data-tip="Szkolenia z cyberbezpieczeństwa">
+                <Icon icon="checklist" width={16} height={16}  />Kursy
+              </a>
+            </li>
+            <li>
+              <a href="https://kamilporembinski.pl/szkolenia-i-konsultacje/"
+                class="tooltip flex tooltip-bottom" data-tip="Szkolenia i konsultacje">
+                <Icon icon="human" width={16} height={16}  />Szkolenia
+              </a>
+            </li>
+            <li>
               <a href="https://github.com/kporembinski/zabezpieczsie.pl"
                 class="tooltip flex tooltip-bottom" data-tip="Zobacz/edycja źródła i danych">
                 <Icon icon="github" width={16} height={16}  />GitHub
