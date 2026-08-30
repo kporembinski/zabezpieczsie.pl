@@ -48,6 +48,15 @@
     "discovered": "2026-08-05T18:29:39.074132+00:00"
   },
   {
+    "company": "MyDr",
+    "date": "2026-08",
+    "type": "wyciek_danych",
+    "source": "bezpiecznedane.gov.pl",
+    "sourceUrl": "https://bezpiecznedane.gov.pl/historia-wyciekow",
+    "verified": true,
+    "description": "W firmie MyDr doszło do nieuprawnionego dostępu do bazy danych systemu, z którego korzystają przychodnie lekarskie i gabinety. Fakt przełamania zabezpieczeń firmy MyDr jest potwierdzony, służby nie stwierdziły jak dotąd upublicznienia tych danych, z uwagi na dobro obywateli – prewencyjnie przekazujemy jednak informację, czyje numery PESEL znalazły się w wycieku. O zakresie danych informują pacjentów dotknięte incydentem placówki, natomiast w serwisie bezpieczedane.gov.pl istnieje jedynie możliwość sprawdzenia czy PESEL użytkownika znalazł się w wycieku. Ze względu na charakter danych przechowywanych w systemach MyDr rekomendujemy poniższe działania."
+  },
+  {
     "company": "Bater",
     "date": "2026-07-31",
     "type": "ransomware",
