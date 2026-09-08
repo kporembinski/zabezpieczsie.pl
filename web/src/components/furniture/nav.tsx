@@ -65,6 +65,12 @@ export default component$(() => {
               </a>
             </li>
             <li>
+              <a href="https://jestesokazja.pl/"
+                class="tooltip flex tooltip-bottom" data-tip="Książka Jesteś okazją">
+                <Icon icon="articles" width={16} height={16}  />Książka
+              </a>
+            </li>
+            <li>
               <a href="https://szkolenia.kamilporembinski.pl/"
                 class="tooltip flex tooltip-bottom" data-tip="Szkolenia z cyberbezpieczeństwa">
                 <Icon icon="checklist" width={16} height={16}  />Kursy
