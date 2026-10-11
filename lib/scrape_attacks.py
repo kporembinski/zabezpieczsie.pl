@@ -3,6 +3,7 @@ import json
 import logging
 import os
 import re
+import time
 
 import requests
 
@@ -14,7 +15,7 @@ ATTACKS_JSON_PATH = os.path.join(PROJECT_ROOT, 'web', 'src', 'data', 'attacks.js
 
 RANSOMWARE_LIVE_URL = 'https://api-pro.ransomware.live/victims/'
 BEZPIECZNEDANE_URL = 'https://bezpiecznedane.gov.pl/historia-wyciekow'
-BEZPIECZNEDANE_API_URL = 'https://bezpiecznedane.gov.pl/api/proxy/raytha/contentitems/last_leaks'
+BEZPIECZNEDANE_USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0 Safari/537.36'
 HIBP_BREACHES_URL = 'https://haveibeenpwned.com/api/v3/breaches'
 HIBP_USER_AGENT = 'ZabezpieczSie.pl-CyberatakiScraper (https://www.zabezpieczsie.pl)'
 
@@ -28,6 +29,11 @@ POLISH_BREACH_NAMES = {
     'CERTPolandPhish',
     'PolishCredentials',
 }
+
+# The site's JSON proxy now answers 403 "Endpoint forbidden" to direct calls,
+# but the leak list is server-rendered into the page as a Next.js RSC payload.
+NEXT_F_PUSH_PATTERN = re.compile(r'self\.__next_f\.push\(\[1,("(?:[^"\\]|\\.)*")\]\)')
+LEAK_ITEM_START_PATTERN = re.compile(r'\{"creationTime":')
 
 ONION_URL_PATTERN = re.compile(r'\S*\.onion\S*', re.IGNORECASE)
 HTML_TAG_PATTERN = re.compile(r'<[^>]+>')
@@ -83,10 +89,35 @@ def fetch_ransomware_live(api_key):
     return attacks
 
 
-def scrape_bezpiecznedane():
-    response = requests.get(BEZPIECZNEDANE_API_URL, timeout=30)
-    response.raise_for_status()
-    items = response.json()['result']['items']
+def extract_bezpiecznedane_items(page_html):
+    payload = ''.join(json.loads(chunk) for chunk in NEXT_F_PUSH_PATTERN.findall(page_html))
+    decoder = json.JSONDecoder()
+    items_by_id = {}
+    for match in LEAK_ITEM_START_PATTERN.finditer(payload):
+        try:
+            item, _ = decoder.raw_decode(payload, match.start())
+        except ValueError:
+            continue
+        if 'leak_date' in item.get('publishedContent', {}):
+            items_by_id[item['id']] = item
+    return list(items_by_id.values())
+
+
+def scrape_bezpiecznedane(attempts=10, delay=3):
+    # The page only intermittently includes the leak list (their server-side
+    # fetch seems flaky), so retry until it shows up.
+    headers = {'User-Agent': BEZPIECZNEDANE_USER_AGENT}
+    items = []
+    for attempt in range(1, attempts + 1):
+        response = requests.get(BEZPIECZNEDANE_URL, headers=headers, timeout=30)
+        response.raise_for_status()
+        items = extract_bezpiecznedane_items(response.text)
+        if items:
+            break
+        logger.info(f'No leak entries in bezpiecznedane.gov.pl page (attempt {attempt}/{attempts}), retrying...')
+        time.sleep(delay)
+    if not items:
+        raise RuntimeError('No leak entries found on bezpiecznedane.gov.pl - page structure may have changed.')
     attacks = []
     for item in items:
         if not item.get('isPublished'):
