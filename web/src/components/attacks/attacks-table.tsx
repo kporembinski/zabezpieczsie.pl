@@ -30,6 +30,17 @@ const formatDiscovered = (iso: string): string => {
   return `${pad(d.getUTCDate())}.${pad(d.getUTCMonth() + 1)}.${d.getUTCFullYear()} ${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())} UTC`;
 };
 
+// Newest month first; within a month verified entries go on top (bezpiecznedane
+// only has month precision, so a plain date compare would push them to the end).
+const compareAttacks = (a: Attack, b: Attack): number => {
+  const monthA = a.date.slice(0, 7);
+  const monthB = b.date.slice(0, 7);
+  if (monthA !== monthB) return monthA < monthB ? 1 : -1;
+  if (a.verified !== b.verified) return a.verified ? -1 : 1;
+  if (a.date !== b.date) return a.date < b.date ? 1 : -1;
+  return 0;
+};
+
 type Group = { label: string; items: Attack[] };
 
 const groupByMonth = (attacks: Attack[]): Group[] => {
@@ -54,7 +65,7 @@ export default component$((props: { attacks: Attack[] }) => {
     visibleMonths: MONTHS_PER_PAGE,
   });
 
-  const sorted = [...props.attacks].sort((a, b) => (a.date < b.date ? 1 : -1));
+  const sorted = [...props.attacks].sort(compareAttacks);
   const filtered = sorted.filter(
     (attack) => filterState.type === 'all' || attack.type === filterState.type
   );
