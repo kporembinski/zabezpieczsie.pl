@@ -1,5 +1,17 @@
 [
   {
+    "company": "nowaszkola.com",
+    "date": "2026-10-15",
+    "type": "ransomware",
+    "source": "ransomware.live",
+    "sourceUrl": "https://www.ransomware.live/id/bm93YXN6a29sYS5jb21AaW5jcmFuc29t",
+    "verified": false,
+    "sector": "Education",
+    "group": "incransom",
+    "description": "/",
+    "discovered": "2026-10-15T22:03:22.348956+00:00"
+  },
+  {
     "company": "intense.pl",
     "date": "2026-09-29",
     "type": "ransomware",
